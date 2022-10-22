@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC, useState } from 'react'
 import axios, { AxiosInstance } from 'axios'
 
 type Kurabeteminaika = {
@@ -28,7 +28,7 @@ export default (() => {
     }
     return (
         <div>
-            hello world
+            hello world!
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
                 <div key={item.id}>
