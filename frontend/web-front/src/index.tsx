@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './styles/index.css';
+import Top from './mainflames/Top';
+import Lists from './mainflames/Lists';
+import Graph from './mainflames/Graph';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -9,7 +12,16 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <header>
+      <h1>くらべてみなイカ？</h1>
+    </header>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Top />} />
+        <Route path="/weapons" element={<Lists />} />
+        <Route path="/result-graph" element={<Graph />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
