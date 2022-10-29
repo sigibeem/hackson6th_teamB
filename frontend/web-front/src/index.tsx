@@ -1,27 +1,30 @@
 import React from 'react';
+// import { memo } from 'react'
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
-import Top from './mainflames/Top';
-import Lists from './mainflames/Lists';
-import Graph from './mainflames/Graph';
+import App from './App';
+// import background from './images/background/mobileBackground.jpg'
+import { FiMenu } from 'react-icons/fi';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+// const Background = memo(()=>{
+//   return (
+//     <div className="background" style={{ backgroundImage: `url(${background})`}}>
+//     </div>
+//   )
+// });
+
 root.render(
   <React.StrictMode>
     <header>
       <h1>くらべてみなイカ？</h1>
+      <FiMenu />
     </header>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Top />} />
-        <Route path="/weapons" element={<Lists />} />
-        <Route path="/result-graph" element={<Graph />} />
-      </Routes>
-    </BrowserRouter>
+      <App />
   </React.StrictMode>
 );
 
