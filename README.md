@@ -16,7 +16,7 @@
 ### create packages(If you want to start a new project)
     docker-compose run --rm web-front sh -c "yarn create react-app . --template typescript"
 
-### If you are joining a project,　type the following command in web-front directory
+### If you are joining our project,　type the following command in web-front directory
     "yarn install"
 
 ### run server
