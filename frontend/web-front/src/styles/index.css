@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'splatoon';
+  src: url('../fonts/851Gkktt_005.ttf');
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -28,6 +33,7 @@ header {
 }
 
 h1 {
+  font-family: 'splatoon', sans-serif;
   display: inline-block;
   margin: 0;
   color: #fff;
