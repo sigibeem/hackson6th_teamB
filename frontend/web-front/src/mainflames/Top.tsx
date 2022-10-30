@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
+import '../styles/menulist.css'
 import { useNavigate } from "react-router-dom";
 
 function Top() {

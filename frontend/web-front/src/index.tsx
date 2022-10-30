@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
-import background from './images/background/mobileBackground.jpg'
+import './styles/App.css'
 import { FiMenu } from 'react-icons/fi';
 import reportWebVitals from './reportWebVitals';
 
@@ -15,11 +15,16 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <header>
-      <h1>くらべてみなイカ？</h1>
-      <FiMenu />
-    </header>
-      <App />
+    <div className='container'>
+      <header>
+        <h1>くらべてみなイカ？</h1>
+        <FiMenu />
+      </header>
+        <App />
+      <footer>
+        ここがfooterです
+      </footer>
+    </div>
   </React.StrictMode>
 );
 
