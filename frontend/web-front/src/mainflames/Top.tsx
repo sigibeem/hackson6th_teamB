@@ -1,12 +1,11 @@
-import React from 'react';
-import '../styles/App.css';
+import '../styles/index.css';
 import '../styles/menulist.css'
 import { useNavigate } from "react-router-dom";
 
 function Top() {
   const navigate = useNavigate();
   const handleClickWeaponList = () => {
-    navigate('/weaponlist')
+    navigate('/weapons')
   }
   const handleClickHead = () => {
     navigate('/head')

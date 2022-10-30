@@ -1,0 +1,57 @@
+/* 左側のリスト */
+.listitemsUlLeft {
+  font-family: 'splatoon', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.listitemsLiLeft {
+  display: flex;
+  width: 270px;
+  padding: 5px;
+  font-size: 30px;
+  color: #f5eb00;
+  list-style: none;
+  background-color: #9900c7;
+  border-radius: 10px;
+}
+
+.listitemsImgLeft {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.listitemsTextLeft {
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+/* 右側のリスト */
+.listitemsUlRight {
+  font-family: 'splatoon', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.listitemsLiRight {
+  display: flex;
+  width: 270px;
+  padding: 5px;
+  font-size: 30px;
+  color: #009df5;
+  list-style: none;
+  background-color: #b2ee33;
+  border-radius: 10px;
+}
+
+.listitemsImgRight {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.listitemsTextRight {
+  margin-left: 1em;
+  text-decoration: none;
+}
