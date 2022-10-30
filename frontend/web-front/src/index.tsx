@@ -4,27 +4,22 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
 import './styles/App.css'
-import { FiMenu } from 'react-icons/fi';
+
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 
-
 root.render(
   <React.StrictMode>
-    <div className='container'>
-      <header>
-        <h1>くらべてみなイカ？</h1>
-        <FiMenu />
-      </header>
+    <BrowserRouter>
+      <div className='container'>
         <App />
-      <footer>
-        ここがfooterです
-      </footer>
-    </div>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
