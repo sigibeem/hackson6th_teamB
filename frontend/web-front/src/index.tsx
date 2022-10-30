@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
-// import background from './images/background/mobileBackground.jpg'
+import background from './images/background/mobileBackground.jpg'
 import { FiMenu } from 'react-icons/fi';
 import reportWebVitals from './reportWebVitals';
 
@@ -11,12 +11,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-// const Background = memo(()=>{
-//   return (
-//     <div className="background" style={{ backgroundImage: `url(${background})`}}>
-//     </div>
-//   )
-// });
+
 
 root.render(
   <React.StrictMode>
