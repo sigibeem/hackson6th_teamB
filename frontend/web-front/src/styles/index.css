@@ -15,13 +15,15 @@ body {
 }
 
 .background {
+  z-index: -20;
   height: 1400px;
 }
 
 header {
+  font-size: 12px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background: rgb(32, 32, 33);
   height: 60px;
   padding: 10px;
@@ -43,6 +45,38 @@ header svg {
   height: 50px;
   width: 50px;
   color: rgb(250, 250, 6);
+  margin-left: 4em;
+}
+
+.menuContent {
+  width: 50%;
+  height: 70%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #353535;
+}
+
+.menuContent ul {
+  font-family: 'splatoon', sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 50px 10px 0;
+}
+
+.menuContent ul li {
+  list-style: none;
+  margin: 1.6em;
+}
+
+.menuContent ul li p {
+  list-style: none;
+  color: white;
+}
+
+.menuClose {
+  color: yellow;
 }
 
 footer {
@@ -66,12 +100,11 @@ code {
 
 .hukidashi {
   position: relative;
-  display: inline-block;
   margin: 1.5em 0;
   padding: 20px 5em;
   width: 300px;
   min-width: 180px;
-  max-width: 100%;
+  max-width: 80%;
   color: rgb(250, 250, 250);
   font-size: 30px;
   background: #545454;
@@ -81,10 +114,10 @@ code {
 }
 
 .hukidashi::before {
-  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
+  content: '';
   margin-left: -15px;
   border: 20px solid transparent;
   border-top: 20px solid #545454;
@@ -100,4 +133,53 @@ code {
   border-radius: 50%;
   background-color: rgb(108, 116, 81);
   margin-left: 10em;
+}
+
+@media screen and (max-width: 480px) {
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  header {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(32, 32, 33);
+    height: 60px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hukidashi {
+    position: static;
+    margin-left: 2em;
+    padding: 7px 1.6em;
+    font-size: 22px;
+    width: 60px;
+    height: 150px;
+  }
+
+  .hukidashi::before {
+    content: '';
+    margin-left: -15px;
+    border: 0px solid transparent;
+    border-top: 0px solid #545454;
+  }
+
+  .menuContent {
+    width: 250px;
+  }
+
+  .bukichi {
+    height: 200px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(108, 116, 81);
+    margin-left: 10em;
+  }
+
+  footer {
+    height: 00px;
+  }
 }
