@@ -7,6 +7,7 @@ import './styles/App.css';
 import background from './images/background/mobileBackground.jpg'
 import { FiMenu } from 'react-icons/fi';
 import './styles/index.css'
+import RouterConfig from './Router/RouterConfig';
 
 const App = React.memo(()=>{
   const navigate = useNavigate();
@@ -52,11 +53,8 @@ const App = React.memo(()=>{
       </>}
 
       </header>
-      <Routes>
-        <Route path="/" element={<Top />} />
-        <Route path="/weapons" element={<Lists />} />
-        <Route path="/result-graph" element={<Graph />} />
-      </Routes>
+      <RouterConfig />
+      {/* mainflamesRoute */}
       <footer>
         ここがfooterです
       </footer>
