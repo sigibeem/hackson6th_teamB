@@ -35,26 +35,22 @@ export const listitems_category: listitems_category[] =  [
     title: 'シェルター'
   },{
     id: 8,
-    url: 'sellect_shelter',
+    url: 'sellect_wiper',
     title: 'ワイパー'
   },{
     id: 9,
-    url: 'sellect_charger',
-    title: 'ブラスター'
-  },{
-    id: 10,
     url: 'sellect_brush',
     title: 'フデ'
   },{
-    id: 11,
+    id: 10,
     url: 'sellect_reelgun',
     title: 'リールガン'
   },{
-    id: 12,
+    id: 11,
     url: 'sellect_shooter',
     title: 'シューター'
   },{
-    id: 13,
+    id: 12,
     url: 'sellect_stringer',
     title: 'ストリンガー'
   }
