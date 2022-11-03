@@ -7,51 +7,51 @@ interface listitems_category {
 export const listitems_category: listitems_category[] =  [
   {
     id: 1,
-    url: 'sellect_charger',
+    url: '/weapons/charger',
     title: 'チャージャー'
   },{
     id: 2,
-    url: 'sellect_blaster',
+    url: 'blaster',
     title: 'ブラスター'
   },{
     id: 3,
-    url: 'sellect_roller',
+    url: 'roller',
     title: 'ローラー'
   },{
     id: 4,
-    url: 'sellect_throsher',
+    url: 'throsher',
     title: 'スロッシャー'
   },{
     id: 5,
-    url: 'sellect_spinner',
+    url: 'spinner',
     title: 'スピナー'
   },{
     id: 6,
-    url: 'sellect_manuver',
+    url: 'manuver',
     title: 'マニューバー'
   },{
     id: 7,
-    url: 'sellect_shelter',
+    url: 'shelter',
     title: 'シェルター'
   },{
     id: 8,
-    url: 'sellect_wiper',
+    url: 'wiper',
     title: 'ワイパー'
   },{
     id: 9,
-    url: 'sellect_brush',
+    url: 'brush',
     title: 'フデ'
   },{
     id: 10,
-    url: 'sellect_reelgun',
+    url: 'reelgun',
     title: 'リールガン'
   },{
     id: 11,
-    url: 'sellect_shooter',
+    url: 'shooter',
     title: 'シューター'
   },{
     id: 12,
-    url: 'sellect_stringer',
+    url: 'stringer',
     title: 'ストリンガー'
   }
 ]

@@ -187,7 +187,7 @@ export const brush = [
   }
 ]
 
-export const throcher = [
+export const throsher = [
   {
     id: 1,
     url: 'images/weapon/throcher/buckTh',
