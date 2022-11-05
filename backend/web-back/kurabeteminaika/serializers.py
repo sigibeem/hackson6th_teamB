@@ -1,8 +1,9 @@
 from rest_framework import serializers
-from .models import Kurabeteminaika
+from .models import weapon_configuration
+from dataclasses import fields
+from pyexpat import model
 
-
-class KurabeteminaikaSerializer(serializers.ModelSerializer):
+class ikaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Kurabeteminaika
-        fields = ('id', 'title', 'body')
+        model = weapon_configuration
+        fields = ('weapon_name', 'range', 'damage', 'fire_rate')

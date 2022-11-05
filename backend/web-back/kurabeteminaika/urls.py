@@ -1,7 +1,11 @@
-from django.urls import path, include
-from .views import ListKurabeteminaika, DetailKurabeteminaika
+from django.urls import URLPattern, path, include
+from rest_framework.urlpatterns import format_suffix_patterns
+from rest_framework import routers
+from . import views
+
+router = routers.DefaultRouter()
+router.register('ika', views.IkaAPIView)
 
 urlpatterns = [
-    path('<int:pk>/', DetailKurabeteminaika.as_view()),
-    path('', ListKurabeteminaika.as_view())
+    path('', include(router.urls))
 ]

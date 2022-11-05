@@ -1,17 +1,10 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.shortcuts import render
-from rest_framework import generics
-from .models import Kurabeteminaika
-from .serializers import KurabeteminaikaSerializer
+from rest_framework import viewsets, generics
+from .models import weapon_configuration
+from .serializers import ikaSerializer
 
+class IkaAPIView(viewsets.ModelViewSet):
+    queryset = weapon_configuration.objects.all()
+    serializer_class = ikaSerializer
 
-class ListKurabeteminaika(generics.ListAPIView):
-    queryset = Kurabeteminaika.objects.all()
-    serializer_class = KurabeteminaikaSerializer
-
-
-class DetailKurabeteminaika(generics.RetrieveAPIView):
-    queryset = Kurabeteminaika.objects.all()
-    serializer_class = KurabeteminaikaSerializer
