@@ -1,13 +1,19 @@
 import { reelgun } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
+import { useNavigate } from "react-router-dom"
 
 const Reelgun = () => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate("/weapons", {state: true})
+  }
   return (
     <div>
       {reelgun.map((reelguns) => {
         return(
         <ul className='listitemsUlLeft' key={reelguns.id}>
-          <li className='listitemsLiLeft'>
+          <li className='listitemsLiLeft' onClick={handleClick}>
             {reelguns.title}
           </li>
         </ul>

@@ -1,8 +1,8 @@
-import { brush } from "../weaponItems"
+import { blaster } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Brush = () => {
+const BlasterRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const Brush = () => {
   }
   return (
     <div>
-      {brush.map((brushs) => {
+      {blaster.map((blasters) => {
         return(
-        <ul className='listitemsUlLeft' key={brushs.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
-            {brushs.title}
+        <ul className='listitemsUlRight' key={blasters.id}>
+          <li className='listitemsLiRight' onClick={handleClick}>
+            {blasters.title}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const Brush = () => {
   )
 }
 
-export default Brush
+export default BlasterRight

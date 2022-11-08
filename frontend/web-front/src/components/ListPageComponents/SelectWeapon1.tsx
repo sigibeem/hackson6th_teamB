@@ -2,9 +2,18 @@ import { Link, useNavigate } from "react-router-dom";
 import { listitems_category } from './weaponListCategory';
 import '../../styles/listpage/listitems.css'
 
-const SellectWeapon1 = () => {
+const SelectWeapon1 = () => {
   return (
     <div>
+      <ul className='btnList'>
+        <li className='listStyle'>
+          <button className='btn' >list1</button>
+          {/* onClick={handleClickSellectWeapon1} */}
+        </li>
+        <li className='listStyle'>
+          <button className='btnDisabled' disabled={false}>list2</button>
+        </li>  
+      </ul>
       <br />
       {listitems_category.map((listitem_category) => {
         return(
@@ -23,4 +32,4 @@ const SellectWeapon1 = () => {
   )
 }
 
-export default SellectWeapon1
+export default SelectWeapon1

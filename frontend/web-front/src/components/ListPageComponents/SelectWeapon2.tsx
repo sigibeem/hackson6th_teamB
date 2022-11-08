@@ -1,12 +1,20 @@
 import { Link, useNavigate } from "react-router-dom";
-import { listitems_category } from './weaponListCategory';
+import { listitems_category_right } from './weaponListCategory';
 import '../../styles/listpage/listitems.css'
 
-const SellectWeapon2 = () => {
+const SelectWeapon2 = () => {
   return (
     <div>
+      <ul className='btnList'>
+        <li className='listStyle'>
+          <button className='btnDisabled' >list1</button>
+        </li>
+        <li className='listStyle'>
+          <button className='btn' disabled={false}>list2</button>
+        </li>  
+      </ul>
       <br />
-      {listitems_category.map((listitem_category) => {
+      {listitems_category_right.map((listitem_category) => {
         return(
           <ul className='listitemsUlRight' key={listitem_category.id}>          
             <Link to={listitem_category.url} style={{ textDecoration: 'none' }}><li className='listitemsLiRight'>
@@ -23,4 +31,4 @@ const SellectWeapon2 = () => {
   )
 }
 
-export default SellectWeapon2
+export default SelectWeapon2
