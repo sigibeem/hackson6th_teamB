@@ -1,5 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import GraphAreaSelectWeaponLeft from '../components/GraphPageComponents/GraphAreaSelectWeaponLeft'
+import GraphAreaSelectWeaponRight from '../components/GraphPageComponents/GraphAreaSelectWeaponRight'
 import Blaster from '../components/ListPageComponents/weaponlists/blaster/Blaster'
 import BlasterRight from '../components/ListPageComponents/weaponlists/blaster/BlasterRight'
 import Brush from '../components/ListPageComponents/weaponlists/brush/Brush'
@@ -59,8 +61,14 @@ const RouterConfig = () => {
         <Route path="/weapons/spinner_right" element={<SpinnerRight />} />
         <Route path="/weapons/stringer" element={<Stringer />} />
         <Route path="/weapons/stringer_right" element={<StringerRight />} />
+        <Route path="/weapons/throsher" element={<Throsher />} />
         <Route path="/weapons/throsher_right" element={<ThrosherRight />} />
+        <Route path="/weapons/wiper" element={<Wiper />} />
         <Route path="/weapons/wiper_right" element={<WiperRight />} />
+
+        {/* grapharea */}
+        <Route path="/result-graph/selectweapon_left" element={<GraphAreaSelectWeaponLeft />} />
+        <Route path="/result-graph/selectweapon_right" element={<GraphAreaSelectWeaponRight />} />
       </Routes>
     </div>
   )

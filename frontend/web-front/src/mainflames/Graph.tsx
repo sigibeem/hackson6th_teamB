@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import axios, { AxiosInstance } from 'axios'
+import GraphAreaSelectWeaponLeft from '../components/GraphPageComponents/GraphAreaSelectWeaponLeft'
+import '../styles/menulist.css'
+import { useLocation, useNavigate } from 'react-router-dom'
+import GraphAreaSelectWeaponRight from '../components/GraphPageComponents/GraphAreaSelectWeaponRight'
 
 type Kurabeteminaika = {
     id: string
@@ -26,9 +30,23 @@ function Graph () {
             console.log(error)
         }
     }
+    const navigate = useNavigate()
+    const handleNavigateList1 = () => {
+        navigate('/weapons')
+    }
+    const handleNavigateList2 = () => {
+        navigate('/weapons', {state: true})
+    }
+
+    const location = useLocation()
+    const [selectWeapon1, setSelectWeapon1] = useState(location.state)
+
     return (
         <div>
-            hello world!
+            <ul className='btnList'>
+                <li><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
+                <li><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>     
+            </ul>
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
                 <div key={item.id}>
@@ -36,6 +54,15 @@ function Graph () {
                     <p>{item.body}</p>
                 </div>
             ))}
+            {!selectWeapon1 ? 
+            <>
+              <GraphAreaSelectWeaponRight />
+            </>
+            :
+            <>
+              <GraphAreaSelectWeaponLeft />
+            </>}
+            
         </div>
     )
 }

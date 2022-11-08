@@ -6,7 +6,7 @@ const RollerRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/weapons", {state: true})
+    navigate("/result-graph", {state: false})
   }
   return (
     <div>

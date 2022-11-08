@@ -6,7 +6,7 @@ const Throsher = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/weapons", {state: true})
+    navigate("/result-graph", {state: true})
   }
   return (
     <div>
