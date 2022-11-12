@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, useNavigate, Link } from 'react-router-dom';
-import Top from './mainflames/Top';
-import Lists from './mainflames/Lists';
-import Graph from './mainflames/Graph';
+import { useNavigate, Link } from 'react-router-dom';
 import './styles/App.css';
 import background from './images/background/mobileBackground.jpg'
 import { FiMenu } from 'react-icons/fi';
@@ -54,7 +51,6 @@ const App = React.memo(()=>{
 
       </header>
       <RouterConfig />
-      {/* mainflamesRoute */}
       <footer>
         ここがfooterです
       </footer>
