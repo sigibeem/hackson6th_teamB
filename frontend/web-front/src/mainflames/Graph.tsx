@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import axios, { AxiosInstance } from 'axios'
 import GraphAreaSelectWeaponLeft from '../components/GraphPageComponents/GraphAreaSelectWeaponLeft'
 import '../styles/menulist.css'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import GraphAreaSelectWeaponRight from '../components/GraphPageComponents/GraphAreaSelectWeaponRight'
+import '../styles/index.css'
 
 type Kurabeteminaika = {
     id: string
@@ -57,6 +58,7 @@ function Graph () {
             {!selectWeapon1 ? 
             <>
               <GraphAreaSelectWeaponRight />
+              <Link to='/totalling'><h1 className='h1'>この組み合わせはどうだった？</h1></Link>
             </>
             :
             <>

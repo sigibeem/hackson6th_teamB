@@ -26,9 +26,11 @@ import Throsher from '../components/ListPageComponents/weaponlists/throsher/Thro
 import ThrosherRight from '../components/ListPageComponents/weaponlists/throsher/ThrosherRight'
 import Wiper from '../components/ListPageComponents/weaponlists/wiper/Wiper'
 import WiperRight from '../components/ListPageComponents/weaponlists/wiper/WiperRight'
+import VictoryOrDefeat from '../components/TotallingPageComponents/VictoryOrDefeat'
 import Graph from '../mainflames/Graph'
 import Lists from '../mainflames/Lists'
 import Top from '../mainflames/Top'
+import Totalling from '../mainflames/Totalling'
 
 const RouterConfig = () => {
   return (
@@ -69,6 +71,10 @@ const RouterConfig = () => {
         {/* grapharea */}
         <Route path="/result-graph/selectweapon_left" element={<GraphAreaSelectWeaponLeft />} />
         <Route path="/result-graph/selectweapon_right" element={<GraphAreaSelectWeaponRight />} />
+
+        {/* totalling */}
+        <Route path="/totalling" element={<Totalling />} />
+        <Route path="/totalling/result" element={<VictoryOrDefeat />} />
       </Routes>
     </div>
   )
