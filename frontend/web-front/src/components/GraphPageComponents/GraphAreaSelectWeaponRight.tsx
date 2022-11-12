@@ -40,13 +40,13 @@ const GraphAreaSelectWeaponRight = () => {
   };
   return (
     <div className='grapharea'>
-    <Radar 
-        height={300}
-        width={300}
-        data={graphData}
-        id="chart-key"
-    />
-</div>
+      <Radar 
+          height={300}
+          width={300}
+          data={graphData}
+          id="chart-key"
+      />
+    </div>
   )
 }
 
