@@ -14,7 +14,7 @@ const ReelgunRight = () => {
         return(
         <ul className='listitemsUlRight' key={reelguns.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {reelguns.title}
+            {reelguns.weapon_name}
           </li>
         </ul>
         )

@@ -1,8 +1,8 @@
-import { shelter } from "../weaponItems"
+import { brella } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const ShelterRight = () => {
+const BrellaRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const ShelterRight = () => {
   }
   return (
     <div>
-      {shelter.map((shelters) => {
+      {brella.map((brellas) => {
         return(
-        <ul className='listitemsUlRight' key={shelters.id}>
+        <ul className='listitemsUlRight' key={brellas.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {shelters.title}
+            {brellas.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const ShelterRight = () => {
   )
 }
 
-export default ShelterRight
+export default BrellaRight

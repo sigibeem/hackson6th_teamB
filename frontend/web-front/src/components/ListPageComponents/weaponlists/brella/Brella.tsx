@@ -1,8 +1,8 @@
-import { throsher } from "../weaponItems"
+import { brella } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Throsher = () => {
+const Brella = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const Throsher = () => {
   }
   return (
     <div>
-      {throsher.map((throshers) => {
+      {brella.map((brellas) => {
         return(
-        <ul className='listitemsUlLeft' key={throshers.id}>
+        <ul className='listitemsUlLeft' key={brellas.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {throshers.title}
+            {brellas.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const Throsher = () => {
   )
 }
 
-export default Throsher
+export default Brella

@@ -14,7 +14,7 @@ const WiperRight = () => {
         return(
         <ul className='listitemsUlRight' key={wipers.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {wipers.title}
+            {wipers.weapon_name}
           </li>
         </ul>
         )

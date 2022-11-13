@@ -14,7 +14,7 @@ const Roller = () => {
         return(
         <ul className='listitemsUlLeft' key={rollers.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {rollers.title}
+            {rollers.weapon_name}
           </li>
         </ul>
         )

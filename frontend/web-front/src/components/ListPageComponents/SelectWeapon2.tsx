@@ -16,11 +16,11 @@ const SelectWeapon2 = () => {
       <br />
       {listitems_category_right.map((listitem_category) => {
         return(
-          <ul className='listitemsUlRight' key={listitem_category.id}>          
+          <ul className='listitemsUlRight' key={listitem_category.category_id}>          
             <Link to={listitem_category.url} style={{ textDecoration: 'none' }}><li className='listitemsLiRight'>
                 <span className='listitemsImgRight'></span>
                   <span className='listitemsTextRight'>
-                    {listitem_category.title}
+                    {listitem_category.category_name}
                   </span>
                </li>
             </Link>

@@ -1,8 +1,8 @@
-import { throsher } from "../weaponItems"
+import { slosher } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const ThrosherRight = () => {
+const SlosherRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const ThrosherRight = () => {
   }
   return (
     <div>
-      {throsher.map((throshers) => {
+      {slosher.map((sloshers) => {
         return(
-        <ul className='listitemsUlRight' key={throshers.id}>
+        <ul className='listitemsUlRight' key={sloshers.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {throshers.title}
+            {sloshers.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const ThrosherRight = () => {
   )
 }
 
-export default ThrosherRight
+export default SlosherRight

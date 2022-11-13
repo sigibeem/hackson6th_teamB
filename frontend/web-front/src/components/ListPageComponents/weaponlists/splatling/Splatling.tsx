@@ -1,8 +1,8 @@
-import { shelter } from "../weaponItems"
+import { splatling } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Shelter = () => {
+const Splatling = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const Shelter = () => {
   }
   return (
     <div>
-      {shelter.map((shelters) => {
+      {splatling.map((splatlings) => {
         return(
-        <ul className='listitemsUlLeft' key={shelters.id}>
+        <ul className='listitemsUlLeft' key={splatlings.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {shelters.title}
+            {splatlings.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const Shelter = () => {
   )
 }
 
-export default Shelter
+export default Splatling

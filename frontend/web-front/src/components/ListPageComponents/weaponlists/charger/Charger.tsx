@@ -14,7 +14,7 @@ const Charger = () => {
         return(
         <ul className='listitemsUlLeft' key={chargers.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {chargers.title}
+            {chargers.weapon_name}
           </li>
         </ul>
         )

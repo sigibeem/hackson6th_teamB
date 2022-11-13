@@ -1,8 +1,8 @@
-import { spinner } from "../weaponItems"
+import { slosher } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Spinner = () => {
+const Slosher = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const Spinner = () => {
   }
   return (
     <div>
-      {spinner.map((spinners) => {
+      {slosher.map((sloshers) => {
         return(
-        <ul className='listitemsUlLeft' key={spinners.id}>
+        <ul className='listitemsUlLeft' key={sloshers.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {spinners.title}
+            {sloshers.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const Spinner = () => {
   )
 }
 
-export default Spinner
+export default Slosher

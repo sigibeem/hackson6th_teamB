@@ -14,7 +14,7 @@ const Stringer = () => {
         return(
         <ul className='listitemsUlLeft' key={stringers.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {stringers.title}
+            {stringers.weapon_name}
           </li>
         </ul>
         )
