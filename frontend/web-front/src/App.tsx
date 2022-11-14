@@ -39,13 +39,13 @@ const App = React.memo(()=>{
                 <Link to={'/weapons'} style={{ textDecoration: 'none' }}><p>ブキ</p></Link>
               </li>
               <li>
-                <Link to={'head'} style={{ textDecoration: 'none' }}><p>アタマ</p></Link>
+                <Link to={'/head'} style={{ textDecoration: 'none' }}><p>アタマ</p></Link>
               </li>
               <li>
-                <Link to={'armor'} style={{ textDecoration: 'none' }}><p>フク</p></Link>
+                <Link to={'/armor'} style={{ textDecoration: 'none' }}><p>フク</p></Link>
               </li>
               <li>
-                <Link to={'shoes'} style={{ textDecoration: 'none' }}><p>くつ</p></Link>
+                <Link to={'/shoes'} style={{ textDecoration: 'none' }}><p>くつ</p></Link>
               </li>
             </ul>
         </div>

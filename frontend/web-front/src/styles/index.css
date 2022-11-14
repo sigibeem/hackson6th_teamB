@@ -48,6 +48,18 @@ h1 {
   margin-top: 11px;
 }
 
+.textLink {
+  list-style: none;
+  font-family: 'splatoon', sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: #fff;
+}
+
+.textLink:hover {
+  color: #a025d5;
+}
+
 header svg {
   height: 50px;
   width: 50px;
@@ -84,6 +96,41 @@ header svg {
 
 .menuClose {
   color: yellow;
+}
+
+.resultUl {
+  font-family: 'splatoon', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultLiWin {
+  font-family: 'splatoon', sans-serif;
+  display: flex;
+  width: 270px;
+  padding: 5px;
+  padding-left: 3em;
+  font-size: 30px;
+  color: #f5eb00;
+  list-style: none;
+  background-color: #ff3535;
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: 1em;
+}
+
+.resultLiLose {
+  font-family: 'splatoon', sans-serif;
+  display: flex;
+  width: 270px;
+  padding: 5px;
+  padding-left: 3em;
+  font-size: 30px;
+  color: #00314d;
+  list-style: none;
+  background-color: #385fff;
+  border-radius: 10px;
+  border-style: none;
 }
 
 footer {

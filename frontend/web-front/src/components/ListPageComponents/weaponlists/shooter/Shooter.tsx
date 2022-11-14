@@ -14,7 +14,7 @@ const Shooter = () => {
         return(
         <ul className='listitemsUlLeft' key={shooters.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {shooters.title}
+            {shooters.weapon_name}
           </li>
         </ul>
         )

@@ -14,7 +14,7 @@ const BrushRight = () => {
         return(
         <ul className='listitemsUlRight' key={brushs.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {brushs.title}
+            {brushs.weapon_name}
           </li>
         </ul>
         )

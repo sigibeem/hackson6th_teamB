@@ -1,8 +1,8 @@
-import { spinner } from "../weaponItems"
+import { splatling } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const SpinnerRight = () => {
+const SplatlingRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const SpinnerRight = () => {
   }
   return (
     <div>
-      {spinner.map((spinners) => {
+      {splatling.map((splatlings) => {
         return(
-        <ul className='listitemsUlRight' key={spinners.id}>
+        <ul className='listitemsUlRight' key={splatlings.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {spinners.title}
+            {splatlings.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const SpinnerRight = () => {
   )
 }
 
-export default SpinnerRight
+export default SplatlingRight

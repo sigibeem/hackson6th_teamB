@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import axios, { AxiosInstance } from 'axios'
 import GraphAreaSelectWeaponLeft from '../components/GraphPageComponents/GraphAreaSelectWeaponLeft'
 import '../styles/menulist.css'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import GraphAreaSelectWeaponRight from '../components/GraphPageComponents/GraphAreaSelectWeaponRight'
+import '../styles/index.css'
 
 type Kurabeteminaika = {
     id: string
@@ -39,13 +40,25 @@ function Graph () {
     }
 
     const location = useLocation()
-    const [selectWeapon1, setSelectWeapon1] = useState(location.state)
+    const [selectWeapon1] = useState(location.state)
+
+    const handleSelectPlayModeWeapon1 = () => {
+        navigate('/totalling')
+    }
+    const handleSelectPlayModeWeapon2 = () => {
+        navigate('/totalling', {state: true})
+    }
 
     return (
         <div>
             <ul className='btnList'>
+<<<<<<< HEAD
                 <li><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
                 <li><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>
+=======
+                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
+                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>     
+>>>>>>> remotes/origin/react_base
             </ul>
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
@@ -56,7 +69,16 @@ function Graph () {
             ))}
             {!selectWeapon1 ?
             <>
+<<<<<<< HEAD
                 <GraphAreaSelectWeaponRight />
+=======
+              <GraphAreaSelectWeaponRight />
+              <ul>
+                <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
+                <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
+              </ul>
+
+>>>>>>> remotes/origin/react_base
             </>
             :
             <>

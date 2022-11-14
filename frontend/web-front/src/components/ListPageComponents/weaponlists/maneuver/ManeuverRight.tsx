@@ -1,8 +1,8 @@
-import { manuver } from "../weaponItems"
+import { maneuver } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const ManuverRight = () => {
+const ManeuverRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const ManuverRight = () => {
   }
   return (
     <div>
-      {manuver.map((manuvers) => {
+      {maneuver.map((maneuvers) => {
         return(
-        <ul className='listitemsUlRight' key={manuvers.id}>
+        <ul className='listitemsUlRight' key={maneuvers.id}>
           <li className='listitemsLiRight' onClick={handleClick}>
-            {manuvers.title}
+            {maneuvers.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const ManuverRight = () => {
   )
 }
 
-export default ManuverRight
+export default ManeuverRight
