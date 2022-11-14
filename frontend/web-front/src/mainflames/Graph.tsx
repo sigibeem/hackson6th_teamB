@@ -45,7 +45,7 @@ function Graph () {
         <div>
             <ul className='btnList'>
                 <li><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
-                <li><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>     
+                <li><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>
             </ul>
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
@@ -54,15 +54,15 @@ function Graph () {
                     <p>{item.body}</p>
                 </div>
             ))}
-            {!selectWeapon1 ? 
+            {!selectWeapon1 ?
             <>
-              <GraphAreaSelectWeaponRight />
+                <GraphAreaSelectWeaponRight />
             </>
             :
             <>
-              <GraphAreaSelectWeaponLeft />
+                <GraphAreaSelectWeaponLeft />
             </>}
-            
+
         </div>
     )
 }
