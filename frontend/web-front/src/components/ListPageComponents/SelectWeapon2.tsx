@@ -16,11 +16,7 @@ const SelectWeapon2 = () => {
       <br />
       {listitems_category_right.map((listitem_category) => {
         return(
-<<<<<<< HEAD
-          <ul className='listitemsUlRight' key={listitem_category.id}>
-=======
-          <ul className='listitemsUlRight' key={listitem_category.category_id}>          
->>>>>>> remotes/origin/react_base
+          <ul className='listitemsUlRight' key={listitem_category.category_id}>
             <Link to={listitem_category.url} style={{ textDecoration: 'none' }}><li className='listitemsLiRight'>
                 <span className='listitemsImgRight'></span>
                   <span className='listitemsTextRight'>

@@ -52,13 +52,8 @@ function Graph () {
     return (
         <div>
             <ul className='btnList'>
-<<<<<<< HEAD
-                <li><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
-                <li><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>
-=======
                 <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
-                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>     
->>>>>>> remotes/origin/react_base
+                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>
             </ul>
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
@@ -69,16 +64,12 @@ function Graph () {
             ))}
             {!selectWeapon1 ?
             <>
-<<<<<<< HEAD
                 <GraphAreaSelectWeaponRight />
-=======
-              <GraphAreaSelectWeaponRight />
-              <ul>
-                <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
-                <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
-              </ul>
+                <ul>
+                    <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
+                    <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
+                </ul>
 
->>>>>>> remotes/origin/react_base
             </>
             :
             <>

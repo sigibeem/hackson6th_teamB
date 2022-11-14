@@ -45,23 +45,13 @@ const GraphAreaSelectWeaponRight = () => {
 
   return (
     <div className='grapharea'>
-<<<<<<< HEAD
-    <Radar
-        height={300}
-        width={300}
-        data={graphData}
-        id="chart-key"
-    />
-</div>
-=======
-      <Radar 
+      <Radar
           height={300}
           width={300}
           data={graphData}
           id="chart-key"
       />
     </div>
->>>>>>> remotes/origin/react_base
   )
 }
 
