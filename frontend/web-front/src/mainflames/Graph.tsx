@@ -66,6 +66,7 @@ function Graph () {
             <>
               <GraphAreaSelectWeaponRight />
               <ul>
+                  {/* ブキ1orブキ2を変数に置き換える */}
                 <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
                 <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
               </ul>
