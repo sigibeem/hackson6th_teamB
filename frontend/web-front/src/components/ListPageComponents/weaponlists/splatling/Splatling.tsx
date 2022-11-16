@@ -1,8 +1,8 @@
-import { charger } from "../weaponItems"
+import { splatling } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Charger = () => {
+const Splatling = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -10,11 +10,11 @@ const Charger = () => {
   }
   return (
     <div>
-      {charger.map((chargers) => {
+      {splatling.map((splatlings) => {
         return(
-        <ul className='listitemsUlLeft' key={chargers.id}>
+        <ul className='listitemsUlLeft' key={splatlings.id}>
           <li className='listitemsLiLeft' onClick={handleClick}>
-            {chargers.weapon_name}
+            {splatlings.weapon_name}
           </li>
         </ul>
         )
@@ -23,4 +23,4 @@ const Charger = () => {
   )
 }
 
-export default Charger
+export default Splatling

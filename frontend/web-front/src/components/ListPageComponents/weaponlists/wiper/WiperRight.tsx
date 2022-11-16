@@ -2,18 +2,18 @@ import { wiper } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Wiper = () => {
+const WiperRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/result-graph", {state: true})
+    navigate("/result-graph", {state: false})
   }
   return (
     <div>
       {wiper.map((wipers) => {
         return(
-        <ul className='listitemsUlLeft' key={wipers.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+        <ul className='listitemsUlRight' key={wipers.id}>
+          <li className='listitemsLiRight' onClick={handleClick}>
             {wipers.weapon_name}
           </li>
         </ul>
@@ -23,4 +23,4 @@ const Wiper = () => {
   )
 }
 
-export default Wiper
+export default WiperRight

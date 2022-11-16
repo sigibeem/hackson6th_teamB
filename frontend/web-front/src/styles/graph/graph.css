@@ -1,0 +1,13 @@
+.grapharea {
+  background-color: white;
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .grapharea {
+    background-color: white;
+    color: white;
+    width: 500px;
+    height: 500px;
+  }
+}

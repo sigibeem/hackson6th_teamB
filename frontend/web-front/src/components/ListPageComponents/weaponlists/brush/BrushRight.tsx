@@ -2,18 +2,18 @@ import { brush } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Brush = () => {
+const BrushRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/result-graph", {state: true})
+    navigate("/result-graph", {state: false})
   }
   return (
     <div>
       {brush.map((brushs) => {
         return(
-        <ul className='listitemsUlLeft' key={brushs.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+        <ul className='listitemsUlRight' key={brushs.id}>
+          <li className='listitemsLiRight' onClick={handleClick}>
             {brushs.weapon_name}
           </li>
         </ul>
@@ -23,4 +23,4 @@ const Brush = () => {
   )
 }
 
-export default Brush
+export default BrushRight

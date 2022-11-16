@@ -2,18 +2,18 @@ import { charger } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Charger = () => {
+const ChargerRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/result-graph", {state: true})
+    navigate("/result-graph", {state: false})
   }
   return (
     <div>
       {charger.map((chargers) => {
         return(
-        <ul className='listitemsUlLeft' key={chargers.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+        <ul className='listitemsUlRight' key={chargers.id}>
+          <li className='listitemsLiRight' onClick={handleClick}>
             {chargers.weapon_name}
           </li>
         </ul>
@@ -23,4 +23,4 @@ const Charger = () => {
   )
 }
 
-export default Charger
+export default ChargerRight

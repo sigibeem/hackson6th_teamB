@@ -2,18 +2,18 @@ import { roller } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Roller = () => {
+const RollerRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/result-graph", {state: true})
+    navigate("/result-graph", {state: false})
   }
   return (
     <div>
       {roller.map((rollers) => {
         return(
-        <ul className='listitemsUlLeft' key={rollers.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+        <ul className='listitemsUlRight' key={rollers.id}>
+          <li className='listitemsLiRight' onClick={handleClick}>
             {rollers.weapon_name}
           </li>
         </ul>
@@ -23,4 +23,4 @@ const Roller = () => {
   )
 }
 
-export default Roller
+export default RollerRight

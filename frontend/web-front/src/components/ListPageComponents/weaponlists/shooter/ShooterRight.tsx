@@ -2,18 +2,18 @@ import { shooter } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
-const Shooter = () => {
+const ShooterRight = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate("/result-graph", {state: true})
+    navigate("/result-graph", {state: false})
   }
   return (
     <div>
       {shooter.map((shooters) => {
         return(
-        <ul className='listitemsUlLeft' key={shooters.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+        <ul className='listitemsUlRight' key={shooters.id}>
+          <li className='listitemsLiRight' onClick={handleClick}>
             {shooters.weapon_name}
           </li>
         </ul>
@@ -23,4 +23,4 @@ const Shooter = () => {
   )
 }
 
-export default Shooter
+export default ShooterRight
