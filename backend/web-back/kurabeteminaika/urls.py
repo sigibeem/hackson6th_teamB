@@ -1,7 +1,10 @@
+from rest_framework import routers
 from django.urls import path, include
-from .views import ListKurabeteminaika, DetailKurabeteminaika
+from .views import *
+
 
 urlpatterns = [
-    path('<int:pk>/', DetailKurabeteminaika.as_view()),
-    path('', ListKurabeteminaika.as_view())
+    path('statistics/<str:weapon>/', MatchResultViewSet.as_view()),
+    #path('vote/', CreatVote.as_view()),
+
 ]
