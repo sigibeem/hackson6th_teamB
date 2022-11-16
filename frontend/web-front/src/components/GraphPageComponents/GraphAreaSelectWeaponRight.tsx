@@ -10,7 +10,7 @@ import {
   } from 'chart.js';
 import { Radar } from "react-chartjs-2";
 
-ChartJS.register(   
+ChartJS.register(
     RadialLinearScale,
     PointElement,
     LineElement,
@@ -38,9 +38,14 @@ const GraphAreaSelectWeaponRight = () => {
     },
     ],
   };
+
+  if(localStorage.getItem('passed') === 'false' || !localStorage.getItem('passed')){
+    localStorage.setItem('passed','true');
+  }
+
   return (
     <div className='grapharea'>
-      <Radar 
+      <Radar
           height={300}
           width={300}
           data={graphData}

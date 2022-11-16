@@ -21,8 +21,10 @@ const App = React.memo(()=>{
   return (
     <div className="background" style={{ backgroundImage: `url(${background})`}}>
       <header>
-        <h1 onClick={() => navigate('/')}>くらべてみなイカ？</h1>
-          <FiMenu onClick={handleClickOpenMenu}/>
+        <div id="header-itemBox">
+          <h1 onClick={() => navigate('/')}>くらべてみなイカ？</h1>
+            <FiMenu onClick={handleClickOpenMenu}/>
+        </div>
       {isOpenMenu &&
       <>
         <div className='menuContent'>
@@ -31,10 +33,10 @@ const App = React.memo(()=>{
                 X
               </li>
               <li>
-                  <Link to={'/'} style={{ textDecoration: 'none' }}><p>TOP</p></Link>
+                <Link to={'/'} style={{ textDecoration: 'none' }}><p>TOP</p></Link>
               </li>
               <li>
-                  <Link to={'/weapons'} style={{ textDecoration: 'none' }}><p>ブキ</p></Link>
+                <Link to={'/weapons'} style={{ textDecoration: 'none' }}><p>ブキ</p></Link>
               </li>
               <li>
                 <Link to={'/head'} style={{ textDecoration: 'none' }}><p>アタマ</p></Link>

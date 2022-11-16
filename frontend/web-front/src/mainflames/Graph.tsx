@@ -53,7 +53,7 @@ function Graph () {
         <div>
             <ul className='btnList'>
                 <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
-                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>     
+                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>
             </ul>
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
@@ -62,21 +62,19 @@ function Graph () {
                     <p>{item.body}</p>
                 </div>
             ))}
-            {!selectWeapon1 ? 
+            {!selectWeapon1 ?
             <>
-              <GraphAreaSelectWeaponRight />
-              <ul>
-                  {/* ブキ1orブキ2を変数に置き換える */}
-                <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
-                <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
-              </ul>
-
+                <GraphAreaSelectWeaponRight />
+                <ul>
+                    <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
+                    <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
+                </ul>
             </>
             :
             <>
-              <GraphAreaSelectWeaponLeft />
+                <GraphAreaSelectWeaponLeft />
             </>}
-            
+
         </div>
     )
 }
