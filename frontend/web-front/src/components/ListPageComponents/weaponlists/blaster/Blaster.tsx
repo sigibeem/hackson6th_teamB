@@ -2,7 +2,6 @@ import { blaster } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
 import React, { useContext } from 'react';
-import axios from 'axios'
 
 
 const Blaster = () => {
@@ -12,8 +11,6 @@ const Blaster = () => {
     navigate("/result-graph", {state: true})
 
     const weapon = e.currentTarget.dataset.weapon
-    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
-    .then(response=>{console.log("body:",response.data)})
     const blasterContext = React.createContext(weapon)
 
     // const range = e.currentTarget.dataset.range

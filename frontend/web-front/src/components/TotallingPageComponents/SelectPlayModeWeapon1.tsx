@@ -15,11 +15,6 @@ const SelectPlayModeWeapon1 = () => {
   }
   return (
     <div>
-      <ul className='btnList'>
-        <li className='listStyle'>
-          <button className='btn' >ブキ1</button>
-        </li>
-      </ul>
       <h1 className='h1'>どれをプレイした？</h1>
       <ul className='listitemsUlLeft'>
         <li className='listitemsLiLeft' onClick={handleNavigateTotallingNawabari}>ナワバリバトル</li>

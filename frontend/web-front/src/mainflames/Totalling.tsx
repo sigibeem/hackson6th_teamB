@@ -1,20 +1,26 @@
 import { useState } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router"
 import SelectPlayModeWeapon1 from "../components/TotallingPageComponents/SelectPlayModeWeapon1"
-import SelectPlayModeWeapon2 from "../components/TotallingPageComponents/SelectPlayModeWeapon2"
+import SelectWeaponVote from "../components/TotallingPageComponents/SelectWeaponVote"
+
 
 
 const Totalling = () => {
   const location = useLocation()
-  const [selectPlayModeWeapon2] = useState(location.state)
+  const [selectWeapon, setSelectWeapon] = useState(location.state)
+  const handleClickShowPlayMode = () => {
+    setSelectWeapon(true)
+  }
   return (
     <div>
-      {!selectPlayModeWeapon2 ? 
-      <SelectPlayModeWeapon1 />
+      {!selectWeapon ? 
+      <>
+      <SelectWeaponVote />
+      <button onClick={handleClickShowPlayMode}>プレイモード選択へ</button>
+      </>
       :
-      <SelectPlayModeWeapon2 />
-      }
-      
+      <SelectPlayModeWeapon1 />
+    }
     </div>
   )
 }

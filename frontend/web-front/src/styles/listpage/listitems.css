@@ -55,3 +55,20 @@
   margin-left: 1em;
   text-decoration: none;
 }
+
+/* weapon vote */
+.weaponList {
+  font-family: 'splatoon', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.weaponItem {
+  background-color: beige;
+
+  list-style: none;
+  width: 170px;
+  padding: 5px;
+  font-size: 30px;
+}
