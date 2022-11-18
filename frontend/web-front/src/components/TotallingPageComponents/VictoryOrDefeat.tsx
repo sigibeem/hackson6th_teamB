@@ -21,7 +21,7 @@ const VictoryOrDefeat = () => {
   return (
     <div>
       <h1 className='h1'>{selectPlayMode}</h1>
-      {/* <Link to='/' style={{ textDecoration: 'none' }}> */}
+       <Link to='/' style={{ textDecoration: 'none' }}> 
           <ul className='resultUl'>
             <li style={{ listStyle: 'none' }}>
               <button data-num="1" onClick={postAPIData} className='resultLiWin'>勝ち</button>
@@ -30,7 +30,7 @@ const VictoryOrDefeat = () => {
               <button data-num="0" onClick={postAPIData} className='resultLiLose'>負け</button>
             </li>
           </ul>     
-      {/* </Link> */}
+       </Link> 
     </div>
   )
 }

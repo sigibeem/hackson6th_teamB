@@ -2,6 +2,7 @@ import { roller } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
+import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
 
 const UseVoteSelectRoller = () => {
   const [show, setShow] = useState(true)
@@ -26,7 +27,7 @@ const UseVoteSelectRoller = () => {
         })}
       </>
       :
-      <></>}
+      <><SelectPlayModeWeapon1 /></>}
     </div>
   )
 }

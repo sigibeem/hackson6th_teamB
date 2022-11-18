@@ -2,6 +2,7 @@ import { slosher } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
+import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
 
 const UseVoteSelectSlosher = () => {
   const [show, setShow] = useState(true)
@@ -27,7 +28,7 @@ const UseVoteSelectSlosher = () => {
         })}
       </>
       :
-      <></>}
+      <><SelectPlayModeWeapon1 /></>}
     </div>
   )
 }

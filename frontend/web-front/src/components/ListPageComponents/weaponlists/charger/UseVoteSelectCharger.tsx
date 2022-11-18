@@ -2,6 +2,7 @@ import { charger } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
+import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
 
 const UseVoteSelectCharger = () => {
   const [show, setShow] = useState(true)
@@ -26,7 +27,7 @@ const UseVoteSelectCharger = () => {
       })}
     </>  
     :
-    <></>
+    <><SelectPlayModeWeapon1 /></>
     }
     </div>
   )

@@ -2,6 +2,7 @@ import { splatling } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
+import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
 
 const UseVoteSelectSplatling = () => {
   const [show, setShow] = useState(true)
@@ -26,7 +27,7 @@ const UseVoteSelectSplatling = () => {
         })}
       </>
       :
-      <></>}
+      <><SelectPlayModeWeapon1 /></>}
     </div>
   )
 }

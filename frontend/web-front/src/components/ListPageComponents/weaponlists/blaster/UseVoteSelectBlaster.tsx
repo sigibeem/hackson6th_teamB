@@ -2,6 +2,7 @@ import { blaster } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
+import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
 
 
 const UseVoteSelectBlaster = () => {
@@ -11,10 +12,6 @@ const UseVoteSelectBlaster = () => {
     const weapon = e.currentTarget.dataset.weapon
     axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
     .then(response=>{console.log("body:",response.data)})
-
-    // const range = e.currentTarget.dataset.range
-    // const firerate = e.currentTarget.dataset.firerate
-    // const damage = e.currentTarget.dataset.damage
   }
   return (
     <div>
@@ -32,8 +29,10 @@ const UseVoteSelectBlaster = () => {
             </>
             :
             <>
+              <SelectPlayModeWeapon1 />
             </>
       }
+
     </div>
   )
 }
