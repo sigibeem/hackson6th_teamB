@@ -8,11 +8,33 @@ class KurabeteminaikaSerializer(serializers.ModelSerializer):
         model = Kurabeteminaika
         fields = ('id', 'title', 'body')
 
-class GetResultMatchSerializer(serializers.ModelSerializer):
+
+class WeaponSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Match_result
+        model = Weapon
         fields = '__all__'
 
+class BattleModeSerializer(serializers.ModelSerializer):
+    class Meta:
+        mdoel = Battle_mode
+        fields = '__all__'
+class GetResultMatchSerializer(serializers.ModelSerializer):
+
+    #battle_mode = BattleModeSerializer(many=True)
+    class Meta:
+        model = Match_result
+        fields = [
+            'weapon',
+            'battle_mode',
+            'result',
+            #'win_rate',
+        ]
+    '''
+    win_rate = serializers.SerializerMethodField()
+    def get_win_rate(self, obj):
+        
+        return obj.result + 100
+    '''
 
 '''
 class PostVote(serializers.ModelSerializer):

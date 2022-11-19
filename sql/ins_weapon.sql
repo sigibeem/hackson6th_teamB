@@ -1,4 +1,4 @@
-INSERT INTO kurabeteminaika_weapon VALUES 
+INSERT INTO weapon VALUES 
 (NULL, 'wakaba'),
 (NULL, 'sshooter'),
 (NULL, 'splatroller'),
@@ -54,7 +54,7 @@ INSERT INTO kurabeteminaika_weapon VALUES
 (NULL, 'explosher'),
 (NULL, 'kugelschreiber'),
 (NULL, 'heroshooter_replica');
-INSERT INTO kurabeteminaika_battle_mode VALUES
+INSERT INTO battle_mode VALUES
 (NULL, 'area'),
 (NULL, 'asari'),
 (NULL, 'yagura'),
