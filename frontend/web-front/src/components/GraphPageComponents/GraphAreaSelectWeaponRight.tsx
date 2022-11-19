@@ -9,6 +9,8 @@ import {
     Legend,
   } from 'chart.js';
 import { Radar } from "react-chartjs-2";
+import { ComponentProps } from 'react';
+import GraphAreaSelectWeaponLeft from './GraphAreaSelectWeaponLeft';
 
 ChartJS.register(
     RadialLinearScale,
@@ -18,7 +20,15 @@ ChartJS.register(
     Tooltip,
     Legend)
 
-const GraphAreaSelectWeaponRight = () => {
+type weaponProps = {
+  select_list2: boolean,
+  weapon2_name: string,
+  weapon2_range: number,
+  weapon2_firerate: number,
+  weapon2_damage: number,
+} 
+
+ const GraphAreaSelectWeaponRight = () => {
   const labels = ["range", "damage", "fire_rate"];
   const graphData = {
     labels: labels,

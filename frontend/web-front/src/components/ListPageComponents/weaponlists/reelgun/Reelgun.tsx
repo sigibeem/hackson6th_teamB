@@ -5,15 +5,26 @@ import { useNavigate } from "react-router-dom"
 const Reelgun = () => {
   const navigate = useNavigate()
 
-  const handleClick = async () => {
-    navigate("/result-graph", {state: true})
+  const handleClick = async (e: any) => {
+    const weapon = e.currentTarget.dataset.weapon
+    const range = e.currentTarget.dataset.range
+    const firerate = e.currentTarget.dataset.firerate
+    const damage = e.currentTarget.dataset.damage
+    const weapon1 = {
+      select_list1: true,
+      weapon1_name: weapon,
+      weapon1_range: range,
+      weapon1_firerate: firerate,
+      weapon1_damage: damage,
+    };
+    navigate("/result-graph", {state: weapon1})
   }
   return (
     <div>
       {reelgun.map((reelguns) => {
         return(
         <ul className='listitemsUlLeft' key={reelguns.id}>
-          <li data-weapon={reelguns.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={reelguns.weapon_name} data-range={reelguns.range} data-firerate={reelguns.fire_rate} data-damage={reelguns.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {reelguns.weapon_name}
           </li>
         </ul>
