@@ -70,7 +70,7 @@ function Graph () {
             </>
             :
             <>
-                <GraphAreaSelectWeaponLeft />
+                <GraphAreaSelectWeaponLeft/>
             </>}
 
         </div>
