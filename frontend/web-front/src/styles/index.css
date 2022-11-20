@@ -68,6 +68,15 @@ body header {
   z-index: 0.1;
 }
 
+.yellowInk2 {
+  position: absolute;
+  /* top: 0px;
+  left: 100; */
+  width: 50px;
+  height: 50px;
+  z-index: 0.1;
+}
+
 #header-itemBox {
   position: absolute;
   display: flex;

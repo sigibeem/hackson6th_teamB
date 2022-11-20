@@ -56,7 +56,9 @@ function Top() {
     topPageMenuItems.push(
       <li key={i} className='topMenuBtn' onClick={topPageMenuData[i].func}>
         <img src={topPageMenuData[i].img} alt="" />
-        <h2>{topPageMenuData[i].name}</h2>
+        <div className="topMenuTextBlock">
+          <h2>{topPageMenuData[i].name}</h2>
+        </div>
       </li>
     );
   }
@@ -96,8 +98,10 @@ function Top() {
           {topPageMenuItems}
         </ul>
       </div>
-      <div className='hukidashi'>
-        <p>2つの<span className='textEmphasis'>アイテム</span>をくらべて<br />みなイカ？</p>
+      <div id="messageArea">
+        <div className='contentMessageBox'>
+          <p>2つの<span className='textEmphasis'>アイテム</span>をくらべて<br />みなイカ？</p>
+        </div>
       </div>
       <div id="characterImage"></div>
     </div>

@@ -62,12 +62,33 @@
     border-radius: 50%;
 }
 
-.topMenuBtn h2 {
+.topMenuTextBlock {
     position: absolute;
-    display: inline-block;
     top: 9px;
-    left: 10px;
+    left: 2px;
+    width: 100%;
+    text-align: center;
+    font-family: 'splatoon', sans-serif;
+    letter-spacing: 5px;
     z-index: 0.3;
+}
+
+.topMenuBtn h2 {
     color: rgb(255, 200, 0);
     font-size: 20px;
+}
+
+#messageArea {
+    text-align: center;
+}
+
+.contentMessageBox {
+    display: inline-block;
+    background: rgba(254, 253, 253, 0.8);
+    font-family: 'splatoon', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px rgb(34, 34, 34);
 }
