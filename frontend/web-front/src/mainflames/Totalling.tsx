@@ -3,7 +3,7 @@ import SelectWeaponVote from "../components/TotallingPageComponents/SelectWeapon
 const Totalling = () => {
   return (
     <div>
-        <SelectWeaponVote />
+       <SelectWeaponVote />
     </div>
   )
 }

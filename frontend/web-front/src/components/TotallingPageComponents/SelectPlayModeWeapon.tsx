@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import '../../styles/listpage/listitems.css'
 import '../../styles/menulist.css'
 
-const SelectPlayModeWeapon1 = () => {
+const SelectPlayModeWeapon = () => {
   const navigate = useNavigate()
   const handleNavigateTotallingNawabari = () =>{
     navigate("/totalling/result", {state: 'ナワバリバトル'})
@@ -27,4 +27,4 @@ const SelectPlayModeWeapon1 = () => {
   )
 }
 
-export default SelectPlayModeWeapon1
+export default SelectPlayModeWeapon

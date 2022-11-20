@@ -50,6 +50,11 @@ ChartJS.register(
     ],
   };
 
+  sessionStorage.setItem('weapon2_name', weapon2.weapon2_name)
+  sessionStorage.setItem('weapon2_range', weapon2.weapon2_range)
+  sessionStorage.setItem('weapon2_damage', weapon2.weapon2_damage)
+  sessionStorage.setItem('weapon2_firerate', weapon2.weapon2_firerate)
+
   if(localStorage.getItem('passed') === 'false' || !localStorage.getItem('passed')){
     localStorage.setItem('passed','true');
   }
