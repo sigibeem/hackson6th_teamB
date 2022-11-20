@@ -1,4 +1,5 @@
-import '../../styles/graph/graph.css'
+import { useState } from "react";
+import '../../styles/graph/graph.css';
 import {
     Chart as ChartJS,
     RadialLinearScale,
@@ -9,6 +10,7 @@ import {
     Legend,
   } from 'chart.js';
 import { Radar } from "react-chartjs-2";
+import { useInterval } from "../../functions/useInterval";
 
 ChartJS.register(
     RadialLinearScale,
@@ -39,9 +41,39 @@ const GraphAreaSelectWeaponRight = () => {
     ],
   };
 
+  const [count, setCount] = useState(0);
+  const [delay, setDelay] = useState(10000);
+  const [isRunning, setIsRunning] = useState(true);
+
+  // ローカルストレージが'pssed'='false'の場合もしくはpassedがない場合は発火
   if(localStorage.getItem('passed') === 'false' || !localStorage.getItem('passed')){
     localStorage.setItem('passed','true');
+    // カウントアップ関数の呼び出し
   }
+
+  useInterval(
+    () => {
+      console.log(count);
+      setCount(count + 1);
+    },
+    isRunning ? delay : null
+  );
+
+  if(count === 3){
+    setCount(count - 3);
+    setDelay(delay - 10000);
+    setIsRunning(!isRunning);
+    localStorage.passed === 'true' ? movePage() : stopfunction();
+  }
+
+  function movePage(){
+    window.location.href = "/totalling";
+  }
+
+  function stopfunction(){
+    return;
+  }
+
 
   return (
     <div className='grapharea'>

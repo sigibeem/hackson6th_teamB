@@ -5,6 +5,7 @@ import background from './images/background/mobileBackground.jpg'
 import blueInk1 from './images/background/blueInk1.png';
 import blueInk2 from './images/background/blueInk2.png';
 import yellowInk1 from './images/background/yellowInk1.png';
+import yellowInk2 from './images/background/yellowInk2.png';
 import { FiMenu } from 'react-icons/fi';
 import './styles/index.css';
 import RouterConfig from './Router/RouterConfig';
@@ -27,6 +28,7 @@ const App = React.memo(()=>{
         <img className="blueInk1" src={blueInk1} alt="" />
         <img className="blueInk2" src={blueInk2} alt="" />
         <img className="yellowInk1" src={yellowInk1} alt="" />
+        <img className="yellowInk2" src={yellowInk2} alt="" />
         <div id="header-itemBox">
           <h1 onClick={() => navigate('/')}>くらべてみなイカ？</h1>
             <FiMenu onClick={handleClickOpenMenu}/>

@@ -3046,9 +3046,9 @@ chart.js@^3.9.1:
   integrity sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w==
 
 check-types@^11.1.1:
-  version "11.1.2"
-  resolved "https://registry.yarnpkg.com/check-types/-/check-types-11.1.2.tgz#86a7c12bf5539f6324eb0e70ca8896c0e38f3e2f"
-  integrity sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfCar8t2SIAuEDwtmx2da1YB52YuHQMQ==
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/check-types/-/check-types-11.2.0.tgz#ad10768898f5a26e7a6c167712ae8271e87646f7"
+  integrity sha512-VG4EMKSCluD0PL42qeYs7tRY9loeShcYWf3PsJUfx51zW4w8PkfAp3ivDzNb8G49I850MDrsGvT45fa31pDJfw==
 
 chokidar@^3.4.2, chokidar@^3.5.3:
   version "3.5.3"
