@@ -14,6 +14,7 @@
   list-style: none;
   background-color: #5220f5;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .listitemsTextLeft {
@@ -37,6 +38,7 @@
   list-style: none;
   background-color: #b2ee33;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .listitemsTextRight {
@@ -53,11 +55,18 @@
 }
 
 .weaponItem {
-  background-color: beige;
+  background-color: rgb(104, 104, 104);
+  color: #f5eb00;
   list-style: none;
-  width: 170px;
+  width: 220px;
   padding: 5px;
   font-size: 30px;
+  margin: 1em;
+}
+
+.weaponItem :hover {
+  cursor: pointer;
+  color: black;
 }
 
 .listitemsImg {
