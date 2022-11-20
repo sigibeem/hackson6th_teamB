@@ -5,15 +5,16 @@ import { useNavigate } from "react-router-dom"
 const Slosher = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: true})
+
   }
   return (
     <div>
       {slosher.map((sloshers) => {
         return(
         <ul className='listitemsUlLeft' key={sloshers.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={sloshers.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
             {sloshers.weapon_name}
           </li>
         </ul>

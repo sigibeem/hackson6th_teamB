@@ -14,26 +14,23 @@ const VictoryOrDefeat = () => {
     //     baseURL: 'http://localhost:8080',
     // })
     const datanum = e.currentTarget.dataset.num
-    axios.post("http://localhost:8080/api/vote", {"gamemode":selectPlayMode, "result":datanum})
+    axios.post("http://localhost:8080/api/vote", {"battle_mode":selectPlayMode, "result":datanum})
     .then(response=>{console.log("body:",response.data)})
 }
 
   return (
     <div>
       <h1 className='h1'>{selectPlayMode}</h1>
-      {/* <Link to='/' style={{ textDecoration: 'none' }}> */}
+       <Link to='/' style={{ textDecoration: 'none' }}> 
           <ul className='resultUl'>
             <li style={{ listStyle: 'none' }}>
-              <button data-num="0" onClick={postAPIData} className='resultLiWin'>勝ち</button>
+              <button data-num="1" onClick={postAPIData} className='resultLiWin'>勝ち</button>
             </li>
             <li style={{ listStyle: 'none' }}>
-              <button data-num="1" onClick={postAPIData} className='resultLiLose'>負け</button>
+              <button data-num="0" onClick={postAPIData} className='resultLiLose'>負け</button>
             </li>
-          </ul>
-          {/* <li onClick={postAPIData} className='listitemsLiLeft'>勝ち</li>
-          <li onClick={postAPIData} className='listitemsLiLeft'>負け</li> */}
-      
-      {/* </Link> */}
+          </ul>     
+       </Link> 
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 const Brella = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: true})
   }
   return (
@@ -13,7 +13,7 @@ const Brella = () => {
       {brella.map((brellas) => {
         return(
         <ul className='listitemsUlLeft' key={brellas.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={brellas.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
             {brellas.weapon_name}
           </li>
         </ul>

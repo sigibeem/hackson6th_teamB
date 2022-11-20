@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 const Shooter = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: true})
   }
   return (
@@ -13,7 +13,7 @@ const Shooter = () => {
       {shooter.map((shooters) => {
         return(
         <ul className='listitemsUlLeft' key={shooters.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={shooters.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
             {shooters.weapon_name}
           </li>
         </ul>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 const Wiper = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: true})
   }
   return (
@@ -13,7 +13,7 @@ const Wiper = () => {
       {wiper.map((wipers) => {
         return(
         <ul className='listitemsUlLeft' key={wipers.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={wipers.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
             {wipers.weapon_name}
           </li>
         </ul>

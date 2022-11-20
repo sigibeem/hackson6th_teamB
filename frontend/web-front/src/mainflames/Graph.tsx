@@ -43,10 +43,7 @@ function Graph () {
     const [selectWeapon1] = useState(location.state)
 
     const handleSelectPlayModeWeapon1 = () => {
-        navigate('/totalling')
-    }
-    const handleSelectPlayModeWeapon2 = () => {
-        navigate('/totalling', {state: true})
+        navigate('/totalling', {state: false})
     }
 
     return (
@@ -66,10 +63,10 @@ function Graph () {
             <>
                 <GraphAreaSelectWeaponRight />
                 <ul>
-                    <li className='textLink' onClick={handleSelectPlayModeWeapon1}>"ブキ1"でプレイ</li>
-                    <li className='textLink' onClick={handleSelectPlayModeWeapon2}>"ブキ2"でプレイ</li>
+                    <li className='textLink' onClick={handleSelectPlayModeWeapon1}>
+                        よろしければ投票お願いします
+                    </li>
                 </ul>
-
             </>
             :
             <>

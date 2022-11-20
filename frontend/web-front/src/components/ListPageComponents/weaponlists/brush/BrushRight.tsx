@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 const BrushRight = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: false})
   }
   return (
@@ -13,7 +13,7 @@ const BrushRight = () => {
       {brush.map((brushs) => {
         return(
         <ul className='listitemsUlRight' key={brushs.id}>
-          <li className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={brushs.weapon_name} className='listitemsLiRight' onClick={handleClick}>
             {brushs.weapon_name}
           </li>
         </ul>

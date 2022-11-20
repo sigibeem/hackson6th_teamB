@@ -510,7 +510,12 @@
             "damage" : 33,
             "fire_rate" : 25,
             "sub_weapon" : "ポイントセンサー",
+<<<<<<< HEAD
             "special_attack" : "エナジースタンド"
+=======
+            "special_attack" : "エナジースタンド",
+            "image" : "./images/btnImages/"
+>>>>>>> remotes/origin/react_base
         }
     }
 }

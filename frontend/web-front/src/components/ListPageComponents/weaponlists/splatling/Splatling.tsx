@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 const Splatling = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: true})
   }
   return (
@@ -13,7 +13,7 @@ const Splatling = () => {
       {splatling.map((splatlings) => {
         return(
         <ul className='listitemsUlLeft' key={splatlings.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={splatlings.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
             {splatlings.weapon_name}
           </li>
         </ul>

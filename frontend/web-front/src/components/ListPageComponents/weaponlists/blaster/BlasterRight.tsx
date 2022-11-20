@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 const BlasterRight = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
+  const handleClick = async () => {
     navigate("/result-graph", {state: false})
   }
   return (
@@ -13,7 +13,7 @@ const BlasterRight = () => {
       {blaster.map((blasters) => {
         return(
         <ul className='listitemsUlRight' key={blasters.id}>
-          <li className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={blasters.weapon_name} className='listitemsLiRight' onClick={handleClick}>
             {blasters.weapon_name}
           </li>
         </ul>
