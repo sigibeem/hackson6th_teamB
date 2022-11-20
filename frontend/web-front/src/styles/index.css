@@ -39,6 +39,19 @@ body header {
   margin-left: 30px;
 }
 
+.container {
+  margin-top: 5em;
+  height: 800px;
+}
+
+@media screen and (min-width: 480px) {
+  .center {
+    width: 800px;
+    height: 1000px;
+    margin: auto; /* 中央寄せ */
+  }
+}
+
 h1 {
   font-family: 'splatoon', sans-serif;
   font-size: 24px;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './styles/App.css';
 import background from './images/background/mobileBackground.jpg'
 import { FiMenu } from 'react-icons/fi';
 import './styles/index.css'
@@ -52,7 +51,11 @@ const App = React.memo(()=>{
       </>}
 
       </header>
-      <RouterConfig />
+
+      <div className='center'>
+        <RouterConfig />
+      </div>
+
       <footer>
         ここがfooterです
       </footer>
