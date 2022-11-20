@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import '../styles/menulist.css'
 import SelectWeapon1 from '../components/ListPageComponents/SelectWeapon1';
 import { useLocation } from 'react-router';

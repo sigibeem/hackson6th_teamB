@@ -1,8 +1,6 @@
 import { blaster } from "../weaponItems"
 import '../../../../styles/listpage/listitems.css'
 import { useNavigate } from "react-router-dom"
-import React, { useContext } from 'react';
-
 
 const Blaster = () => {
   const navigate = useNavigate()

@@ -24,7 +24,7 @@ const RollerRight = () => {
       {roller.map((rollers) => {
         return(
         <ul className='listitemsUlRight' key={rollers.id}>
-          <li data-weapon={rollers.weapon_name} className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={rollers.weapon_name} data-range={rollers.range} data-firerate={rollers.fire_rate} data-damage={rollers.damage}  className='listitemsLiRight' onClick={handleClick}>
             {rollers.weapon_name}
           </li>
         </ul>

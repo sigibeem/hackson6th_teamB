@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import axios, { AxiosInstance } from 'axios'
+import axios from 'axios'
 import '../../styles/menulist.css'
 import '../../styles/index.css'
 

@@ -24,7 +24,7 @@ const StringerRight = () => {
       {stringer.map((stringers) => {
         return(
         <ul className='listitemsUlRight' key={stringers.id}>
-          <li data-weapon={stringers.weapon_name} className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={stringers.weapon_name} data-range={stringers.range} data-firerate={stringers.fire_rate} data-damage={stringers.damage} className='listitemsLiRight' onClick={handleClick}>
             {stringers.weapon_name}
           </li>
         </ul>

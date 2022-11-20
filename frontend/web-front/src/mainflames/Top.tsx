@@ -40,7 +40,7 @@ function Top() {
   }
 
   function movePage(){
-    window.location.href = "/result-graph";
+    window.location.href = "/totalling";
   }
 
   function stopfunction(){

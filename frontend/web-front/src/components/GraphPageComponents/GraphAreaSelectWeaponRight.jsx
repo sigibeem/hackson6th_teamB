@@ -9,8 +9,9 @@ import {
     Legend,
   } from 'chart.js';
 import { Radar } from "react-chartjs-2";
-import { ComponentProps } from 'react';
-import GraphAreaSelectWeaponLeft from './GraphAreaSelectWeaponLeft';
+import { useState } from 'react';
+import { useLocation } from 'react-router';
+import TotallingLink from '../TotallingPageComponents/TotallingLink';
 
 ChartJS.register(
     RadialLinearScale,
@@ -20,28 +21,28 @@ ChartJS.register(
     Tooltip,
     Legend)
 
-type weaponProps = {
-  select_list2: boolean,
-  weapon2_name: string,
-  weapon2_range: number,
-  weapon2_firerate: number,
-  weapon2_damage: number,
-} 
-
  const GraphAreaSelectWeaponRight = () => {
+  const weapon_name = sessionStorage.getItem("weapon1_name");
+  const weapon_damage = Number(sessionStorage.getItem("weapon1_damage"))
+  const weapon_range = Number(sessionStorage.getItem("weapon1_range"))
+  const weapon_firerate = Number(sessionStorage.getItem("weapon1_firerate"))
+
+  const location = useLocation()
+  const [weapon2] = useState(location.state)
+
   const labels = ["range", "damage", "fire_rate"];
   const graphData = {
     labels: labels,
     datasets: [
       {
-          label: 'ブキ１',
-          data: [5, 9, 3],
+          label: weapon_name,
+          data: [weapon_range, weapon_damage, weapon_firerate],
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
           borderColor: 'rgba(255, 99, 132, 1)',
           borderWidth: 1,
       },{
-        label: 'ブキ2',
-        data: [7, 5, 5],
+        label: weapon2.weapon2_name,
+        data: [weapon2.weapon2_range, weapon2.weapon2_damage, weapon2.weapon2_firerate],
         backgroundColor: 'rgba(32, 111, 25, 0.2)',
         borderColor: 'rgba(32, 111, 25, 1)',
         borderWidth: 1,
@@ -54,14 +55,18 @@ type weaponProps = {
   }
 
   return (
-    <div className='grapharea'>
-      <Radar
-          height={300}
-          width={300}
-          data={graphData}
-          id="chart-key"
-      />
-    </div>
+    <>
+      <div className='grapharea'>
+        <Radar
+            height={300}
+            width={300}
+            data={graphData}
+            id="chart-key"
+        />
+        
+      </div>
+      <TotallingLink />
+    </>
   )
 }
 

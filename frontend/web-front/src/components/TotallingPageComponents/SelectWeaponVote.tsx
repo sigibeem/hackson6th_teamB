@@ -81,10 +81,6 @@ const SelectWeaponVote = () => {
     setShowReelgun(true)
     setShowWeaponList(false)
   }
-  //hide
-  const handleClickHide = () =>{
-    setHide(true)
-  }
 
   return (
     <div>
