@@ -8,11 +8,6 @@
   src: url('../fonts/851Gkktt_005.ttf');
 }
 
-/* 不自然な文字の置き換え */
-.fix {
-  font-family: 'fix', sans-serif;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -101,7 +96,7 @@ body header {
 }
 
 h1 {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   font-size: 24px;
   display: inline-block;
   color: #fff;
@@ -111,7 +106,7 @@ h1 {
 
 .textLink {
   list-style: none;
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix' f;
   font-size: 30px;
   margin: 0;
   color: #fff;
@@ -139,7 +134,7 @@ header svg {
 }
 
 .menuContent ul {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   font-size: 30px;
   color: white;
   padding: 50px 10px 0;
@@ -160,13 +155,13 @@ header svg {
 }
 
 .resultUl {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
 
 .resultLiWin {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   width: 270px;
   padding: 5px;
@@ -181,7 +176,7 @@ header svg {
 }
 
 .resultLiLose {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   width: 270px;
   padding: 5px;
@@ -228,7 +223,7 @@ code {
   font-size: 30px;
   background: #545454;
   border-radius: 15px;
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   letter-spacing: 0.2em;
 }
 

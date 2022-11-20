@@ -1,6 +1,6 @@
 /* 左側のリスト */
 .listitemsUlLeft {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
@@ -23,7 +23,7 @@
 
 /* 右側のリスト */
 .listitemsUlRight {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +46,7 @@
 
 /* weapon vote */
 .weaponList {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -54,7 +54,6 @@
 
 .weaponItem {
   background-color: beige;
-
   list-style: none;
   width: 170px;
   padding: 5px;
