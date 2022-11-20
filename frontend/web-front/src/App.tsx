@@ -57,7 +57,7 @@ const App = React.memo(()=>{
       </div>
 
       <footer>
-        ここがfooterです
+        <p>Copyright 2022 ©kurabeteminaika All Rights Reserved.</p>
       </footer>
     </div>
   );

@@ -3,6 +3,16 @@
   src: url('../fonts/ikamodoki1_0.ttf');
 }
 
+@font-face {
+  font-family: 'fix';
+  src: url('../fonts/851Gkktt_005.ttf');
+}
+
+/* 不自然な文字の置き換え */
+.fix {
+  font-family: 'fix', sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -46,7 +56,7 @@ body header {
 
 @media screen and (min-width: 480px) {
   .center {
-    width: 800px;
+    width: 550px;
     height: 1000px;
     margin: auto; /* 中央寄せ */
   }
@@ -158,6 +168,10 @@ footer {
   margin-top: 10em;
   position: fixed;
   bottom: 0;
+}
+
+footer p {
+  margin: auto;
 }
 
 code {
