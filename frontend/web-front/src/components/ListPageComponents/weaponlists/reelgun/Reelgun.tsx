@@ -25,7 +25,10 @@ const Reelgun = () => {
         return(
         <ul className='listitemsUlLeft' key={reelguns.id}>
           <li data-weapon={reelguns.weapon_name} data-range={reelguns.range} data-firerate={reelguns.fire_rate} data-damage={reelguns.damage}  className='listitemsLiLeft' onClick={handleClick}>
-            {reelguns.weapon_name}
+           <img src={reelguns.image} alt='' className='listitemsImg'/>
+           <span className='listitemsTextLeft'>
+              {reelguns.weapon_name}
+            </span>
           </li>
         </ul>
         )

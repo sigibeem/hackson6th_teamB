@@ -20,7 +20,10 @@ const UseVoteSelectShooter = () => {
           return(
           <ul className='listitemsUlLeft' key={shooters.id}>
             <li data-weapon={shooters.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
-              {shooters.weapon_name}
+              <img src={shooters.image} alt='' className='listitemsImg'/>
+                <span className='listitemsTextRight'>
+                  {shooters.weapon_name}
+                </span>
             </li>
           </ul>
           )

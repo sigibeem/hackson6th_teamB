@@ -20,7 +20,10 @@ const UseVoteSelectReelgun = () => {
           return(
           <ul className='listitemsUlLeft' key={reelguns.id}>
             <li data-weapon={reelguns.weapon_name} className='listitemsLiLeft' onClick={handleClick}>
-              {reelguns.weapon_name}
+              <img src={reelguns.image} alt='' className='listitemsImg'/>
+                <span className='listitemsTextRight'>
+                  {reelguns.weapon_name}
+                </span>
             </li>
           </ul>
           )

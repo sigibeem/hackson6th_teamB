@@ -25,7 +25,10 @@ const ShooterRight = () => {
         return(
         <ul className='listitemsUlRight' key={shooters.id}>
           <li data-weapon={shooters.weapon_name} data-range={shooters.range} data-firerate={shooters.fire_rate} data-damage={shooters.damage} className='listitemsLiRight' onClick={handleClick}>
-            {shooters.weapon_name}
+          <img src={shooters.image} alt='' className='listitemsImg'/>
+            <span className='listitemsTextRight'>
+              {shooters.weapon_name}
+            </span>
           </li>
         </ul>
         )
