@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useInterval } from "../functions/useInterval";
 import '../styles/index.css';
+import '../styles/topPage/topPageStyle.css';
+import weaponImage from "../images/btnImages/weapon/shooter/gal52.png";
+import noImage from "../images/btnImages/noimage.jpg";
 import '../styles/menulist.css'
 
 function Top() {
@@ -23,6 +26,42 @@ function Top() {
   const [delay, setDelay] = useState(10000);
   const [isRunning, setIsRunning] = useState(true);
 
+  // メニューリストアイテム
+  const topPageMenuItems = [];
+
+  const topPageMenuData = [
+    {
+      name : "ブキ",
+      img: weaponImage,
+      func: handleClickWeaponList
+    },
+    {
+      name : "アタマ",
+      img: noImage,
+      func: handleClickHead
+    },
+    {
+      name : " フク",
+      img: noImage,
+      func: handleClickArmor
+    },
+    {
+      name : " クツ",
+      img: noImage,
+      func: handleClickShoes
+    }
+  ];
+
+  for(let i in topPageMenuData){
+    topPageMenuItems.push(
+      <li key={i} className='topMenuBtn' onClick={topPageMenuData[i].func}>
+        <img src={topPageMenuData[i].img} alt="" />
+        <h2>{topPageMenuData[i].name}</h2>
+      </li>
+    );
+  }
+
+  // カウントアップ関数の呼び出し
   useInterval(
     () => {
       console.log(count);
@@ -31,7 +70,7 @@ function Top() {
     isRunning ? delay : null
   );
 
-
+  // カウントアップの取り消し（count == 3 の場合 setIntervalをキャンセル）
   if(count === 3){
     setCount(count - 3);
     setDelay(delay - 10000);
@@ -50,16 +89,17 @@ function Top() {
 
   return (
     <div className="Top">
-      <ul className='btnList'>
-        <li className='btn' onClick={handleClickWeaponList}>ブキ</li>
-        <li className='btn' onClick={handleClickHead}>アタマ</li>
-        <li className='btn' onClick={handleClickArmor}>フク</li>
-        <li className='btn' onClick={handleClickShoes}>クツ</li>
-      </ul>
-      <div className='hukidashi'>
-        <p>キミの知りたい<br /><span className='textEmphasis'>アイテム</span>を教えて<br />ほしいデシ！</p>
+      <div className="topPagelistBox">
+        <div className="lineMarkerLong"></div>
+        <div className="lineMarkerShrot"></div>
+        <ul className='topMenuList'>
+          {topPageMenuItems}
+        </ul>
       </div>
-      <p className='bukichi'></p>
+      <div className='hukidashi'>
+        <p>2つの<span className='textEmphasis'>アイテム</span>をくらべて<br />みなイカ？</p>
+      </div>
+      <div id="characterImage"></div>
     </div>
   );
 }
