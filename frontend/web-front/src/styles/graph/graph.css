@@ -1,6 +1,15 @@
 .grapharea {
-  background-color: white;
+  background-color: rgb(215, 215, 215);
   color: white;
+}
+
+.link {
+  font-family: 'splatoon', sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 10px;
+  margin-top: 11px;
 }
 
 @media screen and (min-width: 480px) {
