@@ -1,5 +1,5 @@
 import { slosher } from "../weaponItems"
-import '../../../../styles/listpage/listitems.css'
+import '../../../../styles/listPage/listitems.css'
 import { useNavigate } from "react-router-dom"
 
 const SlosherRight = () => {

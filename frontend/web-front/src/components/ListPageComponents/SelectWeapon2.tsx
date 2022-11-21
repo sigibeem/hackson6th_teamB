@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { listitems_category_right } from './weaponListCategory';
-import '../../styles/listpage/listitems.css'
+import '../../styles/listPage/listitems.css'
 
 const SelectWeapon2 = () => {
   return (

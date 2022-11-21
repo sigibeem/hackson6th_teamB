@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { listitems_category } from './weaponListCategory';
-import '../../styles/listpage/listitems.css'
+import '../../styles/listPage/listitems.css'
 
 const SelectWeapon1 = () => {
   return (
@@ -8,7 +8,6 @@ const SelectWeapon1 = () => {
       <ul className='btnList'>
         <li className='listStyle'>
           <button className='btn' >list1</button>
-          {/* onClick={handleClickSellectWeapon1} */}
         </li>
         <li className='listStyle'>
           <button className='btnDisabled' disabled={false}>list2</button>

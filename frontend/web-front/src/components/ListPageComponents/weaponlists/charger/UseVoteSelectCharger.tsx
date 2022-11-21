@@ -1,5 +1,5 @@
 import { charger } from "../weaponItems"
-import '../../../../styles/listpage/listitems.css'
+import '../../../../styles/listPage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
 import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
@@ -14,7 +14,7 @@ const UseVoteSelectCharger = () => {
   }
   return (
     <div>
-      {show ? 
+      {show ?
     <>
       {charger.map((chargers) => {
         return(
@@ -25,7 +25,7 @@ const UseVoteSelectCharger = () => {
         </ul>
         )
       })}
-    </>  
+    </>
     :
     <><SelectPlayModeWeapon1 /></>
     }

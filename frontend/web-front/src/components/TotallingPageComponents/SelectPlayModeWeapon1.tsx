@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import '../../styles/listpage/listitems.css'
+import '../../styles/listPage/listitems.css'
 import '../../styles/menulist.css'
 
 const SelectPlayModeWeapon1 = () => {

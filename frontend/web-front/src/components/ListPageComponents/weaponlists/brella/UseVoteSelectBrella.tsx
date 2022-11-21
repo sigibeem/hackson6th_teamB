@@ -1,5 +1,5 @@
 import { brella } from "../weaponItems"
-import '../../../../styles/listpage/listitems.css'
+import '../../../../styles/listPage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
 import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
@@ -14,7 +14,7 @@ const UseVoteSelectBrella = () => {
   }
   return (
     <div>
-      {show ? 
+      {show ?
     <>
       {brella.map((brellas) => {
         return(
@@ -27,7 +27,7 @@ const UseVoteSelectBrella = () => {
       })}
     </>
     :
-    <><SelectPlayModeWeapon1 /></>  
+    <><SelectPlayModeWeapon1 /></>
     }
     </div>
   )

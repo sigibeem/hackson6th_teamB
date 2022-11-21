@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../../styles/index.css'
-import '../../styles/listpage/listitems.css'
+import '../../styles/listPage/listitems.css'
 import UseVoteSelectBlaster from '../ListPageComponents/weaponlists/blaster/UseVoteSelectBlaster'
 import UseVoteSelectBrella from '../ListPageComponents/weaponlists/brella/UseVoteSelectBrella'
 import UseVoteSelectBrush from '../ListPageComponents/weaponlists/brush/UseVoteSelectBrush'
@@ -88,7 +88,7 @@ const SelectWeaponVote = () => {
 
   return (
     <div>
-      {showWeaponList ? 
+      {showWeaponList ?
       <>
         <h1 className='h1'>どのブキでプレイした？</h1>
         <ul className='weaponList'>
@@ -157,7 +157,7 @@ const SelectWeaponVote = () => {
       :
       <></>
       }
-      
+
         {showShooter && <UseVoteSelectShooter />}
         {showSlosher && <UseVoteSelectSlosher />}
         {showStringer && <UseVoteSelectStringer />}
@@ -170,7 +170,7 @@ const SelectWeaponVote = () => {
         {showReelgun && <UseVoteSelectReelgun />}
         {showRoller && <UseVoteSelectRoller />}
         {showWiper && <UseVoteSelectWiper />}
-      
+
 
     </div>
   )

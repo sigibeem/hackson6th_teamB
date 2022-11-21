@@ -1,65 +1,65 @@
 interface listitems_category {
   category_id: number;
-  url: string;
   category_name: string;
+  url: string;
   count: number
-} 
+}
 
 export const listitems_category: listitems_category[] =  [
   {
     category_id: 1,
-    url: '/weapons/shooter',
     category_name: 'シューター',
+    url: '/weapons/shooter',
     count: 14
   },{
     category_id: 2,
-    url: '/weapons/charger',
     category_name: 'チャージャー',
+    url: '/weapons/charger',
     count: 7
   },{
     category_id: 3,
-    url: '/weapons/blaster',
     category_name: 'ブラスター',
+    url: '/weapons/blaster',
     count: 6
   },{
     category_id: 4,
-    url: '/weapons/roller',
     category_name: 'ローラー',
+    url: '/weapons/roller',
     count: 4
   },{
     category_id: 5,
-    url: '/weapons/brush',
     category_name: 'フデ',
+    url: '/weapons/brush',
     count: 2
   },{
     category_id: 6,
-    url: '/weapons/slosher',
     category_name: 'スロッシャー',
+    url: '/weapons/slosher',
     count: 5
   },{
     category_id: 7,
-    url: '/weapons/splatling',
     category_name: 'スピナー',
+    url: '/weapons/splatling',
     count: 5
   },{
     category_id: 8,
-    url: '/weapons/maneuver',
     category_name: 'マニューバー',
+    url: '/weapons/maneuver',
     count: 5
   },{
     category_id: 9,
-    url: '/weapons/brella',
     category_name: 'シェルター',
+    url: '/weapons/brella',
     count: 3
   },{
     category_id: 10,
-    url: '/weapons/wiper',
     category_name: 'ワイパー',
+    url: '/weapons/wiper',
     count: 2
   },{
     category_id: 11,
-    url: '/weapons/stringer',
     category_name: 'ストリンガー',
+    url: '/weapons/stringer',
     count: 2
   }
 ]
@@ -68,33 +68,33 @@ export const listitems_category: listitems_category[] =  [
 export const listitems_category_right: listitems_category[] =  [
   {
     category_id: 1,
-    url: '/weapons/shooter_list2',
     category_name: 'シューター',
+    url: '/weapons/shooter_list2',
     count: 14
   },{
     category_id: 2,
-    url: '/weapons/charger_list2',
     category_name: 'チャージャー',
+    url: '/weapons/charger_list2',
     count: 7
   },{
     category_id: 3,
-    url: '/weapons/blaster_list2',
     category_name: 'ブラスター',
+    url: '/weapons/blaster_list2',
     count: 6
   },{
     category_id: 4,
-    url: '/weapons/roller_list2',
     category_name: 'ローラー',
+    url: '/weapons/roller_list2',
     count: 4
   },{
     category_id: 5,
-    url: '/weapons/brush_list2',
     category_name: 'フデ',
+    url: '/weapons/brush_list2',
     count: 2
   },{
     category_id: 6,
-    url: '/weapons/slosher_list2',
     category_name: 'スロッシャー',
+    url: '/weapons/slosher_list2',
     count: 5
   },{
     category_id: 7,
@@ -103,23 +103,23 @@ export const listitems_category_right: listitems_category[] =  [
     count: 5
   },{
     category_id: 8,
-    url: '/weapons/maneuver_list2',
     category_name: 'マニューバー',
+    url: '/weapons/maneuver_list2',
     count: 5
   },{
     category_id: 9,
-    url: '/weapons/brella_list2',
     category_name: 'シェルター',
+    url: '/weapons/brella_list2',
     count: 3
   },{
     category_id: 10,
-    url: '/weapons/wiper_list2',
     category_name: 'ワイパー',
+    url: '/weapons/wiper_list2',
     count: 2
   },{
     category_id: 11,
-    url: '/weapons/stringer_list2',
     category_name: 'ストリンガー',
+    url: '/weapons/stringer_list2',
     count: 2
   }
 ]

@@ -1,5 +1,5 @@
 import { blaster } from "../weaponItems"
-import '../../../../styles/listpage/listitems.css'
+import '../../../../styles/listPage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
 import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
@@ -15,7 +15,7 @@ const UseVoteSelectBlaster = () => {
   }
   return (
     <div>
-      {show ? 
+      {show ?
             <>
             {blaster.map((blasters) => {
               return(

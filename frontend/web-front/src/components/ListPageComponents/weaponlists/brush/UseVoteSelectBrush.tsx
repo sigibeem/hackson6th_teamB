@@ -1,5 +1,5 @@
 import { brush } from "../weaponItems"
-import '../../../../styles/listpage/listitems.css'
+import '../../../../styles/listPage/listitems.css'
 import axios from 'axios'
 import { useState } from "react"
 import SelectPlayModeWeapon1 from "../../../TotallingPageComponents/SelectPlayModeWeapon1"
@@ -14,7 +14,7 @@ const UseVoteSelectBrush = () => {
   }
   return (
     <div>
-      {show ? 
+      {show ?
     <>
       {brush.map((brushs) => {
         return(
@@ -27,7 +27,7 @@ const UseVoteSelectBrush = () => {
       })}
     </>
     :
-    <><SelectPlayModeWeapon1 /></>  
+    <><SelectPlayModeWeapon1 /></>
     }
     </div>
   )
