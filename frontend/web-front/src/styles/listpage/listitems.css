@@ -1,6 +1,6 @@
 /* 左側のリスト */
 .listitemsUlLeft {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
@@ -14,12 +14,7 @@
   list-style: none;
   background-color: #5220f5;
   border-radius: 10px;
-}
-
-.listitemsImgLeft {
-  width: 50px;
-  height: 50px;
-  background-color: black;
+  cursor: pointer;
 }
 
 .listitemsTextLeft {
@@ -29,7 +24,7 @@
 
 /* 右側のリスト */
 .listitemsUlRight {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
@@ -43,12 +38,7 @@
   list-style: none;
   background-color: #b2ee33;
   border-radius: 10px;
-}
-
-.listitemsImgRight {
-  width: 50px;
-  height: 50px;
-  background-color: black;
+  cursor: pointer;
 }
 
 .listitemsTextRight {
@@ -58,17 +48,29 @@
 
 /* weapon vote */
 .weaponList {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .weaponItem {
-  background-color: beige;
-
+  background-color: rgb(104, 104, 104);
+  color: #f5eb00;
   list-style: none;
-  width: 170px;
+  width: 220px;
   padding: 5px;
   font-size: 30px;
+  margin: 1em;
+}
+
+.weaponItem :hover {
+  cursor: pointer;
+  color: black;
+}
+
+.listitemsImg {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
 }

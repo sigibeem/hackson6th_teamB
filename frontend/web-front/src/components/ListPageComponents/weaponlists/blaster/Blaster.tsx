@@ -1,21 +1,23 @@
 import { blaster } from "../weaponItems"
 import '../../../../styles/listPage/listitems.css'
 import { useNavigate } from "react-router-dom"
-import React, { useContext } from 'react';
-
 
 const Blaster = () => {
   const navigate = useNavigate()
 
   const handleClick = async (e: any) => {
-    navigate("/result-graph", {state: true})
-
     const weapon = e.currentTarget.dataset.weapon
-    const blasterContext = React.createContext(weapon)
-
-    // const range = e.currentTarget.dataset.range
-    // const firerate = e.currentTarget.dataset.firerate
-    // const damage = e.currentTarget.dataset.damage
+    const range = e.currentTarget.dataset.range
+    const firerate = e.currentTarget.dataset.firerate
+    const damage = e.currentTarget.dataset.damage
+    const weapon1 = {
+      select_list1: true,
+      weapon1_name: weapon,
+      weapon1_range: range,
+      weapon1_firerate: firerate,
+      weapon1_damage: damage,
+    };
+    navigate("/result-graph", {state: weapon1})
   }
   return (
     <div>

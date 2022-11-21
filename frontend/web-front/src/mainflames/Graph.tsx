@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import axios, { AxiosInstance } from 'axios'
 import GraphAreaSelectWeaponLeft from '../components/GraphPageComponents/GraphAreaSelectWeaponLeft'
 import '../styles/menulist.css'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import GraphAreaSelectWeaponRight from '../components/GraphPageComponents/GraphAreaSelectWeaponRight'
 import '../styles/index.css'
 
@@ -70,7 +70,7 @@ function Graph () {
             </>
             :
             <>
-                <GraphAreaSelectWeaponLeft />
+                <GraphAreaSelectWeaponLeft/>
             </>}
 
         </div>

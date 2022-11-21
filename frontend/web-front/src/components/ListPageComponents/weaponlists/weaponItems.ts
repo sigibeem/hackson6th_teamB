@@ -1,7 +1,25 @@
+//shooterItem
+import wakaba from '../../../images/btnImages/weapon/shooter/wakaba.png'
+import hero from '../../../images/btnImages/weapon/shooter/hero.png'
+import spra from '../../../images/btnImages/weapon/shooter/spra.png'
+import proM from '../../../images/btnImages/weapon/shooter/proM.png'
+import nzap from '../../../images/btnImages/weapon/shooter/nzap.png'
+import prime from '../../../images/btnImages/weapon/shooter/prime.png'
+import bold from '../../../images/btnImages/weapon/shooter/bold.png'
+import gal52 from '../../../images/btnImages/weapon/shooter/gal52.png'
+import jetSw from '../../../images/btnImages/weapon/shooter/jetSw.png'
+import sharpM from '../../../images/btnImages/weapon/shooter/sharpM.png'
+import g96 from '../../../images/btnImages/weapon/shooter/g96.png'
+
+//reelgun
+import L3 from '../../../images/btnImages/weapon/reelgun/l3.png'
+import H3 from '../../../images/btnImages/weapon/reelgun/h3.png'
+import bottle from '../../../images/btnImages/weapon/reelgun/bottle.png'
+
 export const shooter = [
   {
     id: 1,
-    image: 'images/weapon/shooter/wakabaSh',
+    image: wakaba,
     weapon_name: 'わかばシューター',
     output: 'wakabaSh',
     range: 35,
@@ -17,7 +35,7 @@ export const shooter = [
     }
   },{
     id: 2,
-    image: 'images/weapon/shooter/heroRep',
+    image: hero,
     weapon_name: 'ヒーローシューターレプリカ',
     output: 'heroRep',
     range: 50,
@@ -33,7 +51,7 @@ export const shooter = [
     }
   },{
     id: 3,
-    image: 'images/weapon/shooter/spraSh',
+    image: spra,
     weapon_name: 'スプラシューター',
     output: 'spraSh',
     range: 50,
@@ -49,7 +67,7 @@ export const shooter = [
     }
   },{
     id: 4,
-    image: 'images/weapon/shooter/proModelMg',
+    image: proM,
     weapon_name: 'プロモデラーMG',
     output: 'proModelMg',
     range: 35,
@@ -65,7 +83,7 @@ export const shooter = [
     }
   },{
     id: 5,
-    image: 'images/weapon/shooter/nZ85',
+    image: nzap,
     weapon_name: 'N-ZAP85',
     output: 'nZ85',
     range: 50,
@@ -81,7 +99,7 @@ export const shooter = [
     }
   },{
     id: 6,
-    image: 'images/weapon/shooter/primeSh',
+    image: prime,
     weapon_name: 'プライムシューター',
     output: 'primeSh',
     range: 70,
@@ -97,7 +115,7 @@ export const shooter = [
     }
   },{
     id: 7,
-    image: 'images/weapon/shooter/boldMk',
+    image: bold,
     weapon_name: 'ボールドマーカー',
     output: 'boldMk',
     range: 15,
@@ -113,7 +131,7 @@ export const shooter = [
     }
   },{
     id: 8,
-    image: 'images/weapon/shooter/galon52',
+    image: gal52,
     weapon_name: '52ガロン',
     output: 'galon52',
     range: 55,
@@ -129,7 +147,7 @@ export const shooter = [
     }
   },{
     id: 9,
-    image: 'images/weapon/shooter/jetSwp',
+    image: jetSw,
     weapon_name: 'ジェットスイーパー',
     output: 'jetSwp',
     range: 80,
@@ -145,7 +163,7 @@ export const shooter = [
     }
   },{
     id: 10,
-    image: 'images/weapon/shooter/sharpMk',
+    image: sharpM,
     weapon_name: 'シャープマーカー',
     output: 'sharpMk',
     range: 30,
@@ -161,7 +179,7 @@ export const shooter = [
     }
   },{
     id: 11,
-    image: 'images/weapon/shooter/galon96',
+    image: g96,
     weapon_name: '96ガロン',
     output: 'galon96',
     range: 65,
@@ -181,7 +199,7 @@ export const shooter = [
 export const reelgun = [
   {
     id: 1,
-    image: 'images/weapon/reelgun/L3reelgun',
+    image: L3,
     weapon_name: 'L3レールガン',
     output: 'L3reelgun',
     range: 60,
@@ -197,7 +215,7 @@ export const reelgun = [
     }
   },{
     id: 2,
-    image: 'images/weapon/reelgun/H3reelgun',
+    image: H3,
     weapon_name: 'H3レールガン',
     output: 'H3reelgun',
     range: 70,
@@ -213,7 +231,7 @@ export const reelgun = [
     }
   },{
     id: 3,
-    image: 'images/weapon/reelgun/bottol',
+    image: bottle,
     weapon_name: 'ボトルガイザー',
     output: 'bottol',
     range: 85,

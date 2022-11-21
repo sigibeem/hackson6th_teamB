@@ -3,6 +3,11 @@
   src: url('../fonts/ikamodoki1_0.ttf');
 }
 
+@font-face {
+  font-family: 'fix';
+  src: url('../fonts/851Gkktt_005.ttf');
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -77,18 +82,32 @@ body header {
   z-index: 0.5;
 }
 
+.container {
+  margin-top: 5em;
+  height: 800px;
+}
+
+@media screen and (min-width: 480px) {
+  .center {
+    width: 550px;
+    height: 1000px;
+    margin: auto; /* 中央寄せ */
+  }
+}
+
 h1 {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   font-size: 24px;
   display: inline-block;
   color: #fff;
   letter-spacing: 10px;
   margin-top: 11px;
+  cursor: pointer;
 }
 
 .textLink {
   list-style: none;
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix' f;
   font-size: 30px;
   margin: 0;
   color: #fff;
@@ -106,20 +125,21 @@ header svg {
 }
 
 .menuContent {
-  width: 50%;
+  display: inline-block;
+  width: 25%;
   height: 70%;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: #353535;
+  background: rgb(46, 46, 46);
+  box-shadow: 0px 2px 3px rgb(113, 113, 113);
 }
 
 .menuContent ul {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   font-size: 30px;
   color: white;
-  padding: 50px 10px 0;
 }
 
 .menuContent ul li {
@@ -137,13 +157,13 @@ header svg {
 }
 
 .resultUl {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
 
 .resultLiWin {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   width: 270px;
   padding: 5px;
@@ -158,7 +178,7 @@ header svg {
 }
 
 .resultLiLose {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   width: 270px;
   padding: 5px;
@@ -185,6 +205,10 @@ footer {
   bottom: 0;
 }
 
+footer p {
+  margin: auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -201,7 +225,7 @@ code {
   font-size: 30px;
   background: #545454;
   border-radius: 15px;
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   letter-spacing: 0.2em;
 }
 

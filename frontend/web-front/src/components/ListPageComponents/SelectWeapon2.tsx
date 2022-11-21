@@ -18,7 +18,7 @@ const SelectWeapon2 = () => {
         return(
           <ul className='listitemsUlRight' key={listitem_category.category_id}>
             <Link to={listitem_category.url} style={{ textDecoration: 'none' }}><li className='listitemsLiRight'>
-                <span className='listitemsImgRight'></span>
+              <img src={listitem_category.category_image} alt='' className='listitemsImg' />
                   <span className='listitemsTextRight'>
                     {listitem_category.category_name}
                   </span>

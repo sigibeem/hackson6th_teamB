@@ -1,4 +1,9 @@
 import { useState } from 'react'
+<<<<<<< HEAD
+=======
+import '../styles/menulist.css'
+import SelectWeapon1 from '../components/ListPageComponents/SelectWeapon1';
+>>>>>>> remotes/origin/react_base
 import { useLocation } from 'react-router';
 import '../styles/listPage/listPageStyle.css';
 import '../styles/menulist.css';

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './styles/App.css';
 import background from './images/background/mobileBackground.jpg'
 import blueInk1 from './images/background/blueInk1.png';
 import blueInk2 from './images/background/blueInk2.png';
@@ -60,9 +59,13 @@ const App = React.memo(()=>{
       </>}
 
       </header>
-      <RouterConfig />
+
+      <div className='center'>
+        <RouterConfig />
+      </div>
+
       <footer>
-        ここがfooterです
+        <p>Copyright 2022 ©kurabeteminaika All Rights Reserved.</p>
       </footer>
     </div>
   );

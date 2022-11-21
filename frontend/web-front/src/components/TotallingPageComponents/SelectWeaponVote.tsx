@@ -1,5 +1,7 @@
+import axios from 'axios'
 import { useState } from 'react'
 import '../../styles/index.css'
+<<<<<<< HEAD
 import '../../styles/listPage/listitems.css'
 import UseVoteSelectBlaster from '../ListPageComponents/weaponlists/blaster/UseVoteSelectBlaster'
 import UseVoteSelectBrella from '../ListPageComponents/weaponlists/brella/UseVoteSelectBrella'
@@ -13,146 +15,52 @@ import UseVoteSelectSlosher from '../ListPageComponents/weaponlists/slosher/UseV
 import UseVoteSelectSplatling from '../ListPageComponents/weaponlists/splatling/UseVoteSelectSplatling'
 import UseVoteSelectStringer from '../ListPageComponents/weaponlists/stringer/UseVoteSelectStringer'
 import UseVoteSelectWiper from '../ListPageComponents/weaponlists/wiper/UseVoteSelectWiper'
+=======
+import '../../styles/listpage/listitems.css'
+import SelectPlayModeWeapon from './SelectPlayModeWeapon'
+>>>>>>> remotes/origin/react_base
 
 const SelectWeaponVote = () => {
-  //weaponlist_category
-  const [showWeaponList, setShowWeaponList] = useState(true)
-  //weaponlist
-  const [showShooter, setShowShooter] = useState(false)
-  const [showCharger, setShowCharger] = useState(false)
-  const [showBlaster, setShowBlaster] = useState(false)
-  const [showRoller, setShowRoller] = useState(false)
-  const [showBrush, setShowBrush] = useState(false)
-  const [showSlosher, setShowSlosher] = useState(false)
-  const [showSplatling, setShowSplatling] = useState(false)
-  const [showManeuver, setShowManeuver] = useState(false)
-  const [showBrella, setShowBrella] = useState(false)
-  const [showWiper, setShowWiper] = useState(false)
-  const [showStringer, setShowStringer] = useState(false)
-  const [showReelgun, setShowReelgun] = useState(false)
-  //weaponlist_hide
-  const [hide, setHide] = useState(false)
+  const weapon1_name = sessionStorage.getItem("weapon1_name");
+  const weapon2_name = sessionStorage.getItem("weapon2_name");
+  const [selectWeapon, setSelectWeapon] = useState(false)
 
-  const handleClickShowShooterList = () => {
-    setShowShooter(true)
-    setShowWeaponList(false)
+  const handleClickSelectWeapon1 = async (e: any) => {
+    setSelectWeapon(true)
+    const weapon = e.currentTarget.dataset.weapon
+    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
+    .then(response=>{console.log("body:",response.data)})
   }
-  const handleClickShowChargerList = () => {
-    setShowCharger(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowBlasterList = () => {
-    setShowBlaster(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowRollerList = () => {
-    setShowRoller(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowSlosherList = () => {
-    setShowSlosher(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowBrushList = () => {
-    setShowBrush(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowSplatlingList = () => {
-    setShowSplatling(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowManeuverList = () => {
-    setShowManeuver(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowBrellaList = () => {
-    setShowBrella(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowWiperList = () => {
-    setShowWiper(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowStringerList = () => {
-    setShowStringer(true)
-    setShowWeaponList(false)
-  }
-  const handleClickShowReelgunList = () => {
-    setShowReelgun(true)
-    setShowWeaponList(false)
-  }
-  //hide
-  const handleClickHide = () =>{
-    setHide(true)
+  const handleClickSelectWeapon2 = async (e: any) => {
+    setSelectWeapon(true)
+    const weapon = e.currentTarget.dataset.weapon
+    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
+    .then(response=>{console.log("body:",response.data)})
   }
 
   return (
     <div>
+<<<<<<< HEAD
       {showWeaponList ?
+=======
+>>>>>>> remotes/origin/react_base
       <>
-        <h1 className='h1'>どのブキでプレイした？</h1>
+      {!selectWeapon ?
+    <>
+        <h1 className='h1'>どちらのブキでプレイした？</h1>
         <ul className='weaponList'>
           <li className='weaponItem'>
-            <span onClick={handleClickShowShooterList} className='listitemsTextLeft'>
-              シューター
+            <span data-weapon={weapon1_name} onClick={handleClickSelectWeapon1} className='listitemsTextLeft'>
+              {weapon1_name}
             </span>
           </li>
           <li className='weaponItem'>
-            <span onClick={handleClickShowChargerList} className='listitemsTextLeft'>
-              チャージャー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowBlasterList} className='listitemsTextLeft'>
-              ブラスター
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowRollerList} className='listitemsTextLeft'>
-              ローラー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowBrushList} className='listitemsTextLeft'>
-              ブラシ
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowSlosherList} className='listitemsTextLeft'>
-              スロッシャー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowSplatlingList} className='listitemsTextLeft'>
-              スピナー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowManeuverList} className='listitemsTextLeft'>
-              マニューバー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowBrellaList} className='listitemsTextLeft'>
-              シェルター
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowWiperList} className='listitemsTextLeft'>
-              ワイパー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowStringerList} className='listitemsTextLeft'>
-              ストリンガー
-            </span>
-          </li>
-          <li className='weaponItem'>
-            <span onClick={handleClickShowReelgunList} className='listitemsTextLeft'>
-              リールガン
+            <span data-weapon={weapon2_name} onClick={handleClickSelectWeapon2} className='listitemsTextLeft'>
+              {weapon2_name}
             </span>
           </li>
         </ul>
+<<<<<<< HEAD
       </>
       :
       <></>
@@ -171,7 +79,16 @@ const SelectWeaponVote = () => {
         {showRoller && <UseVoteSelectRoller />}
         {showWiper && <UseVoteSelectWiper />}
 
+=======
+    </>  
+    :
+    <>
+      <SelectPlayModeWeapon />
+    </>
+    }
+>>>>>>> remotes/origin/react_base
 
+      </>
     </div>
   )
 }
