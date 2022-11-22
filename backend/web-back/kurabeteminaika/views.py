@@ -26,6 +26,7 @@ class MatchResultViewSet(generics.ListAPIView):
 
     def get_queryset(self):
         the_weapon = self.kwargs['weapon']
+        '''
         win_rate = {}
 
         battle_mode_list = list(Battle_mode.objects.values_list('battle_mode_name', flat=True))
@@ -36,11 +37,14 @@ class MatchResultViewSet(generics.ListAPIView):
             win_count = match_counter_lock_weapon.filter(result = 1).count()
             
             win_rate[battle_mode] = int(win_count / match_count)
+        '''
         #return json.dumps(win_rate)   
         return Match_result.objects.filter(weapon__weapon_name = the_weapon)
 
 class VoteCreateView(generics.CreateAPIView):
     serializer_class = GetResultMatchSerializer
-    queryset = 
+    queryset = Match_result.objects.all()
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
 
 

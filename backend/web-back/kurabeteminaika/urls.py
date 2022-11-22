@@ -5,6 +5,7 @@ from .views import *
 
 urlpatterns = [
     path('statistics/<str:weapon>/', MatchResultViewSet.as_view()),
+    path('votes/', VoteCreateView.as_view())
     #path('vote/', CreatVote.as_view()),
 
 ]
