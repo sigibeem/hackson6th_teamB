@@ -1,0 +1,22 @@
+{
+    "wipers" : {
+        "drive" : {
+            "name" : "ドライブワイパー",
+            "image" : "/images/noimage.png",
+            "range" : 65,
+            "damage" : 100,
+            "fire_rate" : 20,
+            "sub_weapon" : "トーピード",
+            "special_attack" : "ウルトラハンコ"
+        },
+        "gym" : {
+            "name" : "ジムワイパー",
+            "image" : "/images/noimage.png",
+            "range" : 80,
+            "damage" : 100,
+            "fire_rate" : 20,
+            "sub_weapon" : "クイックボム",
+            "special_attack" : "ショックワンダー"
+        }
+    }
+}

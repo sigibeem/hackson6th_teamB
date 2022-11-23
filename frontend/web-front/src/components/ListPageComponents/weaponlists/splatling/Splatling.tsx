@@ -5,15 +5,26 @@ import { useNavigate } from "react-router-dom"
 const Splatling = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
-    navigate("/result-graph", {state: true})
+  const handleClick = async (e: any) => {
+    const weapon = e.currentTarget.dataset.weapon
+    const range = e.currentTarget.dataset.range
+    const firerate = e.currentTarget.dataset.firerate
+    const damage = e.currentTarget.dataset.damage
+    const weapon1 = {
+      select_list1: true,
+      weapon1_name: weapon,
+      weapon1_range: range,
+      weapon1_firerate: firerate,
+      weapon1_damage: damage,
+    };
+    navigate("/result-graph", {state: weapon1})
   }
   return (
     <div>
       {splatling.map((splatlings) => {
         return(
         <ul className='listitemsUlLeft' key={splatlings.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={splatlings.weapon_name} data-range={splatlings.range} data-firerate={splatlings.fire_rate} data-damage={splatlings.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {splatlings.weapon_name}
           </li>
         </ul>

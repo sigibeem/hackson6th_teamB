@@ -5,15 +5,26 @@ import { useNavigate } from "react-router-dom"
 const Wiper = () => {
   const navigate = useNavigate()
 
-  const handleClick = () => {
-    navigate("/result-graph", {state: true})
+  const handleClick = async (e: any) => {
+    const weapon = e.currentTarget.dataset.weapon
+    const range = e.currentTarget.dataset.range
+    const firerate = e.currentTarget.dataset.firerate
+    const damage = e.currentTarget.dataset.damage
+    const weapon1 = {
+      select_list1: true,
+      weapon1_name: weapon,
+      weapon1_range: range,
+      weapon1_firerate: firerate,
+      weapon1_damage: damage,
+    };
+    navigate("/result-graph", {state: weapon1})
   }
   return (
     <div>
       {wiper.map((wipers) => {
         return(
         <ul className='listitemsUlLeft' key={wipers.id}>
-          <li className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={wipers.weapon_name} data-range={wipers.range} data-firerate={wipers.fire_rate} data-damage={wipers.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {wipers.weapon_name}
           </li>
         </ul>

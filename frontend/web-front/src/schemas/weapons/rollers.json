@@ -1,0 +1,40 @@
+{
+    "rollers" : {
+        "spra" : {
+            "name" : "スプラローラー",
+            "image" : "/images/noimage.png",
+            "range" : 45,
+            "damage" : 100,
+            "fire_rate" : 40,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "グレードバリア"
+        },
+        "carbon" : {
+            "name" : "カーボンローラー",
+            "image" : "/images/noimage.png",
+            "range" : 25,
+            "damage" : 100,
+            "fire_rate" : 60,
+            "sub_weapon" : "ロボットボム",
+            "special_attack" : "ショックワンダー"
+        },
+        "dynamo" : {
+            "name" : "ダイナモローラー",
+            "image" : "/images/noimage.png",
+            "range" : 75,
+            "damage" : 100,
+            "fire_rate" : 30,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "エナジースタンド"
+        },
+        "variable" : {
+            "name" : "ヴァリアブルローラー",
+            "image" : "/images/noimage.png",
+            "range" : 60,
+            "damage" : 100,
+            "fire_rate" : 40,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "マルチミサイル"
+        }
+    }
+}

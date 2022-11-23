@@ -1,0 +1,98 @@
+:root {
+  --base-width: 100%;
+  --btn-size: 80px;
+  --h2-text-shadow: rgb(85, 90, 57);
+}
+
+.topPagelistBox {
+  position: relative;
+}
+
+.lineMarkerLong {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  display: inline-block;
+  background: rgb(239, 255, 94);
+  width: 380px;
+  height: 30px;
+  transform: rotate(2deg);
+  z-index: 0;
+}
+
+.lineMarkerShrot {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  display: inline-block;
+  background: rgb(239, 255, 94);
+  width: 340px;
+  height: 30px;
+  transform: rotate(-2deg);
+  z-index: 0;
+}
+
+.topMenuList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: var(--base-width);
+  padding: 60px 20px 60px 20px;
+  list-style: none;
+  z-index: 0.1;
+  cursor: pointer;
+}
+
+.topMenuBtn {
+  position: relative;
+  background: radial-gradient(rgb(115, 115, 115) 30%, rgb(0, 0, 0));
+  width: var(--btn-size);
+  height: var(--btn-size);
+  /* text-align: center; */
+  border: solid 2px rgb(214, 158, 255);
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(111, 111, 111), -2px -2px 2px rgb(111, 111, 111),
+    -2px 2px 2px rgb(111, 111, 111), 2px -2px 2px rgb(111, 111, 111);
+}
+
+.topMenuBtn img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+  z-index: 0.2;
+  border-radius: 50%;
+}
+
+.topMenuTextBlock {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  width: 100%;
+  text-align: center;
+  font-family: 'splatoon', sans-serif;
+  letter-spacing: 5px;
+  z-index: 0.3;
+}
+
+.topMenuBtn h2 {
+  color: rgb(255, 200, 0);
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px 0px var(--h2-text-shadow), -0.5px -0.5px 0px var(--h2-text-shadow), 0.5px -0.5px 0px var(--h2-text-shadow), -0.5px 0.5px 0px var(--h2-text-shadow);
+}
+
+#messageArea {
+  text-align: center;
+}
+
+.contentMessageBox {
+  display: inline-block;
+  background: rgba(254, 253, 253, 0.8);
+  font-family: 'splatoon', sans-serif;
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 10px rgb(34, 34, 34);
+}

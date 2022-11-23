@@ -1,5 +1,10 @@
 @font-face {
   font-family: 'splatoon';
+  src: url('../fonts/ikamodoki1_0.ttf');
+}
+
+@font-face {
+  font-family: 'fix';
   src: url('../fonts/851Gkktt_005.ttf');
 }
 
@@ -19,31 +24,90 @@ body {
   height: 1400px;
 }
 
-header {
-  font-size: 12px;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
+body header {
+  position: relative;
   background: rgb(32, 32, 33);
-  height: 60px;
-  padding: 10px;
+  height: 70px;
+  padding: 5px;
   position: fixed;
   top: 0;
   left: 0;
   margin: 0;
   width: 100%;
+  box-shadow: 0px 2px 3px rgb(113, 113, 113);
+}
+
+.blueInk1 {
+  position: absolute;
+  top: -100px;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+}
+
+.blueInk2 {
+  position: absolute;
+  top: -100px;
+  left: -10;
+  width: 150px;
+  height: 150px;
+  z-index: 0;
+}
+
+.yellowInk1 {
+  position: absolute;
+  top: -100px;
+  left: -10;
+  width: 150px;
+  height: 150px;
+  z-index: 0.1;
+}
+
+.yellowInk2 {
+  position: absolute;
+  /* top: 0px;
+  left: 100; */
+  width: 50px;
+  height: 50px;
+  z-index: 0.1;
+}
+
+#header-itemBox {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 30px;
+  z-index: 0.5;
+}
+
+.container {
+  margin-top: 5em;
+  height: 800px;
+}
+
+@media screen and (min-width: 480px) {
+  .center {
+    width: 550px;
+    height: 1000px;
+    margin: auto; /* 中央寄せ */
+  }
 }
 
 h1 {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
+  font-size: 24px;
   display: inline-block;
-  margin: 0;
   color: #fff;
+  letter-spacing: 10px;
+  margin-top: 11px;
+  cursor: pointer;
 }
 
 .textLink {
   list-style: none;
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix' f;
   font-size: 30px;
   margin: 0;
   color: #fff;
@@ -61,20 +125,21 @@ header svg {
 }
 
 .menuContent {
-  width: 50%;
+  display: inline-block;
+  width: 25%;
   height: 70%;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: #353535;
+  background: rgb(46, 46, 46);
+  box-shadow: 0px 2px 3px rgb(113, 113, 113);
 }
 
 .menuContent ul {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   font-size: 30px;
   color: white;
-  padding: 50px 10px 0;
 }
 
 .menuContent ul li {
@@ -92,13 +157,13 @@ header svg {
 }
 
 .resultUl {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
 }
 
 .resultLiWin {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   width: 270px;
   padding: 5px;
@@ -113,7 +178,7 @@ header svg {
 }
 
 .resultLiLose {
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   display: flex;
   width: 270px;
   padding: 5px;
@@ -140,6 +205,10 @@ footer {
   bottom: 0;
 }
 
+footer p {
+  margin: auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -156,7 +225,7 @@ code {
   font-size: 30px;
   background: #545454;
   border-radius: 15px;
-  font-family: 'splatoon', sans-serif;
+  font-family: 'splatoon', 'fix';
   letter-spacing: 0.2em;
 }
 
@@ -196,6 +265,7 @@ code {
     left: 0;
     margin: 0;
     width: 100%;
+    z-index: 1;
   }
 
   .hukidashi {

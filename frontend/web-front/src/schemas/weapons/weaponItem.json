@@ -1,0 +1,515 @@
+{
+    "shooters" : {
+        "wakaba" : {
+            "name" : "わかばシューター",
+            "image" : "./images/btnImages/",
+            "range" : 35,
+            "damage" : 25,
+            "fire_rate" : 75,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "グレードバリア"
+        },
+        "hero_rep" : {
+            "name" : "ヒーローシューターレプリカ",
+            "image" : "./images/btnImages/",
+            "range" : 50,
+            "damage" : 33,
+            "fire_rate" : 60,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ウルトラショット"
+        },
+        "spra" : {
+            "name" : "スプラシューター",
+            "image" : "./images/btnImages/",
+            "range" : 50,
+            "damage" : 33,
+            "fire_rate" : 60,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ウルトラショット"
+        },
+        "proMG" : {
+            "name" : "プロモデラーMG",
+            "image" : "./images/btnImages/",
+            "range" : 35,
+            "damage" : 20,
+            "fire_rate" : 90,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "サメライド"
+        },
+        "NZ85" : {
+            "name" : "プロモデラーMG",
+            "range" : 35,
+            "damage" : 20,
+            "fire_rate" : 90,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "サメライド",
+            "image" : "./images/btnImages/"
+        },
+        "prime" : {
+            "name" : "プライムシューター",
+            "range" : 70,
+            "damage" : 33,
+            "fire_rate" : 30,
+            "sub_weapon" : "ラインマーカー",
+            "special_attack" : "カニタンク",
+            "image" : "./images/btnImages/"
+        },
+        "boldMk" : {
+            "name" : "ボールドマーカー",
+            "image" : "./images/btnImages/",
+            "range" : 15,
+            "damage" : 33,
+            "fire_rate" : 80,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "ウルトラハンコ"
+        },
+        "g52" : {
+            "name" : "52ガロン",
+            "image" : "./images/btnImages/",
+            "range" : 55,
+            "damage" : 50,
+            "fire_rate" : 25,
+            "sub_weapon" : "スプラッシュシールド",
+            "special_attack" : "メガホンレーザー 5.1ch"
+        },
+        "jetSwp" : {
+            "name" : "ジェットスイーパー",
+            "image" : "./images/btnImages/",
+            "range" : 80,
+            "damage" : 25,
+            "fire_rate" : 30,
+            "sub_weapon" : "ラインマーカー",
+            "special_attack" : "キューインキ"
+        },
+        "sharpMk" : {
+            "name" : "シャープマーカー",
+            "image" : "./images/btnImages/",
+            "range" : 30,
+            "damage" : 25,
+            "fire_rate" : 80,
+            "sub_weapon" : "クイックボム",
+            "special_attack" : "カニタンク"
+        }
+    },
+
+    "charger" : {
+        "name" : "チャージャー",
+        "spra" : {
+            "name" : "スプラチャージャー",
+            "image" : "./images/btnImages/",
+            "range" : 85,
+            "damage" : 100,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "キューインキ"
+        },
+        "sqa" : {
+            "name" : "スクイックリンα",
+            "image" : "./images/btnImages/",
+            "range" : 75,
+            "damage" : 100,
+            "fire_rate" : 70,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "グレートバリア"
+        },
+        "sqaScope" : {
+            "name" : "スプラスコープ",
+            "image" : "./images/btnImages/",
+            "range" : 90,
+            "damage" : 100,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "キューインキ"
+        },
+        "l4k" : {
+            "name" : "リッター4K",
+            "image" : "./images/btnImages/",
+            "range" : 95,
+            "damage" : 100,
+            "fire_rate" : 25,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "ポップソナー"
+        },
+        "soyCh" : {
+            "name" : "ソイチューバー",
+            "image" : "./images/btnImages/",
+            "range" : 80,
+            "damage" : 100,
+            "fire_rate" : 65,
+            "sub_weapon" : "トーピード",
+            "special_attack" : "マルチミサイル"
+        },
+        "scope4k" : {
+            "name" : "4Kスコープ",
+            "image" : "./images/btnImages/",
+            "range" : 100,
+            "damage" : 100,
+            "fire_rate" : 25,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "ポップソナー"
+        }
+    },
+    "blaster" : {
+        "name" : "ブラスター",
+        "hot" : {
+            "name" : "ホットブラスター",
+            "image" : "./images/btnImages/",
+            "range" : 30,
+            "damage" : 100,
+            "fire_rate" : 20,
+            "sub_weapon" : "ロボットボム",
+            "special_attack" : "グレードバリア"
+        },
+        "rabitt" : {
+            "name" : "ラビットブラスター",
+            "image" : "./images/btnImages/",
+            "range" : 55,
+            "damage" : 50,
+            "fire_rate" : 35,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "トリプルトルネード"
+        },
+        "long" : {
+            "name" : "ロングブラスター",
+            "image" : "./images/btnImages/",
+            "range" : 55,
+            "damage" : 100,
+            "fire_rate" : 15,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ホップソナー"
+        },
+        "nova" : {
+            "name" : "ノバブラスター",
+            "image" : "./images/btnImages/",
+            "range" : 20,
+            "damage" : 100,
+            "fire_rate" : 30,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "ショックワンダー"
+        },
+        "clash" : {
+            "name" : "クラッシュブラスター",
+            "image" : "./images/btnImages/",
+            "range" : 25,
+            "damage" : 50,
+            "fire_rate" : 65,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "ウルトラショット"
+        },
+        "re" : {
+            "name" : "Rブラスターエリート",
+            "image" : "./images/btnImages/",
+            "range" : 60,
+            "damage" : 50,
+            "fire_rate" : 30,
+            "sub_weapon" : "ポイズンミスト",
+            "special_attack" : "キューインキ"
+        }
+    },
+    "name" : "ローラー",
+    "roller" : {
+        "spra" : {
+            "name" : "スプラローラー",
+            "image" : "./images/btnImages/",
+            "range" : 45,
+            "damage" : 100,
+            "fire_rate" : 40,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "グレードバリア"
+        },
+        "carbon" : {
+            "name" : "カーボンローラー",
+            "image" : "./images/btnImages/",
+            "range" : 25,
+            "damage" : 100,
+            "fire_rate" : 60,
+            "sub_weapon" : "ロボットボム",
+            "special_attack" : "ショックワンダー"
+        },
+        "dynamo" : {
+            "name" : "ダイナモローラー",
+            "image" : "./images/btnImages/",
+            "range" : 75,
+            "damage" : 100,
+            "fire_rate" : 30,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "エナジースタンド"
+        },
+        "var" : {
+            "name" : "ヴァリアブルローラー",
+            "image" : "./images/btnImages/",
+            "range" : 60,
+            "damage" : 100,
+            "fire_rate" : 40,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "マルチミサイル"
+        }
+    },
+    "brash" : {
+        "name" : "フデ",
+        "hokusai" : {
+            "name" : "ホクサイ",
+            "image" : "./images/btnImages/",
+            "range" : 25,
+            "damage" : 33,
+            "fire_rate" : 75,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ショックワンダー"
+        },
+        "publo" : {
+            "name" : "パブロ",
+            "image" : "./images/btnImages/",
+            "range" : 10,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "メガホンレーザー 5.1ch"
+        }
+    },
+    "sloshers" : {
+        "name" : "スロッシャー",
+        "bucket" : {
+            "name" : "バケットスロッシャー",
+            "image" : "./images/btnImages/",
+            "range" : 55,
+            "damage" : 50,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "トリプルトルネード"
+        },
+        "hissen" : {
+            "name" : "ヒッセン",
+            "image" : "./images/btnImages/",
+            "range" : 25,
+            "damage" : 50,
+            "fire_rate" : 70,
+            "sub_weapon" : "ポイズンミスト",
+            "special_attack" : "ジェットパック"
+        },
+        "screw" : {
+            "name" : "スクリュースロッシャー",
+            "image" : "./images/btnImages/",
+            "range" : 65,
+            "damage" : 50,
+            "fire_rate" : 35,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "ナイスダマ"
+        },
+        "over" : {
+            "name" : "オーバーフロッシャー",
+            "image" : "./images/btnImages/",
+            "range" : 85,
+            "damage" : 25,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "アメフラシ"
+        },
+        "exp" : {
+            "name" : "エクスプロッシャー",
+            "image" : "./images/btnImages/",
+            "range" : 75,
+            "damage" : 50,
+            "fire_rate" : 20,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "アメフラシ"
+        }
+    },
+    "spinner" : {
+        "name" : "スピナー",
+        "burrel" : {
+            "name" : "バレルスピナー",
+            "image" : "./images/btnImages/",
+            "range" : 75,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "ホップソナー"
+        },
+        "spra" : {
+            "name" : "スプラスピナー",
+            "image" : "./images/btnImages/",
+            "range" : 60,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "クイックボム",
+            "special_attack" : "ウルトラハンコ"
+        },
+        "hydorant" : {
+            "name" : "ハイドラント",
+            "image" : "./images/btnImages/",
+            "range" : 85,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "ロケットボム",
+            "special_attack" : "ナイスダマ"
+        },
+        "noch47" : {
+            "name" : "ノーチラス47",
+            "image" : "./images/btnImages/",
+            "range" : 75,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "アメフラシ"
+        },
+        "coogel" : {
+            "name" : "クーゲルシュライバー",
+            "image" : "./images/btnImages/",
+            "range" : 85,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "ジェットパック"
+        }
+    },
+    "manuver" : {
+        "name" : "マニューバー",
+        "spra" : {
+            "name" : "スプラマニューバー",
+            "image" : "./images/btnImages/",
+            "range" : 45,
+            "damage" : 25,
+            "fire_rate" : 30,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "カニタンク"
+        },
+        "dual" : {
+            "name" : "デュアルスイーパー",
+            "image" : "./images/btnImages/",
+            "range" : 70,
+            "damage" : 25,
+            "fire_rate" : 20,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "ポップソナー"
+        },
+        "spat" : {
+            "name" : "スパッタリー",
+            "image" : "./images/btnImages/",
+            "range" : 20,
+            "damage" : 33,
+            "fire_rate" : 45,
+            "sub_weapon" : "ジャンプビーコン",
+            "special_attack" : "エナジースタンド"
+        },
+        "hop4b" : {
+            "name" : "クアッドホッパーブラック",
+            "image" : "./images/btnImages/",
+            "range" : 55,
+            "damage" : 25,
+            "fire_rate" : 35,
+            "sub_weapon" : "ロボットボム",
+            "special_attack" : "サメライド"
+        },
+        "kel525" : {
+            "name" : "ケルビン525",
+            "image" : "./images/btnImages/",
+            "range" : 65,
+            "damage" : 50,
+            "fire_rate" : 35,
+            "sub_weapon" : "スプラッシュシールド",
+            "special_attack" : "ナイスダマ"
+        }
+    },
+    "shelters" : {
+        "name" : "シェルター",
+        "pala" : {
+            "name" : "パラシェルター",
+            "image" : "./images/btnImages/",
+            "range" : 40,
+            "damage" : 50,
+            "fire_rate" : 50,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "トリプルトルネード"
+        },
+        "camp" : {
+            "name" : "キャンピングシェルター",
+            "image" : "./images/btnImages/",
+            "range" : 65,
+            "damage" : 100,
+            "fire_rate" : 35,
+            "sub_weapon" : "ジャンプビーコン",
+            "special_attack" : "キューインキ"
+        },
+        "spy" : {
+            "name" : "スパイガジェット",
+            "image" : "./images/btnImages/",
+            "range" : 35,
+            "damage" : 33,
+            "fire_rate" : 65,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "サメライド"
+        }
+    },
+    "wiper" : {
+        "name" : "ワイパー",
+        "drive" : {
+            "name" : "ドライブワイパー",
+            "image" : "./images/btnImages/",
+            "range" : 65,
+            "damage" : 100,
+            "fire_rate" : 20,
+            "sub_weapon" : "トーピード",
+            "special_attack" : "ウルトラハンコ"
+        },
+        "gym" : {
+            "name" : "ジムワイパー",
+            "image" : "./images/btnImages/",
+            "range" : 80,
+            "damage" : 100,
+            "fire_rate" : 20,
+            "sub_weapon" : "クイックボム",
+            "special_attack" : "ショックワンダー"
+        }
+    },
+    "stringers" : {
+        "name" : "ストリンガー",
+        "try" : {
+            "name" : "トライストリンガー",
+            "image" : "./images/btnImages/",
+            "range" : 90,
+            "damage" : 100,
+            "fire_rate" : 40,
+            "sub_weapon" : "ポイズンミスト",
+            "special_attack" : "メガホンレーザー 5.1ch"
+        },
+        "lact450" : {
+            "name" : "LACT450",
+            "image" : "./images/btnImages/",
+            "range" : 55,
+            "damage" : 100,
+            "fire_rate" : 75,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "マルチミサイル"
+        }
+    },
+    "reelguns" : {
+        "name" : "リールガン",
+        "l3" : {
+            "name" : "L3リールガン",
+            "image" : "./images/btnImages/",
+            "range" : 60,
+            "damage" : 25,
+            "fire_rate" : 65,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "カニタンク"
+        },
+        "buttol" : {
+            "name" : "ボトルガイザー",
+            "image" : "./images/btnImages/",
+            "range" : 85,
+            "damage" : 33,
+            "fire_rate" : 25,
+            "sub_weapon" : "スプラッシュシールド",
+            "special_attack" : "ウルトラショット"
+        },
+        "h3" : {
+            "name" : "H3リールガン",
+            "image" : "./images/btnImages/",
+            "range" : 70,
+            "damage" : 33,
+            "fire_rate" : 25,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "エナジースタンド"
+        }
+    }
+}

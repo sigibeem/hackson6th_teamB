@@ -1,0 +1,49 @@
+{
+    "spinners" : {
+        "burrel" : {
+            "name" : "バレルスピナー",
+            "image" : "/images/noimage.png",
+            "range" : 75,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "ホップソナー"
+        },
+        "spra" : {
+            "name" : "スプラスピナー",
+            "image" : "/images/noimage.png",
+            "range" : 60,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "クイックボム",
+            "special_attack" : "ウルトラハンコ"
+        },
+        "hydorant" : {
+            "name" : "ハイドラント",
+            "image" : "/images/noimage.png",
+            "range" : 85,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "ロケットボム",
+            "special_attack" : "ナイスダマ"
+        },
+        "noch47" : {
+            "name" : "ノーチラス47",
+            "image" : "/images/noimage.png",
+            "range" : 75,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "アメフラシ"
+        },
+        "coogel" : {
+            "name" : "クーゲルシュライバー",
+            "image" : "/images/noimage.png",
+            "range" : 85,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "ジェットパック"
+        }
+    }
+}
