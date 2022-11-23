@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../styles/menulist.css'
+import '../styles/listpage/listitems.css'
 import SelectWeapon1 from '../components/ListPageComponents/SelectWeapon1';
 import { useLocation } from 'react-router';
 import SelectWeapon2 from '../components/ListPageComponents/SelectWeapon2';
@@ -15,10 +15,12 @@ const Lists = () => {
     <div>
       {!selectWeapon1 ?
     <>
+      <h1 className='listTitle'>List1</h1>
       <SelectWeapon1 />
     </>
     :
     <>
+      <h1 className='listTitle'>List2</h1>
       <SelectWeapon2 />
     </>
     }
