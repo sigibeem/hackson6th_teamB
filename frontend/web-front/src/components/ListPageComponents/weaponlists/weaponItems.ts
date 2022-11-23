@@ -37,7 +37,8 @@ export const shooter = [
   },{
     id: 2,
     image: hero,
-    weapon_name: 'ヒーローシューターレプリカ',
+    display_name: 'ヒーローシューターレプリカ',
+    weapon_name: 'heroshooter_replica',
     output: 'heroRep',
     range: 50,
     damage: 33,
@@ -53,7 +54,8 @@ export const shooter = [
   },{
     id: 3,
     image: spra,
-    weapon_name: 'スプラシューター',
+    display_name: 'スプラシューター',
+    weapon_name: 'sshooter',
     output: 'spraSh',
     range: 50,
     damage: 33,
@@ -69,7 +71,8 @@ export const shooter = [
   },{
     id: 4,
     image: proM,
-    weapon_name: 'プロモデラーMG',
+    display_name: 'プロモデラーMG',
+    weapon_name: 'promodeler_mg',
     output: 'proModelMg',
     range: 35,
     damage: 20,
@@ -85,7 +88,8 @@ export const shooter = [
   },{
     id: 5,
     image: nzap,
-    weapon_name: 'N-ZAP85',
+    display_name: 'N-ZAP85',
+    weapon_name: 'nzap85',
     output: 'nZ85',
     range: 50,
     damage: 25,
@@ -101,7 +105,8 @@ export const shooter = [
   },{
     id: 6,
     image: prime,
-    weapon_name: 'プライムシューター',
+    display_name: 'プライムシューター',
+    weapon_name: 'prime',
     output: 'primeSh',
     range: 70,
     damage: 33,
@@ -117,7 +122,8 @@ export const shooter = [
   },{
     id: 7,
     image: bold,
-    weapon_name: 'ボールドマーカー',
+    display_name: 'ボールドマーカー',
+    weapon_name: 'bold',
     output: 'boldMk',
     range: 15,
     damage: 33,
@@ -133,7 +139,8 @@ export const shooter = [
   },{
     id: 8,
     image: gal52,
-    weapon_name: '52ガロン',
+    display_name: '52ガロン',
+    weapon_name: '52gal',
     output: 'galon52',
     range: 55,
     damage: 50,
@@ -149,7 +156,8 @@ export const shooter = [
   },{
     id: 9,
     image: jetSw,
-    weapon_name: 'ジェットスイーパー',
+    display_name: 'ジェットスイーパー',
+    weapon_name: 'jetsweeper',
     output: 'jetSwp',
     range: 80,
     damage: 25,
@@ -165,7 +173,8 @@ export const shooter = [
   },{
     id: 10,
     image: sharpM,
-    weapon_name: 'シャープマーカー',
+    display_name: 'シャープマーカー',
+    weapon_name: 'sharp',
     output: 'sharpMk',
     range: 30,
     damage: 25,
@@ -181,7 +190,8 @@ export const shooter = [
   },{
     id: 11,
     image: g96,
-    weapon_name: '96ガロン',
+    display_name: '96ガロン',
+    weapon_name: '96gal',
     output: 'galon96',
     range: 65,
     damage: 100,
@@ -201,7 +211,8 @@ export const reelgun = [
   {
     id: 1,
     image: L3,
-    weapon_name: 'L3レールガン',
+    display_name: 'L3レールガン',
+    weapon_name: 'l3reelgun',
     output: 'L3reelgun',
     range: 60,
     damage: 25,
@@ -217,7 +228,8 @@ export const reelgun = [
   },{
     id: 2,
     image: H3,
-    weapon_name: 'H3レールガン',
+    display_name: 'H3レールガン',
+    weapon_name: 'h3reelgun',
     output: 'H3reelgun',
     range: 70,
     damage: 33,
@@ -233,7 +245,8 @@ export const reelgun = [
   },{
     id: 3,
     image: bottle,
-    weapon_name: 'ボトルガイザー',
+    display_name: 'ボトルガイザー',
+    weapon_name: 'bottlegeyser',
     output: 'bottol',
     range: 85,
     damage: 33,
@@ -253,7 +266,8 @@ export const charger = [
   {
     id: 1,
     image: 'images/weapon/charger/spraCh',
-    weapon_name: 'スプラチャージャー',
+    display_name: 'スプラチャージャー',
+    weapon_name: 'splatcharger',
     output: 'spraCh',
     range: 85,
     damage: 100,
@@ -269,7 +283,8 @@ export const charger = [
   }, {
     id: 2,
     image: 'images/weapon/charger/squicA',
-    weapon_name: 'スクイックリンα',
+    display_name: 'スクイックリンα',
+    weapon_name: 'squiclean_a',
     output: 'squicA',
     range: 75,
     damage: 100,
@@ -285,7 +300,8 @@ export const charger = [
   }, {
     id: 3,
     image: 'images/weapon/charger/spraScp',
-    weapon_name: 'スプラスコープ',
+    display_name: 'スプラスコープ',
+    weapon_name: 'splatscope',
     output: 'spraScp',
     range: 90,
     damage: 100,
@@ -301,7 +317,8 @@ export const charger = [
   }, {
     id: 4,
     image: 'images/weapon/charger/lt4',
-    weapon_name: 'リッター4K',
+    display_name: 'リッター4K',
+    weapon_name: 'liter4k',
     output: 'lt4',
     range: 95,
     damage: 100,
@@ -317,7 +334,8 @@ export const charger = [
   }, {
     id: 5,
     image: 'images/weapon/charger/banb14',
-    weapon_name: '14式竹筒銃・甲',
+    display_name: '14式竹筒銃・甲',
+    weapon_name: 'bamboo14kou',
     output: 'banb14',
     range: 80,
     damage: 50,
@@ -333,7 +351,8 @@ export const charger = [
   }, {
     id: 6,
     image: 'images/weapon/charger/soi',
-    weapon_name: 'ソイチューバー',
+    display_name: 'ソイチューバー',
+    weapon_name: 'soytuber',
     output: 'soi',
     range: 80,
     damage: 100,
@@ -349,7 +368,8 @@ export const charger = [
   }, {
     id: 7,
     image: 'images/weapon/charger/scp4k',
-    weapon_name: '4Kスコープ',
+    display_name: '4Kスコープ',
+    weapon_name: '4k_scope',
     output: 'scp4k',
     range: 100,
     damage: 100,
@@ -369,7 +389,8 @@ export const blaster = [
   {
     id: 1,
     image: 'images/weapon/blaster/hotBr',
-    weapon_name: 'ホットブラスター',
+    display_name: 'ホットブラスター',
+    weapon_name: 'hotblaster',
     output: 'hotBr',
     range: 30,
     damage: 100,
@@ -385,7 +406,8 @@ export const blaster = [
   },{
     id: 2,
     image: 'images/weapon/blaster/rapitBr',
-    weapon_name: 'ラピッドブラスター',
+    display_name: 'ラピッドブラスター',
+    weapon_name: 'rapid',
     output: 'rapitBr',
     range: 55,
     damage: 50,
@@ -401,7 +423,8 @@ export const blaster = [
   },{
     id: 3,
     image: 'images/weapon/blaster/longBr',
-    weapon_name: 'ロングブラスター',
+    display_name: 'ロングブラスター',
+    weapon_name: 'longblaster',
     output: 'longBr',
     range: 55,
     damage: 100,
@@ -417,7 +440,8 @@ export const blaster = [
   },{
     id: 4,
     image: 'images/weapon/blaster/novaBr',
-    weapon_name: 'ノヴァブラスター',
+    display_name: 'ノヴァブラスター',
+    weapon_name: 'nova',
     output: 'novaBr',
     range: 20,
     damage: 100,
@@ -433,7 +457,8 @@ export const blaster = [
   },{
     id: 5,
     image: 'images/weapon/blaster/crushBr',
-    weapon_name: 'クラッシュブラスター',
+    display_name: 'クラッシュブラスター',
+    weapon_name: 'clashblaster',
     output: 'crushBr',
     range: 25,
     damage: 50,
@@ -449,7 +474,8 @@ export const blaster = [
   },{
     id: 6,
     image: 'images/weapon/blaster/rBrE',
-    weapon_name: 'Rブラスターエリート',
+    display_name: 'Rブラスターエリート',
+    weapon_name: 'rapid_elite',
     output: 'rBrE',
     range: 60,
     damage: 50,
@@ -469,7 +495,8 @@ export const roller = [
   {
     id: 1,
     image: 'images/weapon/roller/spraRl',
-    weapon_name: 'スプラローラー',
+    display_name: 'スプラローラー',
+    weapon_name: 'splatroller',
     output: 'spraRI',
     range: 45,
     damage: 100,
@@ -485,7 +512,8 @@ export const roller = [
   },  {
     id: 2,
     image: 'images/weapon/roller/cbRl',
-    weapon_name: 'カーボンローラー',
+    display_name: 'カーボンローラー',
+    weapon_name: 'carbon',
     output: 'cbRl',
     range: 25,
     damage: 100,
@@ -501,7 +529,8 @@ export const roller = [
   },{
     id: 3,
     image: 'images/weapon/roller/dinaRl',
-    weapon_name: 'ダイナモローラー',
+    display_name: 'ダイナモローラー',
+    weapon_name: 'dynamo',
     output: 'dinaRl',
     range: 75,
     damage: 100,
@@ -517,7 +546,8 @@ export const roller = [
   },{
     id: 4,
     image: 'images/weapon/roller/vallRl',
-    weapon_name: 'ヴァリアブルローラー',
+    display_name: 'ヴァリアブルローラー',
+    weapon_name: 'variableroller',
     output: 'vallRl',
     range: 60,
     damage: 100,
@@ -537,7 +567,8 @@ export const brush = [
   {
     id: 1,
     image: 'images/weapon/brush/hoku',
-    weapon_name: 'ホクサイ',
+    display_name: 'ホクサイ',
+    weapon_name: 'hokusai',
     output: 'hoku',
     range: 25,
     damage: 33,
@@ -553,7 +584,8 @@ export const brush = [
   },{
     id: 2,
     image: 'images/weapon/brush/pub',
-    weapon_name: 'パブロ',
+    display_name: 'パブロ',
+    weapon_name: 'pablo',
     output: 'pub',
     range: 10,
     damage: 25,
@@ -573,7 +605,8 @@ export const slosher = [
   {
     id: 1,
     image: 'images/weapon/slosher/buckTh',
-    weapon_name: 'バケットスロッシャー',
+    display_name: 'バケットスロッシャー',
+    weapon_name: 'bucketslosher',
     output: 'buckTh',
     range: 55,
     damage: 50,
@@ -589,7 +622,8 @@ export const slosher = [
   },{
     id: 2,
     image: 'images/weapon/slosher/hissen',
-    weapon_name: 'ヒッセン',
+    display_name: 'ヒッセン',
+    weapon_name: 'hissen',
     output: 'hissen',
     range: 25,
     damage: 50,
@@ -605,7 +639,8 @@ export const slosher = [
   },{
     id: 3,
     image: 'images/weapon/slosher/screwTh',
-    weapon_name: 'スクリュースロッシャー',
+    display_name: 'スクリュースロッシャー',
+    weapon_name: 'screwslosher',
     output: 'screwTh',
     range: 65,
     damage: 50,
@@ -621,7 +656,8 @@ export const slosher = [
   },{
     id: 4,
     image: 'images/weapon/slosher/overTh',
-    weapon_name: 'オーバーフロッシャー',
+    display_name: 'オーバーフロッシャー',
+    weapon_name: 'furo',
     output: 'overTh',
     range: 85,
     damage: 25,
@@ -637,7 +673,8 @@ export const slosher = [
   },{
     id: 5,
     image: 'images/weapon/slosher/exTh',
-    weapon_name: 'エクスプロッシャー',
+    display_name: 'エクスプロッシャー',
+    weapon_name: 'explosher',
     output: 'exTh',
     range: 75,
     damage: 50,
@@ -657,7 +694,8 @@ export const splatling = [
   {
     id: 1,
     image: 'images/weapon/splatling/bullSp',
-    weapon_name: 'バレルスピナー',
+    display_name: 'バレルスピナー',
+    weapon_name: 'barrelspinner',
     output: 'bullSp',
     range: 75,
     damage: 25,
@@ -689,7 +727,8 @@ export const splatling = [
   },{
     id: 3,
     image: 'images/weapon/splatling/hyde',
-    weapon_name: 'ハイドラント',
+    display_name: 'ハイドラント',
+    weapon_name: 'hydra',
     output: 'hyde',
     range: 85,
     damage: 25,
@@ -705,7 +744,8 @@ export const splatling = [
   },{
     id: 4,
     image: 'images/weapon/splatling/notila',
-    weapon_name: 'ノーチラス47',
+    display_name: 'ノーチラス47',
+    weapon_name: 'nautilus47',
     output: 'notila',
     range: 75,
     damage: 25,
@@ -721,7 +761,8 @@ export const splatling = [
   },{
     id: 5,
     image: 'images/weapon/splatling/qoogel',
-    weapon_name: 'クーゲルシュライバー',
+    display_name: 'クーゲルシュライバー',
+    weapon_name: 'kugelschreiber',
     output: 'qoogel',
     range: 85,
     damage: 25,
@@ -741,7 +782,8 @@ export const maneuver = [
   {
     id: 1,
     image: 'images/weapon/maneuver/spraMn',
-    weapon_name: 'スプラマニューバー',
+    display_name: 'スプラマニューバー',
+    weapon_name: 'maneuver',
     output: 'spraMn',
     range: 45,
     damage: 25,
@@ -757,7 +799,8 @@ export const maneuver = [
   },{
     id: 2,
     image: 'images/weapon/maneuver/dualSw',
-    weapon_name: 'デュアルスイーパー',
+    display_name: 'デュアルスイーパー',
+    weapon_name: 'dualsweeper',
     output: 'dualSw',
     range: 70,
     damage: 25,
@@ -773,7 +816,8 @@ export const maneuver = [
   },{
     id: 3,
     image: 'images/weapon/maneuver/spat',
-    weapon_name: 'スパッタリー',
+    display_name: 'スパッタリー',
+    weapon_name: 'sputtery',
     output: 'spat',
     range: 20,
     damage: 33,
@@ -789,7 +833,8 @@ export const maneuver = [
   },{
     id: 4,
     image: 'images/weapon/maneuver/qHB',
-    weapon_name: 'クアッドホッパーブラック',
+    display_name: 'クアッドホッパーブラック',
+    weapon_name: 'quadhopper_black',
     output: 'qHB',
     range: 55,
     damage: 25,
@@ -805,7 +850,8 @@ export const maneuver = [
   },{
     id: 5,
     image: 'images/weapon/maneuver/kel525',
-    weapon_name: 'ケルビン525',
+    display_name: 'ケルビン525',
+    weapon_name: 'kelvin525',
     output: 'kel525',
     range: 65,
     damage: 50,
@@ -825,7 +871,8 @@ export const brella = [
   {
     id: 1,
     image: 'images/weapon/brella/palaShel',
-    weapon_name: 'パラシェルター',
+    display_name: 'パラシェルター',
+    weapon_name: 'parashelter',
     output: 'palaShel',
     range: 40,
     damage: 50,
@@ -841,7 +888,8 @@ export const brella = [
   },{
     id: 2,
     image: 'images/weapon/brella/campShel',
-    weapon_name: 'キャンピングシェルター',
+    display_name: 'キャンピングシェルター',
+    weapon_name: 'campingshelter',
     output: 'campShel',
     range: 65,
     damage: 100,
@@ -857,7 +905,8 @@ export const brella = [
   },{
     id: 3,
     image: 'images/weapon/brella/spyGaj',
-    weapon_name: 'スパイガジェット',
+    display_name: 'スパイガジェット',
+    weapon_name: 'spygadget',
     output: 'spyGaj',
     range: 35,
     damage: 33,
@@ -877,7 +926,8 @@ export const wiper = [
   {
     id: 1,
     image: 'images/weapon/wiper/driveWi',
-    weapon_name: 'ドライブワイパー',
+    display_name: 'ドライブワイパー',
+    weapon_name: 'drivewiper',
     output: 'driveWi',
     range: 65,
     damage: 100,
@@ -893,7 +943,8 @@ export const wiper = [
   },{
     id: 2,
     image: 'images/weapon/wiper/gymWi',
-    weapon_name: 'ジムワイパー',
+    display_name: 'ジムワイパー',
+    weapon_name: 'gimwiper',
     output: 'gymWi',
     range: 80,
     damage: 100,
@@ -913,7 +964,8 @@ export const stringer = [
   {
     id: 1,
     image: 'images/weapon/stringer/triStr',
-    weapon_name: 'トライストリンガー',
+    display_name: 'トライストリンガー',
+    weapon_name: 'tristringer',
     output: 'triStr',
     range: 90,
     damage: 100,
@@ -929,7 +981,8 @@ export const stringer = [
   },{
     id: 2,
     image: 'images/weapon/stringer/lact450',
-    weapon_name: 'LACT450',
+    display_name: 'LACT450',
+    weapon_name: 'lct450',
     output: 'lact450',
     range: 55,
     damage: 100,
