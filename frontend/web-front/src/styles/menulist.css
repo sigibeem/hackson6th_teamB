@@ -39,3 +39,38 @@
 .listStyle {
   list-style: none;
 }
+
+.resultUl {
+  font-family: 'splatoon', 'fix';
+  display: flex;
+  flex-direction: column;
+}
+
+.resultLiWin {
+  font-family: 'fix', 'splatoon';
+  font-size: 30px;
+  display: flex;
+  width: 270px;
+  padding: 9px;
+  font-size: 30px;
+  color: #f5eb00;
+  list-style: none;
+  background-color: #ff3535;
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: 1em;
+}
+
+.resultLiLose {
+  font-family: 'fix', 'splatoon';
+  font-size: 20px;
+  display: flex;
+  width: 270px;
+  padding: 9px;
+  font-size: 30px;
+  color: #00314d;
+  list-style: none;
+  background-color: #385fff;
+  border-radius: 10px;
+  border-style: none;
+}

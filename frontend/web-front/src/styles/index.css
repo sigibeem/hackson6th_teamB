@@ -156,41 +156,6 @@ header svg {
   color: yellow;
 }
 
-.resultUl {
-  font-family: 'splatoon', 'fix';
-  display: flex;
-  flex-direction: column;
-}
-
-.resultLiWin {
-  font-family: 'splatoon', 'fix';
-  display: flex;
-  width: 270px;
-  padding: 5px;
-  padding-left: 3em;
-  font-size: 30px;
-  color: #f5eb00;
-  list-style: none;
-  background-color: #ff3535;
-  border-radius: 10px;
-  border-style: none;
-  margin-bottom: 1em;
-}
-
-.resultLiLose {
-  font-family: 'splatoon', 'fix';
-  display: flex;
-  width: 270px;
-  padding: 5px;
-  padding-left: 3em;
-  font-size: 30px;
-  color: #00314d;
-  list-style: none;
-  background-color: #385fff;
-  border-radius: 10px;
-  border-style: none;
-}
-
 footer {
   color: white;
   display: flex;
