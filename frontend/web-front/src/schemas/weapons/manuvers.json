@@ -1,0 +1,49 @@
+{
+    "manuvers" : {
+        "spra" : {
+            "name" : "スプラマニューバー",
+            "image" : "/images/noimage.png",
+            "range" : 45,
+            "damage" : 25,
+            "fire_rate" : 30,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "カニタンク"
+        },
+        "dual" : {
+            "name" : "デュアルスイーパー",
+            "image" : "/images/noimage.png",
+            "range" : 70,
+            "damage" : 25,
+            "fire_rate" : 20,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "ポップソナー"
+        },
+        "spat" : {
+            "name" : "スパッタリー",
+            "image" : "/images/noimage.png",
+            "range" : 20,
+            "damage" : 33,
+            "fire_rate" : 45,
+            "sub_weapon" : "ジャンプビーコン",
+            "special_attack" : "エナジースタンド"
+        },
+        "hop4b" : {
+            "name" : "クアッドホッパーブラック",
+            "image" : "/images/noimage.png",
+            "range" : 55,
+            "damage" : 25,
+            "fire_rate" : 35,
+            "sub_weapon" : "ロボットボム",
+            "special_attack" : "サメライド"
+        },
+        "kel525" : {
+            "name" : "ケルビン525",
+            "image" : "/images/noimage.png",
+            "range" : 65,
+            "damage" : 50,
+            "fire_rate" : 35,
+            "sub_weapon" : "スプラッシュシールド",
+            "special_attack" : "ナイスダマ"
+        }
+    }
+}

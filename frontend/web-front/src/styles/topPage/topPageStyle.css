@@ -1,6 +1,7 @@
 :root {
   --base-width: 100%;
   --btn-size: 80px;
+  --h2-text-shadow: rgb(85, 90, 57);
 }
 
 .topPagelistBox {
@@ -78,6 +79,7 @@
 .topMenuBtn h2 {
   color: rgb(255, 200, 0);
   font-size: 20px;
+  text-shadow: 0.5px 0.5px 0px var(--h2-text-shadow), -0.5px -0.5px 0px var(--h2-text-shadow), 0.5px -0.5px 0px var(--h2-text-shadow), -0.5px 0.5px 0px var(--h2-text-shadow);
 }
 
 #messageArea {

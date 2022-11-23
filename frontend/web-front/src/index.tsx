@@ -11,6 +11,11 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+const baseWidth = window.outerWidth;
+const body = document.querySelectorAll('body')[0];
+
+body.style.width = baseWidth + 'px';
+
 
 root.render(
   <React.StrictMode>

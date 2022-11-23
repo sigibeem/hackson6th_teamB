@@ -1,0 +1,64 @@
+{
+    "weaponCategory" : {
+        "shooters" : {
+            "name" : "シューター",
+            "link" : "/weapons/shooter",
+            "img" : "/images/weapon/shooter/hero.png"
+        },
+        "chargers" : {
+            "name" : "チャージャー",
+            "link" : "/weapons/charger",
+            "img" : "/images/noimage.png"
+        },
+        "blasters" : {
+            "name" : "ブラスター",
+            "link" : "/weapons/blaster",
+            "img" : "/images/noimage.png"
+        },
+        "rollers" : {
+            "name" : "ローラー",
+            "link" : "/weapons/roller",
+            "img" : "images/noimage.png"
+        },
+        "brashes" : {
+            "name" : "フデ",
+            "link" : "/weapons/brush",
+            "img" : "images/noimage.png"
+        },
+        "sloshers" : {
+            "name" : "スロッシャー",
+            "link" : "/weapons/slosher",
+            "img" : "images/noimage.png"
+        },
+        "spinners" : {
+            "name" : "スピナー",
+            "link" : "/weapons/spinner",
+            "img" : "images/noimage.png"
+        },
+        "manuvers" : {
+            "name" : "マニューバー",
+            "link" : "/weapons/manuver",
+            "img" : "images/noimage.png"
+        },
+        "shelters" : {
+            "name" : "シェルター",
+            "link" : "/weapons/shelter",
+            "img" : "images/noimage.png"
+        },
+        "wipers" : {
+            "name" : "ワイパー",
+            "link" : "/weapons/wiper",
+            "img" : "images/noimage.png"
+        },
+        "stringers" : {
+            "name" : "ストリンガー",
+            "link" : "/weapons/shelter",
+            "img" : "images/noimage.png"
+        },
+        "reelguns" : {
+            "name" : "リールガン",
+            "link" : "/weapons/sreelgun",
+            "img" : "images/noimage.png"
+        }
+    }
+}

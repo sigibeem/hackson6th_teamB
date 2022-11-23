@@ -1,0 +1,58 @@
+{
+    "blasters" : {
+        "hot" : {
+            "name" : "ホットブラスター",
+            "image" : "/images/noimage.png",
+            "range" : 30,
+            "damage" : 100,
+            "fire_rate" : 20,
+            "sub_weapon" : "ロボットボム",
+            "special_attack" : "グレードバリア"
+        },
+        "rabitt" : {
+            "name" : "ラビットブラスター",
+            "image" : "/images/noimage.png",
+            "range" : 55,
+            "damage" : 50,
+            "fire_rate" : 35,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "トリプルトルネード"
+        },
+        "long" : {
+            "name" : "ロングブラスター",
+            "image" : "/images/noimage.png",
+            "range" : 55,
+            "damage" : 100,
+            "fire_rate" : 15,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ホップソナー"
+        },
+        "nova" : {
+            "name" : "ノバブラスター",
+            "image" : "/images/noimage.png",
+            "range" : 20,
+            "damage" : 100,
+            "fire_rate" : 30,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "ショックワンダー"
+        },
+        "clash" : {
+            "name" : "クラッシュブラスター",
+            "image" : "/images/noimage.png",
+            "range" : 25,
+            "damage" : 50,
+            "fire_rate" : 65,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "ウルトラショット"
+        },
+        "re" : {
+            "name" : "Rブラスターエリート",
+            "image" : "/images/noimage.png",
+            "range" : 60,
+            "damage" : 50,
+            "fire_rate" : 30,
+            "sub_weapon" : "ポイズンミスト",
+            "special_attack" : "キューインキ"
+        }
+    }
+}

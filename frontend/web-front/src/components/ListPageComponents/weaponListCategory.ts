@@ -3,11 +3,11 @@ import categoryImgRe from '../../images/btnImages/weapon/reelgun/bottle.png'
 
 interface listitems_category {
   category_id: number;
+  url: string;
   category_name: string;
   category_image: string;
-  url: string;
   count: number
-} 
+}
 
 export const listitems_category: listitems_category[] =  [
   {

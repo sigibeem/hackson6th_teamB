@@ -1,0 +1,32 @@
+{
+    "shelters" : {
+        "name" : "シェルター",
+        "pala" : {
+            "name" : "パラシェルター",
+            "image" : "/images/noimage.png",
+            "range" : 40,
+            "damage" : 50,
+            "fire_rate" : 50,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "トリプルトルネード"
+        },
+        "camp" : {
+            "name" : "キャンピングシェルター",
+            "image" : "/images/noimage.png",
+            "range" : 65,
+            "damage" : 100,
+            "fire_rate" : 35,
+            "sub_weapon" : "ジャンプビーコン",
+            "special_attack" : "キューインキ"
+        },
+        "spy" : {
+            "name" : "スパイガジェット",
+            "image" : "/images/noimage.png",
+            "range" : 35,
+            "damage" : 33,
+            "fire_rate" : 65,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "サメライド"
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "shooters" : {
+        "wakaba" : {
+            "name" : "わかばシューター",
+            "image" : "/images/noimage.png",
+            "range" : 35,
+            "damage" : 25,
+            "fire_rate" : 75,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "グレードバリア"
+        },
+        "hero_rep" : {
+            "name" : "ヒーローシューターレプリカ",
+            "image" : "/images/noimage.png",
+            "range" : 50,
+            "damage" : 33,
+            "fire_rate" : 60,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ウルトラショット"
+        },
+        "spra" : {
+            "name" : "スプラシューター",
+            "image" : "/images/noimage.png",
+            "range" : 50,
+            "damage" : 33,
+            "fire_rate" : 60,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ウルトラショット"
+        },
+        "proMG" : {
+            "name" : "プロモデラーMG",
+            "image" : "/images/noimage.png",
+            "range" : 35,
+            "damage" : 20,
+            "fire_rate" : 90,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "サメライド"
+        },
+        "NZ85" : {
+            "name" : "プロモデラーMG",
+            "range" : 35,
+            "damage" : 20,
+            "fire_rate" : 90,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "サメライド",
+            "image" : "/images/noimage.png"
+        },
+        "prime" : {
+            "name" : "プライムシューター",
+            "range" : 70,
+            "damage" : 33,
+            "fire_rate" : 30,
+            "sub_weapon" : "ラインマーカー",
+            "special_attack" : "カニタンク",
+            "image" : "/images/noimage.png"
+        },
+        "boldMk" : {
+            "name" : "ボールドマーカー",
+            "image" : "/images/noimage.png",
+            "range" : 15,
+            "damage" : 33,
+            "fire_rate" : 80,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "ウルトラハンコ"
+        },
+        "g52" : {
+            "name" : "52ガロン",
+            "image" : "/images/noimage.png",
+            "range" : 55,
+            "damage" : 50,
+            "fire_rate" : 25,
+            "sub_weapon" : "スプラッシュシールド",
+            "special_attack" : "メガホンレーザー 5.1ch"
+        },
+        "jetSwp" : {
+            "name" : "ジェットスイーパー",
+            "image" : "/images/noimage.png",
+            "range" : 80,
+            "damage" : 25,
+            "fire_rate" : 30,
+            "sub_weapon" : "ラインマーカー",
+            "special_attack" : "キューインキ"
+        },
+        "sharpMk" : {
+            "name" : "シャープマーカー",
+            "image" : "/images/noimage.png",
+            "range" : 30,
+            "damage" : 25,
+            "fire_rate" : 80,
+            "sub_weapon" : "クイックボム",
+            "special_attack" : "カニタンク"
+        }
+    }
+}

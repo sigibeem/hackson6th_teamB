@@ -1,0 +1,31 @@
+{
+    "reelguns" : {
+        "l3" : {
+            "name" : "L3リールガン",
+            "image" : "/images/btnImages/reelgun/l3.png",
+            "range" : 60,
+            "damage" : 25,
+            "fire_rate" : 65,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "カニタンク"
+        },
+        "buttol" : {
+            "name" : "ボトルガイザー",
+            "image" : "./images/btnImages/reelgun/bottle.png",
+            "range" : 85,
+            "damage" : 33,
+            "fire_rate" : 25,
+            "sub_weapon" : "スプラッシュシールド",
+            "special_attack" : "ウルトラショット"
+        },
+        "h3" : {
+            "name" : "H3リールガン",
+            "image" : "./images/btnImages/reelgun/h3.png",
+            "range" : 70,
+            "damage" : 33,
+            "fire_rate" : 25,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "エナジースタンド"
+        }
+    }
+}
