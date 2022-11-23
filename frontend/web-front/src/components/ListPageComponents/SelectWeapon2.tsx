@@ -6,7 +6,6 @@ import ListItem from "./atoms/ListItem";
 const SelectWeapon2 = () => {
   return (
     <div>
-      <ListItem />
       {listitems_category_right.map((listitem_category) => {
         return(
           <ul className='listitemsUlRight' key={listitem_category.category_id}>

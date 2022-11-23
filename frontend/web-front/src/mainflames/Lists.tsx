@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import  { useState } from 'react'
 import { useLocation } from 'react-router';
+import ListItem from '../components/ListPageComponents/atoms/ListItem';
+import ListItem2 from '../components/ListPageComponents/atoms/ListItem2';
 import SelectWeapon1 from '../components/ListPageComponents/SelectWeapon1';
 import SelectWeapon2 from '../components/ListPageComponents/SelectWeapon2';
 import '../styles/menulist.css';
@@ -13,8 +15,6 @@ const Lists = () => {
     localStorage.setItem('passed','false');
   }
 
-  
-
   return (
     <div>
       <div id="confiremationViewsArea">
@@ -24,8 +24,19 @@ const Lists = () => {
         <div className="weapon2">
           2
         </div>
+        
       </div>
-      { !selectWeapon1 ? <SelectWeapon1 /> : <SelectWeapon2 /> }
+      { !selectWeapon1 ? 
+      <>
+          <ListItem />
+          <SelectWeapon1 /> 
+      </>
+      : 
+      <>
+          <ListItem2 />
+          <SelectWeapon2 />
+      </>
+ }
     </div>
   )
 }

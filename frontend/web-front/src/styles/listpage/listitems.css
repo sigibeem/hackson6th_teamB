@@ -30,6 +30,7 @@
   background-color: rgb(82, 32, 245);
   border-radius: 10px;
   cursor: pointer;
+  letter-spacing: 4px;
 }
 
 .listitemsTextLeft {
@@ -55,6 +56,7 @@
   background-color: rgb(178, 238, 51);
   border-radius: 10px;
   cursor: pointer;
+  letter-spacing: 4px;
 }
 
 .listitemsTextRight {
@@ -86,7 +88,11 @@
 }
 
 .listitemsImg {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: rgb(0, 0, 0);
+}
+
+.a {
+  color: #0000007c;
 }
