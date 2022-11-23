@@ -8,20 +8,15 @@ const VictoryOrDefeat = () => {
   const location = useLocation()
   const [selectPlayMode] = useState(location.state)
   const postAPIData = async (e: any) => {
-    // let instance: AxiosInstance
-
-    // instance = axios.create({
-    //     baseURL: 'http://localhost:8080',
-    // })
     const datanum = e.currentTarget.dataset.num
-    axios.post("http://localhost:8080/api/vote", {"battle_mode":selectPlayMode, "result":datanum})
+    axios.post("http://localhost:8080/api/votes/", {"battle_mode":selectPlayMode, "result":datanum})
     .then(response=>{console.log("body:",response.data)})
 }
 
   return (
     <div>
       <h1 className='h1'>{selectPlayMode}</h1>
-       <Link to='/' style={{ textDecoration: 'none' }}> 
+       <Link to='/' style={{ textDecoration: 'none' }}>
           <ul className='resultUl'>
             <li style={{ listStyle: 'none' }}>
               <button data-num="1" onClick={postAPIData} className='resultLiWin'>勝ち</button>
@@ -29,8 +24,8 @@ const VictoryOrDefeat = () => {
             <li style={{ listStyle: 'none' }}>
               <button data-num="0" onClick={postAPIData} className='resultLiLose'>負け</button>
             </li>
-          </ul>     
-       </Link> 
+          </ul>
+       </Link>
     </div>
   )
 }

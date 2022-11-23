@@ -4,6 +4,7 @@ import '../../styles/index.css'
 import '../../styles/listpage/listitems.css'
 import SelectPlayModeWeapon from './SelectPlayModeWeapon'
 
+
 const SelectWeaponVote = () => {
   const weapon1_name = sessionStorage.getItem("weapon1_name");
   const weapon2_name = sessionStorage.getItem("weapon2_name");
@@ -11,14 +12,27 @@ const SelectWeaponVote = () => {
 
   const handleClickSelectWeapon1 = async (e: any) => {
     setSelectWeapon(true)
-    const weapon = e.currentTarget.dataset.weapon
-    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
-    .then(response=>{console.log("body:",response.data)})
+    const weapon = JSON.stringify(e.currentTarget.dataset.weapon)
+    console.log(weapon);
+
+    axios
+    .post("http://localhost:8080/api/votes/",
+      {
+
+        "weapon": 1,
+        "battle_mode": 5,
+        "result": true,
+
+      })
+      .then(response => {
+        console.log(response);
+      })
   }
+
   const handleClickSelectWeapon2 = async (e: any) => {
     setSelectWeapon(true)
     const weapon = e.currentTarget.dataset.weapon
-    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
+    axios.post("http://localhost:8080/api/votes/", {"Weapon":weapon})
     .then(response=>{console.log("body:",response.data)})
   }
 
@@ -40,7 +54,7 @@ const SelectWeaponVote = () => {
             </span>
           </li>
         </ul>
-    </>  
+    </>
     :
     <>
       <SelectPlayModeWeapon />

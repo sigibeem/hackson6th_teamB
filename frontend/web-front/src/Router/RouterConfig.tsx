@@ -30,6 +30,7 @@ import Graph from '../mainflames/Graph'
 import Lists from '../mainflames/Lists'
 import Top from '../mainflames/Top'
 import Totalling from '../mainflames/Totalling'
+import AggregateResult from '../mainflames/AggregateResult'
 
 const RouterConfig = () => {
   return (
@@ -40,6 +41,7 @@ const RouterConfig = () => {
         <Route index element={<Top />} />
         <Route path="/weapons" element={<Lists />} />
         <Route path="/result-graph" element={<Graph />} />
+        <Route path="/aggreate-result" element={<AggregateResult />} />
 
         {/* weaponlists */}
         <Route path="/weapons/blaster" element={<Blaster />} />

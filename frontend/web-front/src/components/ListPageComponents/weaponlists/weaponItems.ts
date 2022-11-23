@@ -20,7 +20,8 @@ export const shooter = [
   {
     id: 1,
     image: wakaba,
-    weapon_name: 'わかばシューター',
+    display_name: 'わかばシューター',
+    weapon_name: 'wakaba',
     output: 'wakabaSh',
     range: 35,
     damage: 25,
