@@ -1,0 +1,22 @@
+{
+    "stringers" : {
+        "try" : {
+            "name" : "トライストリンガー",
+            "image" : "/images/noimage.png",
+            "range" : 90,
+            "damage" : 100,
+            "fire_rate" : 40,
+            "sub_weapon" : "ポイズンミスト",
+            "special_attack" : "メガホンレーザー 5.1ch"
+        },
+        "lact450" : {
+            "name" : "LACT450",
+            "image" : "/images/noimage.png",
+            "range" : 55,
+            "damage" : 100,
+            "fire_rate" : 75,
+            "sub_weapon" : "カーリングボム",
+            "special_attack" : "マルチミサイル"
+        }
+    }
+}

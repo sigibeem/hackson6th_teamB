@@ -1,0 +1,49 @@
+{
+    "sloshers" : {
+        "bucket" : {
+            "name" : "バケットスロッシャー",
+            "image" : "/images/noimage.png",
+            "range" : 55,
+            "damage" : 50,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "トリプルトルネード"
+        },
+        "hissen" : {
+            "name" : "ヒッセン",
+            "image" : "/images/noimage.png",
+            "range" : 25,
+            "damage" : 50,
+            "fire_rate" : 70,
+            "sub_weapon" : "ポイズンミスト",
+            "special_attack" : "ジェットパック"
+        },
+        "screw" : {
+            "name" : "スクリュースロッシャー",
+            "image" : "/images/noimage.png",
+            "range" : 65,
+            "damage" : 50,
+            "fire_rate" : 35,
+            "sub_weapon" : "タンサンボム",
+            "special_attack" : "ナイスダマ"
+        },
+        "over" : {
+            "name" : "オーバーフロッシャー",
+            "image" : "/images/noimage.png",
+            "range" : 85,
+            "damage" : 25,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプリンクラー",
+            "special_attack" : "アメフラシ"
+        },
+        "exp" : {
+            "name" : "エクスプロッシャー",
+            "image" : "/images/noimage.png",
+            "range" : 75,
+            "damage" : 50,
+            "fire_rate" : 20,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "アメフラシ"
+        }
+    }
+}

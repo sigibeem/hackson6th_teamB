@@ -95,7 +95,7 @@ function Top() {
         <div className="lineMarkerLong"></div>
         <div className="lineMarkerShrot"></div>
         <ul className='topMenuList'>
-          {topPageMenuItems}
+          { topPageMenuItems }
         </ul>
       </div>
       <div id="messageArea">

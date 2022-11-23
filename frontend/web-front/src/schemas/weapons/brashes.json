@@ -1,0 +1,22 @@
+{
+    "brash" : {
+        "hokusai" : {
+            "name" : "ホクサイ",
+            "image" : "/images/noimage.png",
+            "range" : 25,
+            "damage" : 33,
+            "fire_rate" : 75,
+            "sub_weapon" : "キューバンボム",
+            "special_attack" : "ショックワンダー"
+        },
+        "publo" : {
+            "name" : "パブロ",
+            "image" : "/images/noimage.png",
+            "range" : 10,
+            "damage" : 25,
+            "fire_rate" : 100,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "メガホンレーザー 5.1ch"
+        }
+    }
+}

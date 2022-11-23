@@ -1,0 +1,58 @@
+{
+    "chargers" : {
+        "spra" : {
+            "name" : "スプラチャージャー",
+            "image" : "/images/noimage.png",
+            "range" : 85,
+            "damage" : 100,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "キューインキ"
+        },
+        "sqa" : {
+            "name" : "スクイックリンα",
+            "image" : "/images/noimage.png",
+            "range" : 75,
+            "damage" : 100,
+            "fire_rate" : 70,
+            "sub_weapon" : "ポイントセンサー",
+            "special_attack" : "グレートバリア"
+        },
+        "sqaScope" : {
+            "name" : "スプラスコープ",
+            "image" : "/images/noimage.png",
+            "range" : 90,
+            "damage" : 100,
+            "fire_rate" : 45,
+            "sub_weapon" : "スプラッシュボム",
+            "special_attack" : "キューインキ"
+        },
+        "l4k" : {
+            "name" : "リッター4K",
+            "image" : "/images/noimage.png",
+            "range" : 95,
+            "damage" : 100,
+            "fire_rate" : 25,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "ポップソナー"
+        },
+        "soyCh" : {
+            "name" : "ソイチューバー",
+            "image" : "/images/noimage.png",
+            "range" : 80,
+            "damage" : 100,
+            "fire_rate" : 65,
+            "sub_weapon" : "トーピード",
+            "special_attack" : "マルチミサイル"
+        },
+        "scope4k" : {
+            "name" : "4Kスコープ",
+            "image" : "/images/noimage.png",
+            "range" : 100,
+            "damage" : 100,
+            "fire_rate" : 25,
+            "sub_weapon" : "トラップ",
+            "special_attack" : "ポップソナー"
+        }
+    }
+}
