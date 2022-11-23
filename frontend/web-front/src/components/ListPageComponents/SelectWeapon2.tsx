@@ -1,19 +1,12 @@
 import { Link } from "react-router-dom";
 import { listitems_category_right } from './weaponListCategory';
 import '../../styles/listpage/listitems.css'
+import ListItem from "./atoms/ListItem";
 
 const SelectWeapon2 = () => {
   return (
     <div>
-      <ul className='btnList'>
-        <li className='listStyle'>
-          <button className='btnDisabled' >list1</button>
-        </li>
-        <li className='listStyle'>
-          <button className='btn' disabled={false}>list2</button>
-        </li>
-      </ul>
-      <br />
+      <ListItem />
       {listitems_category_right.map((listitem_category) => {
         return(
           <ul className='listitemsUlRight' key={listitem_category.category_id}>

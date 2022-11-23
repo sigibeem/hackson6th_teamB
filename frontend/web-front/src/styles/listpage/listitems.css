@@ -1,8 +1,23 @@
+.listTitle {
+  font-family: 'fix', 'splatoon';
+  background-color: rgba(0, 0, 0, 0.51);
+  margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .listTitle {
+    font-family: 'fix', 'splatoon';
+    background-color: rgba(0, 0, 0, 0.51);
+    margin-left: 5em;
+  }
+}
+
 /* 左側のリスト */
 .listitemsUlLeft {
   font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
+  margin-left: 0.9em;
 }
 
 .listitemsLiLeft {
@@ -12,7 +27,7 @@
   font-size: 30px;
   color: #f5eb00;
   list-style: none;
-  background-color: #5220f5;
+  background-color: rgb(82, 32, 245);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -27,6 +42,7 @@
   font-family: 'splatoon', 'fix';
   display: flex;
   flex-direction: column;
+  margin-left: 0.9em;
 }
 
 .listitemsLiRight {
@@ -36,7 +52,7 @@
   font-size: 30px;
   color: #009df5;
   list-style: none;
-  background-color: #b2ee33;
+  background-color: rgb(178, 238, 51);
   border-radius: 10px;
   cursor: pointer;
 }

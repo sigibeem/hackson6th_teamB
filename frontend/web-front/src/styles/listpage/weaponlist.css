@@ -1,0 +1,59 @@
+.btnList {
+  display: flex;
+  margin-left: 2.3em;
+}
+
+.btn {
+  position: relative;
+  list-style: none;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 1px white;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+}
+
+.btn span {
+  font-size: 22px;
+  position: absolute;
+  top: 50;
+  left: 0;
+  padding-left: 5px;
+  color: yellow;
+}
+
+.btnDisabled {
+  list-style: none;
+  margin: 1.5em;
+  color: white;
+  background-color: rgb(121, 121, 121);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px white;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.btn:hover {
+  border: 2px solid white;
+}
+
+.listStyle {
+  list-style: none;
+}
