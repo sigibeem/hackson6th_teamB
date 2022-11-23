@@ -25,7 +25,7 @@ const ChargerRight = () => {
         return(
         <ul className='listitemsUlRight' key={chargers.id}>
           <li data-weapon={chargers.weapon_name} data-range={chargers.range} data-firerate={chargers.fire_rate} data-damage={chargers.damage}  className='listitemsLiRight' onClick={handleClick}>
-            {chargers.weapon_name}
+            {chargers.display_name}
           </li>
         </ul>
         )

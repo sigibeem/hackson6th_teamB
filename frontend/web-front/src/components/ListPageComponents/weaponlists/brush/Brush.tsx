@@ -25,7 +25,7 @@ const Brush = () => {
         return(
         <ul className='listitemsUlLeft' key={brushs.id}>
           <li data-weapon={brushs.weapon_name} data-range={brushs.range} data-firerate={brushs.fire_rate} data-damage={brushs.damage}  className='listitemsLiLeft' onClick={handleClick}>
-            {brushs.weapon_name}
+            {brushs.display_name}
           </li>
         </ul>
         )

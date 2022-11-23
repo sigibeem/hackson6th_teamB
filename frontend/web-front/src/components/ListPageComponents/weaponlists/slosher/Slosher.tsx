@@ -25,7 +25,7 @@ const Slosher = () => {
         return(
         <ul className='listitemsUlLeft' key={sloshers.id}>
           <li data-weapon={sloshers.weapon_name} data-range={sloshers.range} data-firerate={sloshers.fire_rate} data-damage={sloshers.damage}  className='listitemsLiLeft' onClick={handleClick}>
-            {sloshers.weapon_name}
+            {sloshers.display_name}
           </li>
         </ul>
         )

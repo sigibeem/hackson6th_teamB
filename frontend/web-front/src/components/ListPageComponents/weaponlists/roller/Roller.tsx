@@ -25,7 +25,7 @@ const Roller = () => {
         return(
         <ul className='listitemsUlLeft' key={rollers.id}>
           <li data-weapon={rollers.weapon_name} data-range={rollers.range} data-firerate={rollers.fire_rate} data-damage={rollers.damage}  className='listitemsLiLeft' onClick={handleClick}>
-            {rollers.weapon_name}
+            {rollers.display_name}
           </li>
         </ul>
         )

@@ -25,7 +25,7 @@ const BrellaRight = () => {
         return(
         <ul className='listitemsUlRight' key={brellas.id}>
           <li data-weapon={brellas.weapon_name} data-range={brellas.range} data-firerate={brellas.fire_rate} data-damage={brellas.damage} className='listitemsLiRight' onClick={handleClick}>
-            {brellas.weapon_name}
+            {brellas.display_name}
           </li>
         </ul>
         )

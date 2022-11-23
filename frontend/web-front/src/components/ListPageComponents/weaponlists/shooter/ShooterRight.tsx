@@ -27,7 +27,7 @@ const ShooterRight = () => {
           <li data-weapon={shooters.weapon_name} data-range={shooters.range} data-firerate={shooters.fire_rate} data-damage={shooters.damage} className='listitemsLiRight' onClick={handleClick}>
           <img src={shooters.image} alt='' className='listitemsImg'/>
             <span className='listitemsTextRight'>
-              {shooters.weapon_name}
+              {shooters.display_name}
             </span>
           </li>
         </ul>
