@@ -1,6 +1,7 @@
 .grapharea {
-  background-color: rgb(215, 215, 215);
-  color: white;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.701);
 }
 
 .link {
@@ -14,8 +15,6 @@
 
 @media screen and (min-width: 480px) {
   .grapharea {
-    background-color: white;
-    color: white;
     width: 500px;
     height: 500px;
   }
