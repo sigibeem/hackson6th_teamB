@@ -12,27 +12,14 @@ const SelectWeaponVote = () => {
 
   const handleClickSelectWeapon1 = async (e: any) => {
     setSelectWeapon(true)
-    const weapon = JSON.stringify(e.currentTarget.dataset.weapon)
-    console.log(weapon);
-
-    axios
-    .post("http://localhost:8080/api/votes/",
-      {
-
-        "weapon": 1,
-        "battle_mode": 5,
-        "result": true,
-
-      })
-      .then(response => {
-        console.log(response);
-      })
+    const weapon = e.currentTarget.dataset.weapon
+    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
+    .then(response=>{console.log("body:",response.data)})
   }
-
   const handleClickSelectWeapon2 = async (e: any) => {
     setSelectWeapon(true)
     const weapon = e.currentTarget.dataset.weapon
-    axios.post("http://localhost:8080/api/votes/", {"Weapon":weapon})
+    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
     .then(response=>{console.log("body:",response.data)})
   }
 

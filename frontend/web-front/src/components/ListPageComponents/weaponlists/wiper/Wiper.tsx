@@ -24,7 +24,7 @@ const Wiper = () => {
       {wiper.map((wipers) => {
         return(
         <ul className='listitemsUlLeft' key={wipers.id}>
-          <li data-weapon={wipers.weapon_name} data-range={wipers.range} data-firerate={wipers.fire_rate} data-damage={wipers.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={wipers.display_name} data-range={wipers.range} data-firerate={wipers.fire_rate} data-damage={wipers.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {wipers.display_name}
           </li>
         </ul>

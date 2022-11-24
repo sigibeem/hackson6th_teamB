@@ -24,7 +24,7 @@ const Splatling = () => {
       {splatling.map((splatlings) => {
         return(
         <ul className='listitemsUlLeft' key={splatlings.id}>
-          <li data-weapon={splatlings.weapon_name} data-range={splatlings.range} data-firerate={splatlings.fire_rate} data-damage={splatlings.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={splatlings.display_name} data-range={splatlings.range} data-firerate={splatlings.fire_rate} data-damage={splatlings.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {splatlings.display_name}
           </li>
         </ul>

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK
 from rest_framework.viewsets import ViewSet
@@ -7,6 +8,8 @@ import json
 from .models import *
 from .serializers import *
 
+=======
+>>>>>>> 1b3e23128d0fc57b6314f0ae2bdfe36c1e1cee87
 '''
 class ListKurabeteminaika(generics.ListAPIView):
     queryset = Kurabeteminaika.objects.all()
@@ -16,8 +19,15 @@ class ListKurabeteminaika(generics.ListAPIView):
 class DetailKurabeteminaika(generics.RetrieveAPIView):
     queryset = Kurabeteminaika.objects.all()
     serializer_class = KurabeteminaikaSerializer
+<<<<<<< HEAD
 
 '''
+=======
+'''
+
+
+
+>>>>>>> 1b3e23128d0fc57b6314f0ae2bdfe36c1e1cee87
 #argument:weapon (武器名)、返り値:ゲームモード毎の勝率
 class MatchResultViewSet(generics.ListAPIView):
     queryset = Match_result.objects.all()
@@ -26,6 +36,7 @@ class MatchResultViewSet(generics.ListAPIView):
 
     def get_queryset(self):
         the_weapon = self.kwargs['weapon']
+<<<<<<< HEAD
         '''
         win_rate = {}
 
@@ -47,4 +58,14 @@ class VoteCreateView(generics.CreateAPIView):
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
 
+=======
+
+        return Match_result.objects.filter(weapon__weapon_name = the_weapon)
+
+'''
+class CreatVote(APIView):
+    queryset = Match_result.objects.all()
+    serializer_class = PostVote
+'''
+>>>>>>> 1b3e23128d0fc57b6314f0ae2bdfe36c1e1cee87
 

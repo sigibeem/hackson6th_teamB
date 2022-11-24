@@ -21,6 +21,10 @@ ChartJS.register(
     Tooltip,
     Legend)
 
+ChartJS.defaults.backgroundColor = '#000'    
+ChartJS.defaults.color = '#fff'
+ChartJS.defaults.borderColor = '#616161'
+ChartJS.defaults.font.size = 20
  const GraphAreaSelectWeaponRight = () => {
   const weapon_name = sessionStorage.getItem("weapon1_name");
   const weapon_damage = Number(sessionStorage.getItem("weapon1_damage"))
@@ -29,25 +33,40 @@ ChartJS.register(
 
   const location = useLocation()
   const [weapon2] = useState(location.state)
-
-  const labels = ["range", "damage", "fire_rate"];
+  const labels = ["射程", "ダメージ", "連射力"];
   const graphData = {
     labels: labels,
     datasets: [
       {
           label: weapon_name,
           data: [weapon_range, weapon_damage, weapon_firerate],
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 1,
+          backgroundColor: 'rgba(204, 235, 0, 0.2)',
+          borderColor: 'rgba(204, 235, 0, 1)',
+          borderWidth: 3,
       },{
         label: weapon2.weapon2_name,
         data: [weapon2.weapon2_range, weapon2.weapon2_damage, weapon2.weapon2_firerate],
-        backgroundColor: 'rgba(32, 111, 25, 0.2)',
-        borderColor: 'rgba(32, 111, 25, 1)',
-        borderWidth: 1,
+        backgroundColor: 'rgba(255, 0, 0, 0.2)',
+        borderColor: 'rgba(255, 0, 0, 1)',
+        borderWidth: 3,
     },
     ],
+  };
+
+  const options = {
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: {
+        titleFont: { size: 17 },
+        bodyFont: { size: 17 },
+        titleMarginBottom: 15,
+        backgroundColor: "rgba(255,112,162,0.8)",
+        titleColor: "rgba(0,0,0,1)",
+        bodyColor: "rgba(0,0,0,1)",
+        displayColors: true,
+        xAlign: "center"
+      },
+    },
   };
 
   sessionStorage.setItem('weapon2_name', weapon2.weapon2_name)
@@ -62,13 +81,13 @@ ChartJS.register(
   return (
     <>
       <div className='grapharea'>
-        <Radar
-            height={300}
-            width={300}
-            data={graphData}
-            id="chart-key"
-        />
-        
+          <Radar
+              height={300}
+              width={300}
+              data={graphData}
+              options={options}
+              id="chart-key"
+          />
       </div>
       <TotallingLink />
     </>
