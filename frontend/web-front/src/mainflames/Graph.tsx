@@ -33,13 +33,6 @@ function Graph () {
         }
     }
     const navigate = useNavigate()
-    const handleNavigateList1 = () => {
-        navigate('/weapons')
-    }
-    const handleNavigateList2 = () => {
-        navigate('/weapons', {state: true})
-    }
-
     const location = useLocation()
     const [selectWeapon1] = useState(location.state)
 

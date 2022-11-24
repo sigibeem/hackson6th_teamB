@@ -13,13 +13,13 @@ const SelectWeaponVote = () => {
   const handleClickSelectWeapon1 = async (e: any) => {
     setSelectWeapon(true)
     const weapon = e.currentTarget.dataset.weapon
-    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
+    axios.post("http://localhost:8080/api/votes", {"weapon":weapon})
     .then(response=>{console.log("body:",response.data)})
   }
   const handleClickSelectWeapon2 = async (e: any) => {
     setSelectWeapon(true)
     const weapon = e.currentTarget.dataset.weapon
-    axios.post("http://localhost:8080/api/vote", {"weapon":weapon})
+    axios.post("http://localhost:8080/api/votes", {"weapon":weapon})
     .then(response=>{console.log("body:",response.data)})
   }
 

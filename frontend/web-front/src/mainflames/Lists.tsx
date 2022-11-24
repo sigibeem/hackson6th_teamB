@@ -6,7 +6,7 @@ import '../styles/menulist.css';
 
 const Lists = () => {
   const location = useLocation()
-  const [selectWeapon1, setSelectWeapon1] = useState(location.state)
+  const [selectWeapon1] = useState(location.state)
 
   // 通過履歴を削除
   if(localStorage.getItem('passed') === 'true'){

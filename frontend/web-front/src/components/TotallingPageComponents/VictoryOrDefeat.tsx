@@ -11,7 +11,7 @@ const VictoryOrDefeat = () => {
   const [selectPlayMode] = useState(location.state)
   const postAPIData = async (e: any) => {
     const datanum = e.currentTarget.dataset.num
-    axios.post("http://localhost:8080/api/vote", {"battle_mode":selectPlayMode, "result":datanum})
+    axios.post("http://localhost:8080/api/votes", {"battle_mode":selectPlayMode, "result":datanum})
     .then(response=>{console.log("body:",response.data)})
 }
 
