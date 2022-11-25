@@ -42,7 +42,7 @@ class MatchResultViewSet(generics.ListAPIView):
         return Match_result.objects.filter(weapon__weapon_name = the_weapon)
 
 class VoteCreateView(generics.CreateAPIView):
-    serializer_class = GetResultMatchSerializer
+    serializer_class = PostResultMatchSerializer
     queryset = Match_result.objects.all()
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)

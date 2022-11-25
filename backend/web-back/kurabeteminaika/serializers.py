@@ -12,15 +12,16 @@ class KurabeteminaikaSerializer(serializers.ModelSerializer):
 class WeaponSerializer(serializers.ModelSerializer):
     class Meta:
         model = Weapon
-        fields = '__all__'
+        fields = 'weapon_id', 'weapon_name'
 
 class BattleModeSerializer(serializers.ModelSerializer):
     class Meta:
         mdoel = Battle_mode
         fields = '__all__'
-class GetResultMatchSerializer(serializers.ModelSerializer):
+class PostResultMatchSerializer(serializers.ModelSerializer):
+    weapon = serializers.SlugRelatedField(queryset = Weapon.objects.all(), slug_field = 'weapon_name')
+    battle_mode = serializers.SlugRelatedField(queryset = Battle_mode.objects.all(), slug_field = 'battle_mode_name')
 
-    #battle_mode = BattleModeSerializer(many=True)
     class Meta:
         model = Match_result
         fields = [
@@ -29,6 +30,18 @@ class GetResultMatchSerializer(serializers.ModelSerializer):
             'result',
             #'win_rate',
         ]
+
+class GetResultMatchSerializer(serializers.ModelSerializer):
+    #weapon = serializers.PrimaryKeyRelatedField(queryset = Weapon.objects.all())
+    class Meta:
+        model = Match_result
+        fields = [
+            'weapon',
+            'battle_mode',
+            'result',
+            #'win_rate',
+        ]
+
     '''
     win_rate = serializers.SerializerMethodField()
     def get_win_rate(self, obj):

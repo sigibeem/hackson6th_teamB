@@ -19,7 +19,8 @@ class Battle_mode(models.Model):
     battle_mode_name = models.CharField(max_length=30, help_text = 'バトルモード')
     class Meta:
         db_table = 'battle_mode'
-        
+
+
 class Match_result(models.Model):
     match_result_id = models.SmallAutoField(primary_key=True)
     weapon = models.ForeignKey(Weapon, on_delete = models.CASCADE)
@@ -28,4 +29,5 @@ class Match_result(models.Model):
     result = models.BooleanField(help_text = '勝利した場合はTrue')
     class Meta:
         db_table = 'match_result'
+
 
