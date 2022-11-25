@@ -5,6 +5,7 @@ import '../styles/menulist.css'
 import { useLocation, useNavigate } from 'react-router-dom'
 import GraphAreaSelectWeaponRight from '../components/GraphPageComponents/GraphAreaSelectWeaponRight'
 import '../styles/index.css'
+import ListItem from '../components/ListPageComponents/atoms/ListItem'
 
 type Kurabeteminaika = {
     id: string
@@ -32,13 +33,6 @@ function Graph () {
         }
     }
     const navigate = useNavigate()
-    const handleNavigateList1 = () => {
-        navigate('/weapons')
-    }
-    const handleNavigateList2 = () => {
-        navigate('/weapons', {state: true})
-    }
-
     const location = useLocation()
     const [selectWeapon1] = useState(location.state)
 
@@ -48,10 +42,7 @@ function Graph () {
 
     return (
         <div>
-            <ul className='btnList'>
-                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList1}>list1へ</button></li>
-                <li style={{ listStyle: "none" }}><button className='btn' onClick={handleNavigateList2}>list2へ</button></li>
-            </ul>
+            <ListItem />
             <button onClick={getAPIData}>click</button>
             {kurabeteminaikas.map((item) => (
                 <div key={item.id}>

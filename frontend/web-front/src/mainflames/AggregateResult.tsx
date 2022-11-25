@@ -15,3 +15,4 @@ const AggregateResult = () => {
 }
 
 export default AggregateResult;
+

@@ -24,7 +24,7 @@ const Brush = () => {
       {brush.map((brushs) => {
         return(
         <ul className='listitemsUlLeft' key={brushs.id}>
-          <li data-weapon={brushs.weapon_name} data-range={brushs.range} data-firerate={brushs.fire_rate} data-damage={brushs.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={brushs.display_name} data-range={brushs.range} data-firerate={brushs.fire_rate} data-damage={brushs.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {brushs.display_name}
           </li>
         </ul>

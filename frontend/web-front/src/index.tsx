@@ -16,7 +16,6 @@ const root = ReactDOM.createRoot(
 
 // body.style.width = baseWidth + 'px';
 
-
 root.render(
   <React.StrictMode>
     <BrowserRouter>

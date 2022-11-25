@@ -24,7 +24,7 @@ const ManeuverRight = () => {
       {maneuver.map((maneuvers) => {
         return(
         <ul className='listitemsUlRight' key={maneuvers.id}>
-          <li data-weapon={maneuvers.weapon_name}data-range={maneuvers.range} data-firerate={maneuvers.fire_rate} data-damage={maneuvers.damage}  className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={maneuvers.display_name}data-range={maneuvers.range} data-firerate={maneuvers.fire_rate} data-damage={maneuvers.damage}  className='listitemsLiRight' onClick={handleClick}>
             {maneuvers.display_name}
           </li>
         </ul>

@@ -24,7 +24,7 @@ const Shooter = () => {
       {shooter.map((shooters) => {
         return(
         <ul className='listitemsUlLeft' key={shooters.id}>
-          <li data-weapon={shooters.weapon_name} data-range={shooters.range} data-firerate={shooters.fire_rate} data-damage={shooters.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={shooters.display_name} data-range={shooters.range} data-firerate={shooters.fire_rate} data-damage={shooters.damage}  className='listitemsLiLeft' onClick={handleClick}>
           <img src={shooters.image} alt='' className='listitemsImg'/>
             <span className='listitemsTextLeft'>
               {shooters.display_name}
