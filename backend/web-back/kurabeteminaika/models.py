@@ -14,12 +14,26 @@ class Weapon(models.Model):
     class Meta:
         db_table = 'weapon'
 
+    def __str__(self):
+        return  self.weapon_name
+
 class Battle_mode(models.Model):
     battle_mode_id = models.SmallAutoField(primary_key=True)
     battle_mode_name = models.CharField(max_length=30, help_text = 'バトルモード')
     class Meta:
         db_table = 'battle_mode'
 
+    def __str__(self):
+        return self.battle_mode_name
+'''
+class MatchResultManager(models.Manager):
+    def get_(self):
+        
+        match_count = self.get_queryset().filter(weapon = self.kwargs['weapon'], result = True).count()
+        win_count = self.get_queryset().filter(result = True).count()
+        
+        return 
+'''
 
 class Match_result(models.Model):
     match_result_id = models.SmallAutoField(primary_key=True)
@@ -29,5 +43,9 @@ class Match_result(models.Model):
     result = models.BooleanField(help_text = '勝利した場合はTrue')
     class Meta:
         db_table = 'match_result'
+
+    def __str__(self):
+        return f'{self.weapon} / {self.battle_mode} / {self.result}'
+
 
 
