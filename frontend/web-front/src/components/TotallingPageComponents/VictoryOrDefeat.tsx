@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import '../../styles/menulist.css'
@@ -9,6 +9,17 @@ import yellowInk from '../../images/background/yellowInk1.png'
 const VictoryOrDefeat = () => {
   const location = useLocation()
   const [selectPlayMode] = useState(location.state)
+  const [displayNamePlayMode, setDisplayNamePlayMode] = useState('')
+  useEffect(() => {
+    if(selectPlayMode === "area"){
+      setDisplayNamePlayMode('ナワバリバトル')
+    }else if(selectPlayMode === "asari"){
+      setDisplayNamePlayMode('ヒーローモード')
+    }else if(selectPlayMode === "yagura"){
+      setDisplayNamePlayMode('サーモンラン')
+    }
+  },[])
+
   const postAPIData = async (e: any) => {
     const datanum = e.currentTarget.dataset.num
     let boolValue;
@@ -32,7 +43,7 @@ const VictoryOrDefeat = () => {
 
   return (
     <div>
-      <h1 className='h1'>{selectPlayMode}</h1>
+      <h1 className='h1'>{displayNamePlayMode}</h1>
         <Link to='/' style={{ textDecoration: 'none' }}>
             <ul className='resultUl'>
               <li style={{ listStyle: 'none' }}>
