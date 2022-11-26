@@ -19,9 +19,9 @@ const SelectPlayModeWeapon = () => {
       <ul className='listitemsUlLeft'>
         <li className='listitemsLiLeft' onClick={handleNavigateTotallingNawabari}>ナワバリバトル</li>
         <br />
-        <li className='listitemsLiLeft' onClick={handleNavigateTotallingHero}>ヒーローモード</li>
+        <li className='listitemsLiLeft' onClick={handleNavigateTotallingHero}>ガチアサリ</li>
         <br />
-        <li className='listitemsLiLeft' onClick={handleNavigateTotallingSamon}>サーモンラン</li>
+        <li className='listitemsLiLeft' onClick={handleNavigateTotallingSamon}>ガチヤグラ</li>
       </ul>
     </div>
   )
