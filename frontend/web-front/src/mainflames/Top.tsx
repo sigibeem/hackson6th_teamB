@@ -88,6 +88,12 @@ function Top() {
     return;
   }
 
+  if(sessionStorage.weapon1_name !== null){
+    sessionStorage.weapon1_name = null;
+  }
+  if(sessionStorage.weapon2_name !== null){
+    sessionStorage.weapon2_name = null;
+  }
 
   return (
     <div className="Top">

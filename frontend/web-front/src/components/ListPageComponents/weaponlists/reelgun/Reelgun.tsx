@@ -24,7 +24,7 @@ const Reelgun = () => {
       {reelgun.map((reelguns) => {
         return(
         <ul className='listitemsUlLeft' key={reelguns.id}>
-          <li data-weapon={reelguns.display_name} data-range={reelguns.range} data-firerate={reelguns.fire_rate} data-damage={reelguns.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={reelguns.weapon_name} data-range={reelguns.range} data-firerate={reelguns.fire_rate} data-damage={reelguns.damage}  className='listitemsLiLeft' onClick={handleClick}>
            <img src={reelguns.image} alt='' className='listitemsImg'/>
            <span className='listitemsTextLeft'>
               {reelguns.display_name}

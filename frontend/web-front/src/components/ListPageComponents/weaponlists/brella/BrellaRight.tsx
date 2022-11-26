@@ -24,7 +24,7 @@ const BrellaRight = () => {
       {brella.map((brellas) => {
         return(
         <ul className='listitemsUlRight' key={brellas.id}>
-          <li data-weapon={brellas.display_name} data-range={brellas.range} data-firerate={brellas.fire_rate} data-damage={brellas.damage} className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={brellas.weapon_name} data-range={brellas.range} data-firerate={brellas.fire_rate} data-damage={brellas.damage} className='listitemsLiRight' onClick={handleClick}>
             {brellas.display_name}
           </li>
         </ul>

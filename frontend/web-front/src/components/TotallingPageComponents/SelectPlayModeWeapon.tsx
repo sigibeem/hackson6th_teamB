@@ -5,13 +5,13 @@ import '../../styles/menulist.css'
 const SelectPlayModeWeapon = () => {
   const navigate = useNavigate()
   const handleNavigateTotallingNawabari = () =>{
-    navigate("/totalling/result", {state: 'ナワバリバトル'})
+    navigate("/totalling/result", {state: "area"})
   }
   const handleNavigateTotallingHero = () =>{
-    navigate("/totalling/result", {state: 'ヒーローモード'})
+    navigate("/totalling/result", {state: "asari"})
   }
   const handleNavigateTotallingSamon = () =>{
-    navigate("/totalling/result", {state: 'サーモンラン'})
+    navigate("/totalling/result", {state: "yagura"})
   }
   return (
     <div>

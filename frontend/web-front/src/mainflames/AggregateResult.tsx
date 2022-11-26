@@ -9,6 +9,7 @@ const AggregateResult = () => {
     });
 
     instance.get("/api/statistics/%3Cstr:weapon%3E/")
+    // instance.get("/api/match_result/")
         .then(response=>{console.log(response.data)});
 
     return (<></>);

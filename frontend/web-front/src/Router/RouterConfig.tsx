@@ -76,6 +76,7 @@ const RouterConfig = () => {
         {/* totalling */}
         <Route path="/totalling" element={<Totalling />} />
         <Route path="/totalling/result" element={<VictoryOrDefeat />} />
+        <Route path="/aggregate-result" element={<AggregateResult />} />
       </Routes>
     </div>
   )

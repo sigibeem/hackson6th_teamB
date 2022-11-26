@@ -24,7 +24,7 @@ const BlasterRight = () => {
       {blaster.map((blasters) => {
         return(
         <ul className='listitemsUlRight' key={blasters.id}>
-          <li data-weapon={blasters.display_name} data-range={blasters.range} data-firerate={blasters.fire_rate} data-damage={blasters.damage}  className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={blasters.weapon_name} data-range={blasters.range} data-firerate={blasters.fire_rate} data-damage={blasters.damage}  className='listitemsLiRight' onClick={handleClick}>
             {blasters.display_name}
           </li>
         </ul>

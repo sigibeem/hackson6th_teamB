@@ -24,7 +24,7 @@ const Charger = () => {
       {charger.map((chargers) => {
         return(
         <ul className='listitemsUlLeft' key={chargers.id}>
-          <li data-weapon={chargers.display_name} data-range={chargers.range} data-firerate={chargers.fire_rate} data-damage={chargers.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={chargers.weapon_name} data-range={chargers.range} data-firerate={chargers.fire_rate} data-damage={chargers.damage}  className='listitemsLiLeft' onClick={handleClick}>
             {chargers.display_name}
           </li>
         </ul>
