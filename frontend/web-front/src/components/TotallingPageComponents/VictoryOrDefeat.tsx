@@ -3,8 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import axios from 'axios'
 import '../../styles/menulist.css'
 import '../../styles/index.css'
-import blueInk from '../../images/background/blueInk1.png'
-import yellowInk from '../../images/background/yellowInk1.png'
 
 const VictoryOrDefeat = () => {
   const location = useLocation()
