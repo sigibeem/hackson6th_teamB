@@ -33,7 +33,7 @@ const GraphAreaSelectWeaponLeft = () => {
     labels: labels,
     datasets: [
       {
-          label: weapon1.weapon1_name,
+          label: weapon1.weapon1_display,
           data: [weapon1.weapon1_range, weapon1.weapon1_damage, weapon1.weapon1_firerate],
           backgroundColor: 'rgba(204, 235, 0, 0.2)',
           borderColor: 'rgba(204, 235, 0, 1)',

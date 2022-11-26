@@ -26,7 +26,7 @@ ChartJS.defaults.color = '#fff'
 ChartJS.defaults.borderColor = '#616161'
 ChartJS.defaults.font.size = 20
  const GraphAreaSelectWeaponRight = () => {
-  const weapon_name = sessionStorage.getItem("weapon1_name");
+  const weapon_name = sessionStorage.getItem("weapon1_display");
   const weapon_damage = Number(sessionStorage.getItem("weapon1_damage"))
   const weapon_range = Number(sessionStorage.getItem("weapon1_range"))
   const weapon_firerate = Number(sessionStorage.getItem("weapon1_firerate"))
@@ -44,7 +44,7 @@ ChartJS.defaults.font.size = 20
           borderColor: 'rgba(204, 235, 0, 1)',
           borderWidth: 3,
       },{
-        label: weapon2.weapon2_name,
+        label: weapon2.weapon2_display,
         data: [weapon2.weapon2_range, weapon2.weapon2_damage, weapon2.weapon2_firerate],
         backgroundColor: 'rgba(255, 0, 0, 0.2)',
         borderColor: 'rgba(255, 0, 0, 1)',
