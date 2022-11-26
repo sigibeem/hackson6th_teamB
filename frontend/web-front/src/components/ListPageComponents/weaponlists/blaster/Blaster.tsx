@@ -10,9 +10,11 @@ const Blaster = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon1 = {
       select_list1: true,
       weapon1_name: weapon,
+      weapon1_display: display,
       weapon1_range: range,
       weapon1_firerate: firerate,
       weapon1_damage: damage,
@@ -24,7 +26,7 @@ const Blaster = () => {
       {blaster.map((blasters) => {
         return(
         <ul className='listitemsUlLeft' key={blasters.id}>
-          <li data-weapon={blasters.weapon_name} data-range={blasters.range} data-firerate={blasters.fire_rate} data-damage={blasters.damage} className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={blasters.weapon_name} data-range={blasters.range} data-firerate={blasters.fire_rate} data-damage={blasters.damage} data-display={blasters.display_name} className='listitemsLiLeft' onClick={handleClick}>
               {blasters.display_name}
           </li>
         </ul>

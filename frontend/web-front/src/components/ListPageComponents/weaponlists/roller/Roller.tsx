@@ -10,9 +10,11 @@ const Roller = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon1 = {
       select_list1: true,
       weapon1_name: weapon,
+      weapon1_display: display,
       weapon1_range: range,
       weapon1_firerate: firerate,
       weapon1_damage: damage,
@@ -24,7 +26,7 @@ const Roller = () => {
       {roller.map((rollers) => {
         return(
         <ul className='listitemsUlLeft' key={rollers.id}>
-          <li data-weapon={rollers.weapon_name} data-range={rollers.range} data-firerate={rollers.fire_rate} data-damage={rollers.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={rollers.weapon_name} data-range={rollers.range} data-firerate={rollers.fire_rate} data-damage={rollers.damage} data-display={rollers.display_name} className='listitemsLiLeft' onClick={handleClick}>
             {rollers.display_name}
           </li>
         </ul>

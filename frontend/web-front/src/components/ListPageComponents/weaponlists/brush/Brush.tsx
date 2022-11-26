@@ -10,9 +10,11 @@ const Brush = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon1 = {
       select_list1: true,
       weapon1_name: weapon,
+      weapon1_display: display,
       weapon1_range: range,
       weapon1_firerate: firerate,
       weapon1_damage: damage,
@@ -24,7 +26,7 @@ const Brush = () => {
       {brush.map((brushs) => {
         return(
         <ul className='listitemsUlLeft' key={brushs.id}>
-          <li data-weapon={brushs.weapon_name} data-range={brushs.range} data-firerate={brushs.fire_rate} data-damage={brushs.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={brushs.weapon_name} data-range={brushs.range} data-firerate={brushs.fire_rate} data-damage={brushs.damage} data-display={brushs.display_name} className='listitemsLiLeft' onClick={handleClick}>
             {brushs.display_name}
           </li>
         </ul>

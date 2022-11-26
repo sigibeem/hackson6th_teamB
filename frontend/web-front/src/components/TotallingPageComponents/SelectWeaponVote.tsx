@@ -6,8 +6,8 @@ import SelectPlayModeWeapon from './SelectPlayModeWeapon'
 
 
 const SelectWeaponVote = () => {
-  const weapon1_name = sessionStorage.getItem("weapon1_name");
-  const weapon2_name = sessionStorage.getItem("weapon2_name");
+  const weapon1_displayname = sessionStorage.getItem("weapon1_display");
+  const weapon2_displayname = sessionStorage.getItem("weapon2_display");
   const [selectWeapon, setSelectWeapon] = useState(false)
 
   const handleClickSelectWeapon1 = async (e: any) => {
@@ -31,13 +31,13 @@ const SelectWeaponVote = () => {
         <h1 className='h1'>どちらのブキでプレイした？</h1>
         <ul className='weaponList'>
           <li className='weaponItem'>
-            <span data-weapon={weapon1_name} onClick={handleClickSelectWeapon1} className='listitemsTextLeft'>
-              {weapon1_name}
+            <span data-weapon={weapon1_displayname} onClick={handleClickSelectWeapon1} className='listitemsTextLeft'>
+              {weapon1_displayname}
             </span>
           </li>
           <li className='weaponItem'>
-            <span data-weapon={weapon2_name} onClick={handleClickSelectWeapon2} className='listitemsTextLeft'>
-              {weapon2_name}
+            <span data-weapon={weapon2_displayname} onClick={handleClickSelectWeapon2} className='listitemsTextLeft'>
+              {weapon2_displayname}
             </span>
           </li>
         </ul>

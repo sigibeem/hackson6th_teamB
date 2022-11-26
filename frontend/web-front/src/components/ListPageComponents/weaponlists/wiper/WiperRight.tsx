@@ -10,9 +10,11 @@ const WiperRight = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon2 = {
       select_list2: true,
       weapon2_name: weapon,
+      weapon2_display: display,
       weapon2_range: range,
       weapon2_firerate: firerate,
       weapon2_damage: damage,
@@ -24,7 +26,7 @@ const WiperRight = () => {
       {wiper.map((wipers) => {
         return(
         <ul className='listitemsUlRight' key={wipers.id}>
-          <li data-weapon={wipers.weapon_name} data-range={wipers.range} data-firerate={wipers.fire_rate} data-damage={wipers.damage} className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={wipers.weapon_name} data-range={wipers.range} data-firerate={wipers.fire_rate} data-damage={wipers.damage} data-display={wipers.display_name} className='listitemsLiRight' onClick={handleClick}>
             {wipers.display_name}
           </li>
         </ul>

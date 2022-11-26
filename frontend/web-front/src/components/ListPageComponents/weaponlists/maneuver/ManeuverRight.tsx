@@ -10,9 +10,11 @@ const ManeuverRight = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon2 = {
       select_list2: true,
       weapon2_name: weapon,
+      weapon2_display: display,
       weapon2_range: range,
       weapon2_firerate: firerate,
       weapon2_damage: damage,
@@ -24,7 +26,7 @@ const ManeuverRight = () => {
       {maneuver.map((maneuvers) => {
         return(
         <ul className='listitemsUlRight' key={maneuvers.id}>
-          <li data-weapon={maneuvers.weapon_name}data-range={maneuvers.range} data-firerate={maneuvers.fire_rate} data-damage={maneuvers.damage}  className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={maneuvers.weapon_name}data-range={maneuvers.range} data-firerate={maneuvers.fire_rate} data-damage={maneuvers.damage} data-display={maneuvers.display_name} className='listitemsLiRight' onClick={handleClick}>
             {maneuvers.display_name}
           </li>
         </ul>

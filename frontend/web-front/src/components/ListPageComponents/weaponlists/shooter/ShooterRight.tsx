@@ -10,9 +10,11 @@ const ShooterRight = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon2 = {
       select_list2: true,
       weapon2_name: weapon,
+      weapon2_display: display,
       weapon2_range: range,
       weapon2_firerate: firerate,
       weapon2_damage: damage,
@@ -24,7 +26,7 @@ const ShooterRight = () => {
       {shooter.map((shooters) => {
         return(
         <ul className='listitemsUlRight' key={shooters.id}>
-          <li data-weapon={shooters.weapon_name} data-range={shooters.range} data-firerate={shooters.fire_rate} data-damage={shooters.damage} className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={shooters.weapon_name} data-range={shooters.range} data-firerate={shooters.fire_rate} data-damage={shooters.damage} data-display={shooters.display_name} className='listitemsLiRight' onClick={handleClick}>
           <img src={shooters.image} alt='' className='listitemsImg'/>
             <span className='listitemsTextRight'>
               {shooters.display_name}

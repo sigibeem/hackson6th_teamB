@@ -60,6 +60,7 @@ const GraphAreaSelectWeaponLeft = () => {
   sessionStorage.setItem('weapon1_range', weapon1.weapon1_range)
   sessionStorage.setItem('weapon1_damage', weapon1.weapon1_damage)
   sessionStorage.setItem('weapon1_firerate', weapon1.weapon1_firerate)
+  sessionStorage.setItem('weapon1_display', weapon1.weapon1_display)
   console.log(sessionStorage.getItem('weapon1_range'))
   return (
     <>

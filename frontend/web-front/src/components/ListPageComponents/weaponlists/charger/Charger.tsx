@@ -10,9 +10,11 @@ const Charger = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon1 = {
       select_list1: true,
       weapon1_name: weapon,
+      weapon1_display: display,
       weapon1_range: range,
       weapon1_firerate: firerate,
       weapon1_damage: damage,
@@ -24,7 +26,7 @@ const Charger = () => {
       {charger.map((chargers) => {
         return(
         <ul className='listitemsUlLeft' key={chargers.id}>
-          <li data-weapon={chargers.weapon_name} data-range={chargers.range} data-firerate={chargers.fire_rate} data-damage={chargers.damage}  className='listitemsLiLeft' onClick={handleClick}>
+          <li data-weapon={chargers.weapon_name} data-range={chargers.range} data-firerate={chargers.fire_rate} data-damage={chargers.damage} data-display={chargers.display_name} className='listitemsLiLeft' onClick={handleClick}>
             {chargers.display_name}
           </li>
         </ul>

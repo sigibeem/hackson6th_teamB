@@ -10,9 +10,11 @@ const SplatlingRight = () => {
     const range = e.currentTarget.dataset.range
     const firerate = e.currentTarget.dataset.firerate
     const damage = e.currentTarget.dataset.damage
+    const display = e.currentTarget.dataset.display
     const weapon2 = {
       select_list2: true,
       weapon2_name: weapon,
+      weapon2_display: display,
       weapon2_range: range,
       weapon2_firerate: firerate,
       weapon2_damage: damage,
@@ -24,7 +26,7 @@ const SplatlingRight = () => {
       {splatling.map((splatlings) => {
         return(
         <ul className='listitemsUlRight' key={splatlings.id}>
-          <li data-weapon={splatlings.weapon_name} data-range={splatlings.range} data-firerate={splatlings.fire_rate} data-damage={splatlings.damage} className='listitemsLiRight' onClick={handleClick}>
+          <li data-weapon={splatlings.weapon_name} data-range={splatlings.range} data-firerate={splatlings.fire_rate} data-damage={splatlings.damage} data-display={splatlings.display_name}className='listitemsLiRight' onClick={handleClick}>
             {splatlings.display_name}
           </li>
         </ul>

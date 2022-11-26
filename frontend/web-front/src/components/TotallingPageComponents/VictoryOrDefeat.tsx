@@ -14,9 +14,9 @@ const VictoryOrDefeat = () => {
     if(selectPlayMode === "area"){
       setDisplayNamePlayMode('ナワバリバトル')
     }else if(selectPlayMode === "asari"){
-      setDisplayNamePlayMode('ヒーローモード')
+      setDisplayNamePlayMode('ガチアサリ')
     }else if(selectPlayMode === "yagura"){
-      setDisplayNamePlayMode('サーモンラン')
+      setDisplayNamePlayMode('ガチヤグラ')
     }
   },[])
 
